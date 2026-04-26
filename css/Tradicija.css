@@ -1,0 +1,78 @@
+  div.container-fluid {
+    height: 300px;
+    width: auto;
+  }
+  .display-5{
+    text-align: left;
+  }
+  .nav-item{
+    padding-right: 20px;
+  }
+  a{
+      color: white;
+  }
+  nav.navbar {
+    background-color: #000091;
+  }
+  .card {
+    transition: transform 0.3s;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .card:hover {
+    transform: translateY(10px);
+  }
+  .card-img-top {
+    object-fit: cover;
+    height: 400px;
+  }
+hr{
+  background-color: #FFC107;
+  height: 3px;
+  margin-top: 15px;
+}
+@keyframes ct2 {
+100% {background-position: right -50px top 0}
+}
+.nav-item{
+  padding-right: 20px;
+}
+.jumbotron{
+  background-color: white;
+}
+
+  footer.footer {
+    background-color: #000091;
+    color: white;
+  }
+  
+  .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 576px) {
+    .footer-column {
+      flex: 0 0 50%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .footer-column {
+      flex: 0 0 33.33%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .footer-columns {
+      flex-wrap: nowrap;
+    }
+  }
