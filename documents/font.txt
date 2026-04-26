@@ -1,0 +1,6 @@
+Inter
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+PT Sans
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+
