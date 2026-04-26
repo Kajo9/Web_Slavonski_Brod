@@ -1,2 +1,2 @@
-# Web_Slavonski_Brod
+# Web Slavonski Brod
 ## FOI projekt kolegij Multimedijski sustavi
