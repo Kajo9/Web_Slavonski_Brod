@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/Početna_v2.css">
+  <link rel="stylesheet" href="../css/Smještaj.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+  <title>Slavonski Brod</title>
+  <style>
+    p{
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+    }
+    h1{
+      font-family: 'PT Sans Caption', sans-serif;
+    }
+    h3{
+      font-family: 'PT Sans Caption', sans-serif;
+    }
+    h5{
+      font-family: 'PT Sans Caption', sans-serif;
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-dark navbar-expand-lg">
+    <div class="container" style="color: white;">
+        <a class="navbar-brand" href="../Početna_v2.html">Grad Slavonski Brod</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: -170px;">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../Početna_v2.html" style="color: white; padding-left: 20px;">
+                        <i class="fa fa-home" aria-hidden="true"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown" style="padding-right: 10px;">
+                        <button class="btn btn-outline-warning dropdown-toggle" style="color: white;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Atrakcije
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="Atrakcije.html">Sve atrakcije</a>
+                            <a class="dropdown-item" href="Tvrđava.html">Tvrđava</a>
+                            <a class="dropdown-item" href="Korzo.html">Korzo</a>
+                            <a class="dropdown-item" href="Industrijski_park.html">Industrijski park</a>
+                            <a class="dropdown-item" href="Šetalište_pokraj_Save.html">Šetalište pokraj Save</a>
+                            <a class="dropdown-item" href="Franjevački_samostan.html">Franjevački samostan</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown" style="padding-left: 10px;">
+                        <button class="btn btn-outline-warning dropdown-toggle" style="color: white;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tradicije
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="Tradicija.html">Sve tradicija</a>
+                            <a class="dropdown-item" href="Tradicionalne_pjesme.html">Tradicionalne pjesme</a>
+                            <a class="dropdown-item" href="Tradicionalna_kuhinja.html">Tradicionalna kuhinja</a>
+                            <a class="dropdown-item" href="Slavonski_običaji.html">Slavonski običaji</a>
+                            <a class="dropdown-item" href="Sajmovi.html">Sajmovi</a>
+                            <a class="dropdown-item" href="Narodne_nošnje.html">Narodne nošnje</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="O_gradu_v2.html" style="color: white; padding-left: 35px;padding-left: 30px;">O gradu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Smještaj.html" style="color: white; padding-left: 35px;padding-left: 30px;">Smještaj</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Kontakt.html" style="color: white; padding-left: 30px;">Kontakt</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-warning my-2 my-sm-0" style="color: white;" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-5" class="naslov-1">Smještaj</h1>
+            <hr>
+        </div>
+      </div>
+    <div class="container" style="margin: 20px;">
+        <div class="row" style="margin-right: -350px; margin-bottom: 100px; margin-top: 50px;">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card mb-4">
+              <img class="card-img-top" class="img-fluid" src="https://pix10.agoda.net/hotelImages/233/233841/233841_1112142302005114497.jpg?ca=0&ce=1&s=414x232" alt="Card image cap" data-toggle="modal" data-target="#modal1">
+              <div class="card-body">
+                <h5 class="card-title">Hotel Savus</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal1">Kontakt Informacije</a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card mb-4">
+              <img class="card-img-top" class="img-fluid" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/241738881.jpg?k=fad55acfabee6fa5dc04985106d77f1dfe059aa68ee9bf30921db844d3b23e0e&o=&hp=1" alt="Card image cap" data-toggle="modal" data-target="#modal2">
+              <div class="card-body">
+                <h5 class="card-title">Hotel Art</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal2">Kontakt Informacije</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card mb-4">
+              <img class="card-img-top" class="img-fluid" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/156037270.jpg?k=e2ad0c057803f0571ac969d35c026733bff86d0d5dad544a751dca73c6934357&o=&hp=1" alt="Card image cap" data-toggle="modal" data-target="#modal3">
+              <div class="card-body">
+                <h5 class="card-title">Hostel Mali Pariz</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal3">Kontakt Informacije</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card mb-4">
+              <img class="card-img-top" class="img-fluid" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/203555528.jpg?k=23678e751165d76e2c86fbef603ef35bf848e4d0d2f4ba3adec0ccc1dda9ff73&o=&hp=1" alt="Card image cap" data-toggle="modal" data-target="#modal4">
+              <div class="card-body">
+                <h5 class="card-title">Apartments Moto klub Brod</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal4">Kontakt Informacije</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card mb-4">
+              <img class="card-img-top" class="img-fluid" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/33522849.jpg?k=12ffe034b58c1be5adae9278233c34c0c92c7e4491d6b5733f6138e2b0d32ade&o=&hp=1" alt="Card image cap" data-toggle="modal" data-target="#modal5">
+              <div class="card-body">
+                <h5 class="card-title">Hotel Garten</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal5">Kontakt Informacije</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card mb-4">
+              <img class="card-img-top" class="img-fluid" src="https://cf.bstatic.com/xdata/images/hotel/max500/107468473.jpg?k=6d14c66e57cb0bde239206f7c7a2daad92f218eac1229f46ba878d50bf881fb2&o=&hp=1" alt="Card image cap" data-toggle="modal" data-target="#modal6">
+              <div class="card-body">
+                <h5 class="card-title">Hostel Levicki</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal6">Kontakt Informacije</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal 1 -->
+      <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal1Label">Hotel Savus</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="img-fluid" src="https://pix10.agoda.net/hotelImages/233/233841/233841_1112142302005114497.jpg?ca=0&ce=1&s=800x450" alt="Large image">
+                <div>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>                  
+              <p>Adresa: A. Starčevića 2 A 35000 Slavonski Brod</p>
+              <p>Telefon: +385 35 405 888</p>
+              <p>+385 35 405 884</p>
+              <p>Fax: +385 35 405 880</p>
+              <p>Web: www.savus-hotel.com</p>
+              <p>E-mail: info@savus-hotel.com</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal 2 -->
+      <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal2Label">Hotel Art</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="img-fluid" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/241738881.jpg?k=fad55acfabee6fa5dc04985106d77f1dfe059aa68ee9bf30921db844d3b23e0e&o=&hp=1" alt="Large image">
+              <div>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              </div>    
+              <p>Adresa: Nikole Zrinskog 44 35000 Slavonski Brod</p>
+              <p>Telefon: +385 35 638 950</p>
+              <p>Fax: +385 35 638 951</p>
+              <p>Web: www.art-hotel.hr</p>
+              <p>E-mail: info@art-hotel.hr</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal 3 -->
+      <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal3Label">Hostel Mali Pariz</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="img-fluid" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/156037270.jpg?k=e2ad0c057803f0571ac969d35c026733bff86d0d5dad544a751dca73c6934357&o=&hp=1" alt="Large image">
+              <div>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>    
+              <p>Adresa: 	Eugena Kumičića 32 35000 Slavonski Brod</p>
+              <p>Telefon:  035 470 009 - Recepcija </p>
+              <p>E - mail : hostelmalipariz@gmail.com</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+       <!-- Modal 4 -->
+       <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal4Label">Apartments Moto klub Brod</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="img-fluid" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/203555528.jpg?k=23678e751165d76e2c86fbef603ef35bf848e4d0d2f4ba3adec0ccc1dda9ff73&o=&hp=1" alt="Large image">
+              <div>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>    
+              <p>Adresa: 	Primorska ul. 13, 35000, Slavonski Brod</p>
+              <p>Telefon:  099 346 7331 </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+       <!-- Modal 5 -->
+       <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modal5Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal5Label">Hotel Garten</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="img-fluid" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/33522849.jpg?k=12ffe034b58c1be5adae9278233c34c0c92c7e4491d6b5733f6138e2b0d32ade&o=&hp=1" alt="Large image">
+              <div>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>    
+              <p>Adresa: 	Vinogorska ul. 69, 35000, Slavonski Brod</p>
+              <p>Telefon:  035 465 072</p>
+              <p>E - mail : eko.garten@sb.t-com.hr</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+       <!-- Modal 6 -->
+       <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modal6Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal6Label">Hostel Levicki</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="img-fluid" src="https://cf.bstatic.com/xdata/images/hotel/max500/107468473.jpg?k=6d14c66e57cb0bde239206f7c7a2daad92f218eac1229f46ba878d50bf881fb2&o=&hp=1" alt="Large image">
+              <div>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>    
+              <p>Adresa: 	Trg Stjepana Miletića 11, 35000, Slavonski Brod</p>
+              <p>Telefon:  098 365 000 </p>
+              <p>E - mail :  hostel.levicki@gmail.com</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <footer class="footer" style="padding: 30px; font-size: 20px;">
+        <div class="container">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h5>Kontakt</h5>
+          <ul style="margin-right: 50px; padding: 30px;">
+            <li style="padding-top: 20px;">Slavonski Brod</li>
+            <li style="padding-top: 20px;">Telefon: 099/782-790</li>
+            <li style="padding-top: 20px;">Email: sbturizam@gmail.com</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h5>Mediji</h5>
+            <a href="https://www.instagram.com/your_instagram_username" target="_blank">
+              <i class="fa fa-instagram fa-lg" aria-hidden="true" style="margin-left: -30px; margin-bottom: 10px; padding-top: 50px; display: block;"></i>
+            </a>   
+            <a href="https://twitter.com/" target="_blank">
+              <i class="fa fa-twitter" aria-hidden="true" style="margin-left: -30px; margin-bottom: 10px; padding-top: 30px; display: block;"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+              <i class="fa fa-facebook-official fa-lg" aria-hidden="true" style="margin-left: -30px; margin-bottom: 10px; padding-top: 30px; display: block;"></i>
+            </a>   
+        </div>
+        <div class="footer-column">
+          <h5>Korisni linkovi</h5>
+            <a class="nav-link" href="../Početna_v2.html" style="color: white; margin-left: -30px; padding-top: 30px;">Home</a>
+            <a class="nav-link" href="Atrakcije.html" style="color: white;margin-left: -30px; padding-top: 30px;">Atrakacije</a>
+            <a class="nav-link" href="Tradicija.html" style="color: white;margin-left: -30px; padding-top: 30px;">Tradicije</a>
+            <a class="nav-link" href="Smještaj.html" style="color: white;margin-left: -30px; padding-top: 30px;">Smještaj</a>
+            <a class="nav-link" href="O_gradu_v2.html" style="color: white;margin-left: -30px; padding-top: 30px;">O gradu</a>
+            <a class="nav-link" href="Kontakt.html" style="color: white;margin-left: -30px; padding-top: 30px;">Kontakt</a>
+        </div>
+        </div>
+      </div>
+  </footer>
+</body>
+</html>
