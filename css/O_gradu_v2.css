@@ -39,9 +39,29 @@ hr{
     transform: translateY(-5px);
   }
   .card-img-top{
-    height: 300px;
+    height: 250px;
     width: 100%;
     object-fit: cover;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 120px;
+  }
+
+  .card-title {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+  }
+
+  .card-body .btn {
+    align-self: center;
+    margin-top: 10px;
   }
   .navbar {
     background-color: #000091;

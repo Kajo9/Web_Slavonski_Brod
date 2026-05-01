@@ -26,6 +26,31 @@ nav.navbar {
 .jumbotron{
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+.content-section {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.video-container iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .video-container iframe {
+    height: 315px;
+  }
+}
+
 .modal-dialog {
   width: 100%;
   max-width: 800px;
