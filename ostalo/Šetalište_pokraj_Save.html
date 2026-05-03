@@ -22,15 +22,26 @@
       font-family: 'Inter', sans-serif;
       font-size: 20px;
     }
-    h1{
+    h1,h2,h3,h5{
       font-family: 'PT Sans Caption', sans-serif;
     }
-    h3{
-      font-family: 'PT Sans Caption', sans-serif;
+    h5{ font-size: 30px; }
+
+    .content-section{
+      margin: 40px 0;
     }
-    h5{
-      font-family: 'PT Sans Caption', sans-serif;
-      font-size: 30px;
+
+    .video-container iframe{
+      width: 100%;
+      height: 615px;
+      border: none;
+    }
+
+    .card-img-t{
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -93,56 +104,64 @@
     </div>
 </nav>
 
-    <div class="card bg-dark text-white" style="margin-bottom: 20px;">
-      <img class="card-img" src="../slike/sava-2.jpg" alt="Card image">
-      <div class="card-img-overlay">
-        <div class="jumbotron jumbotron-fluid">
-          <div class="container">
-            <h1 class="display-4">Šetalište pokraj Save</h1>
-            <p class="lead">Adresa: Šetalište Braće Radić, 35000, Slavonski Brod</p>
-          </div>
-        </div>
+ <div class="card bg-dark text-white">
+  <img class="card-img" src="../slike/sava-2.jpg">
+
+  <div class="card-img-overlay">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Šetalište pokraj Save</h1>
+        <p class="lead">Adresa: Šetalište Braće Radić, Slavonski Brod</p>
+
+        <a href="https://www.google.com/maps/place/%C5%A0etali%C5%A1te+Bra%C4%87e+Radi%C4%87/"
+           target="_blank" class="btn btn-primary">
+          Pogledaj na karti
+        </a>
       </div>
     </div>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist" style="padding-right: 1000px;">
-          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Općenito o Šetalištu pokraj Save</a>
-          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Galerija slika</a>
-          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Video</a>
-        </div>
-      <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">        
-        <p class="opis">
-            Za one koji traže opušteni tempo života te nakon radnog vremena žele uživati u prirodi i mirnom okruženju, popularni brodski Kej glavno je mjesto brodskih šetača, a biciklistička i trkačka staza uz rijeku Savu, koja vodi sve do gradskog kupališta na “Poloju” izvrsno je mjesto za sve rekreativce.  
-            Zanimljivost je i kako je brodsko šetalište uz rijeku, ujedno i najduže šetalište u cijeloj Hrvatskoj.
-        </p>
-        <p class="opis">
-            Njezina duljina iznosi 2,5 km i prostire se od ušća rijeke Mrsunje do gradskih bazena.
-            Na šetnicu se nastavlja štalište koje prati Savu Splavarskom ulicom skroz do “Poloja” čime se dobiva 5 km dugo neprekinuto šetalište u kojem uživaju brojni Brođani.
-            Šetnica je ukrašena brojnim grafitima, a tu se nalazi i kip Potjeha, lika iz Ivanine bajke “Kako je Potjeh tražio istinu”. Godine 2019. dovršavaju se radovi na obaloutvrdi i dodatnih 600 m u koje su investirale Hrvatske vode u iznosu od 10 milijuna kuna.
-            Brodski kej je i okupljalište mnogobrojnih mladih posebice petkom i subotom navečer.
-      </p>
-      <p class="opis">
-        Jedna od neobičnijih ulica u Slavonskom Brodu je Splavarska ulica. Stanovnici te ulice žive doslovno na vodi, u stotinjak brodića i splavova prilagođenima za život. Većina ih ove neobične „nekretnine” koristi kao vikendice u toplijim mjesecima, 
-        kad se na brodovima susjedi druže, jedu svježe upecanu ribu, kartaju… Da je riječ o pravoj pravcatoj ulici potvrđuje i činjenica da svaki splav ima svoju adresu na koju im poštar može donijeti poštu. 
-        Splavarska ulica broji osamdesetak prekrasnih splavova poredanih jedan do drugog na rijeci Savi, koji se protežu od športske dvorane Vijuš do športsko-rekreacijskog centra Poloj gdje se možete okupati na lijepoj pješčanoj plaži. Mjesto je to na kojem Brođani ljeti traže spas od vrućina, igra se odbojka, pliva, odmara u hladu… 
-    </p>
-      </div>
-      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-        <div class="card-group">
-          <div class="card">
-            <img class="card-img-t" src="https://travelcroatia.live/wp-content/uploads/2021/11/9-152.png" alt="Card image cap" data-toggle="modal" data-target="#modal2">
-          </div>
-          <div class="card">
-            <img class="card-img-t" src="../slike/sava-3.JPG" alt="Card image cap" data-toggle="modal" data-target="#modal3">
-          </div>
-          <div class="card">
-            <img class="card-img-t" src="../slike/sava-4.jpg" alt="Card image cap" data-toggle="modal" data-target="#modal4">
-          </div>
-          <div class="card">
-            <img class="card-img-t" src="../slike/sava-5.jpg" alt="Card image cap" data-toggle="modal" data-target="#modal5">
-          </div>
-        </div>
-        </div>
+  </div>
+</div>
+ <div class="content-section">
+  <h2 style="color:#000091;">Općenito o Šetalištu pokraj Save</h2>
+
+  <p>
+    Šetalište pokraj Save u Slavonskom Brodu popularno je mjesto za šetnju, rekreaciju i druženje.
+    Uz rijeku Savu proteže se duga biciklistička i pješačka staza koja je jedno od omiljenih mjesta
+    za građane tijekom cijele godine.
+  </p>
+
+  <p>
+    Posebno je zanimljivo što se smatra jednim od najdužih riječnih šetališta u Hrvatskoj.
+    Proteže se od ušća Mrsunje pa sve do gradskih bazena, a dodatno se nastavlja prema Poloju.
+  </p>
+
+  <p>
+    Uz šetalište se nalazi i Splavarska ulica, jedinstvena u Hrvatskoj, gdje se nalaze splavovi
+    na kojima ljudi borave, druže se i provode vrijeme uz rijeku Savu.
+  </p>
+</div>
+
+      <div class="content-section">
+  <h2 style="color:#000091;">Galerija slika</h2>
+
+  <div class="card-group">
+    <div class="card">
+      <img class="card-img-t" src="https://travelcroatia.live/wp-content/uploads/2021/11/9-152.png" data-toggle="modal" data-target="#modal1">
+    </div>
+
+    <div class="card">
+      <img class="card-img-t" src="../slike/sava-3.JPG" data-toggle="modal" data-target="#modal2">
+    </div>
+
+    <div class="card">
+      <img class="card-img-t" src="../slike/sava-4.jpg" data-toggle="modal" data-target="#modal3">
+    </div>
+
+    <div class="card">
+      <img class="card-img-t" src="../slike/sava-5.jpg" data-toggle="modal" data-target="#modal4">
+    </div>
+  </div>
+</div>
            <!-- Modal 1 -->
            <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -220,10 +239,13 @@
               </div>
             </div>
 
-        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">         
-          <iframe style="border: none;" width="1515" height="615" src="https://www.youtube.com/embed/iGf16iDDrnQ" title="YouTube video" allowfullscreen></iframe>
-        </div>
-      </div>
+        <div class="content-section">
+  <h2 style="color:#000091;">Video</h2>
+
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/iGf16iDDrnQ" allowfullscreen></iframe>
+  </div>
+    </div>
       
       <footer class="footer" style="padding-top: 30px; font-size: 20px;">
         <div class="container">
