@@ -20,6 +20,10 @@
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
   <title>Slavonski Brod</title>
   <style>
+    a:focus, button:focus, input:focus, select:focus, textarea:focus {
+      outline: 3px solid #FFD700;
+      outline-offset: 2px;
+    }
     p{
       font-family: 'Inter', sans-serif;
       font-size: 20px;
@@ -38,23 +42,25 @@
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-dark navbar-expand-lg">
+  <nav class="navbar navbar-dark navbar-expand-lg" role="navigation" aria-label="Glavna navigacija">
     <div class="container" style="color: white;">
-      <a class="navbar-brand" href="../Početna_v2.html">Grad Slavonski Brod</a>
+      <a class="navbar-brand" href="../Početna_v2.html" style="display: flex; align-items: center; gap: 10px;">
+        <img src="../slike/grb_SB.png" alt="Grb Slavonski Brod" style="height:36px; width:auto; margin-right:8px;"> Grad Slavonski Brod
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: -170px ;">
+      <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: -170px;">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="../Početna_v2.html" style="color: white; padding-left: 35px;">
+            <a class="nav-link" href="../Početna_v2.html" style="color: white; padding-left: 20px;">
               <i class="fa fa-home" aria-hidden="true"></i> Home
             </a>
           </li>
           <li class="nav-item">
             <div class="dropdown" style="padding-right: 10px;">
-              <button class="btn btn-outline-warning dropdown-toggle" style="color: white;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button class="btn btn-outline-warning dropdown-toggle" style="color: white;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Atrakcije
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -69,7 +75,7 @@
           </li>
           <li class="nav-item">
             <div class="dropdown" style="padding-left: 10px;">
-              <button class="btn btn-outline-warning dropdown-toggle" style="color: white;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button class="btn btn-outline-warning dropdown-toggle" style="color: white;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Tradicije
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -83,13 +89,13 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="O_gradu_v2.html" style="color: white; padding-left: 35px;padding-left: 30px;">O gradu</a>
+            <a class="nav-link" href="O_gradu_v2.html" style="color: white; padding-left: 35px;">O gradu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Smještaj.html" style="color: white; padding-left: 35px;padding-left: 30px;">Smještaj</a>
+            <a class="nav-link" href="Smještaj.html" style="color: white; padding-left: 35px;">Smještaj</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Kontakt.html" style="color: white;padding-left: 35px;">Kontakt</a>
+            <a class="nav-link" href="Kontakt.html" style="color: white; padding-left: 30px;">Kontakt</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -98,7 +104,7 @@
         </form>
       </div>
     </div>
-  </nav>  
+  </nav>
     <div class="jumbotron jumbotron-fluid" style="background-color: #00006B;color: white; padding: 30px;">
         <div class="container">
           <h1 class="display-5">Atrakacije</h1>

@@ -16,8 +16,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet"> 
 <title>Slavonski Brod</title>
-
-  <style>
+<style>
+    a:focus, button:focus, input:focus, select:focus, textarea:focus {
+      outline: 3px solid #FFD700;
+      outline-offset: 2px;
+    }
     p{
       font-family: 'Inter', sans-serif;
       font-size: 20px;
@@ -48,66 +51,69 @@
 <body>
 
 <!-- NAVBAR -->
- <nav class="navbar navbar-dark navbar-expand-lg">
+ <nav class="navbar navbar-dark navbar-expand-lg" role="navigation" aria-label="Glavna navigacija">
     <div class="container" style="color: white;">
-        <a class="navbar-brand" href="../Početna_v2.html">Grad Slavonski Brod</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: -170px ;">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="../Početna_v2.html" style="color: white; padding-left: 35px;">
-                        <i class="fa fa-home" aria-hidden="true"></i> Home
-                    </a>
-                </li>
-                <li class="nav-item dropdown" style="padding-right: 10px;">
-                    <a class="btn btn-outline-warning dropdown-toggle" style="color: white;" href="#" role="button"
-                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Atrakcije
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="Atrakcije.html">Sve atrakcije</a>
-                        <a class="dropdown-item" href="Tvrđava.html">Tvrđava</a>
-                        <a class="dropdown-item" href="Korzo.html">Korzo</a>
-                        <a class="dropdown-item" href="Industrijski_park.html">Industrijski park</a>
-                        <a class="dropdown-item" href="Šetalište_pokraj_Save.html">Šetalište pokraj Save</a>
-                        <a class="dropdown-item" href="Franjevački_samostan.html">Franjevački samostan</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown" style="padding-left: 10px;">
-                    <a class="btn btn-outline-warning dropdown-toggle" style="color: white;" href="#" role="button"
-                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Tradicije
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="Tradicija.html">Sve tradicija</a>
-                        <a class="dropdown-item" href="Tradicionalne_pjesme.html">Tradicionalne pjesme</a>
-                        <a class="dropdown-item" href="Tradicionalna_kuhinja.html">Tradicionalna kuhinja</a>
-                        <a class="dropdown-item" href="Slavonski_običaji.html">Slavonski običaji</a>
-                        <a class="dropdown-item" href="Sajmovi.html">Sajmovi</a>
-                        <a class="dropdown-item" href="Narodne_nošnje.html">Narodne nošnje</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="O_gradu_v2.html" style="color: white; padding-left: 35px;">O gradu</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Smještaj.html" style="color: white; padding-left: 30px;">Smještaj</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Kontakt.html" style="color: white;padding-left: 30px;">Kontakt</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-warning my-2 my-sm-0" style="color: white;" type="submit">Search</button>
-            </form>
-        </div>
+      <a class="navbar-brand" href="../Početna_v2.html" style="display: flex; align-items: center; gap: 10px;">
+        <img src="../slike/grb_SB.png" alt="Grb Slavonski Brod" style="height:36px; width:auto; margin-right:8px;"> Grad Slavonski Brod
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: -170px;">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../Početna_v2.html" style="color: white; padding-left: 20px;">
+              <i class="fa fa-home" aria-hidden="true"></i> Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown" style="padding-right: 10px;">
+              <button class="btn btn-outline-warning dropdown-toggle" style="color: white;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Atrakcije
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="Atrakcije.html">Sve atrakcije</a>
+                <a class="dropdown-item" href="Tvrđava.html">Tvrđava</a>
+                <a class="dropdown-item" href="Korzo.html">Korzo</a>
+                <a class="dropdown-item" href="Industrijski_park.html">Industrijski park</a>
+                <a class="dropdown-item" href="Šetalište_pokraj_Save.html">Šetalište pokraj Save</a>
+                <a class="dropdown-item" href="Franjevački_samostan.html">Franjevački samostan</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown" style="padding-left: 10px;">
+              <button class="btn btn-outline-warning dropdown-toggle" style="color: white;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Tradicije
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="Tradicija.html">Sve tradicija</a>
+                <a class="dropdown-item" href="Tradicionalne_pjesme.html">Tradicionalne pjesme</a>
+                <a class="dropdown-item" href="Tradicionalna_kuhinja.html">Tradicionalna kuhinja</a>
+                <a class="dropdown-item" href="Slavonski_običaji.html">Slavonski običaji</a>
+                <a class="dropdown-item" href="Sajmovi.html">Sajmovi</a>
+                <a class="dropdown-item" href="Narodne_nošnje.html">Narodne nošnje</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="O_gradu_v2.html" style="color: white; padding-left: 35px;">O gradu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Smještaj.html" style="color: white; padding-left: 35px;">Smještaj</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Kontakt.html" style="color: white; padding-left: 30px;">Kontakt</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-warning my-2 my-sm-0" style="color: white;" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-</nav>
-
+  </nav>
 
 <!-- HERO -->
 <div class="card bg-dark text-white">
