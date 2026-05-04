@@ -48,7 +48,9 @@ p.opis{
   
   .modal-body img {
     max-width: 100%;
-    max-height: 600px;
+    width: 65%;
+    height: 600px;
+    object-fit: cover;
     height: auto;
   }
   

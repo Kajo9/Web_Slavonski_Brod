@@ -48,8 +48,15 @@ nav.navbar {
 
 .modal-body img {
   max-width: 100%;
-  max-height: 600px;
-  height: auto;
+  height: 600px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel-item img {
+  height: 600px;
+  object-fit: cover;
+  width: 100%;
 }
 
 .card-img-t{
