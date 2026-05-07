@@ -46,6 +46,24 @@
     .card-img-top{
       cursor: pointer;
     }
+          #kolo-wrap{ cursor: pointer; display: inline-block; }
+            #kolo-wrap .kolo-img{ filter: grayscale(100%); transition: filter 0.25s ease, transform 0.25s ease; display: block; width: auto; max-width:100%; height:auto; transform-origin: center; transform: scale(1.55); }
+            #kolo-wrap .kolo-img:hover, #kolo-wrap:focus .kolo-img, #kolo-wrap:focus-visible .kolo-img, #kolo-wrap:hover .kolo-img, #kolo-wrap:focus .kolo-img{ filter: none; transform: scale(1.65); }
+    
+    .instrument-modal .modal-content {
+    background: transparent;
+    border: none;
+    }
+    .instrument-modal .modal-body {
+    padding: 0;
+    }
+    .instrument-modal img {
+    display: block;
+    max-height: 90vh;   
+    width: auto;         
+    max-width: 100%;
+    border-radius: 4px;
+    }
   </style>
 </head>
 
@@ -91,7 +109,6 @@
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="Tradicija.html">Sve tradicija</a>
                 <a class="dropdown-item" href="Tradicionalne_pjesme.html">Tradicionalne pjesme</a>
-                <a class="dropdown-item" href="Tamburaski_Sastav.html" style="background: #fff3cd; font-weight: 600;">🎸 Tamburaški Sastav (Interaktivno)</a>
                 <a class="dropdown-item" href="Tradicionalna_kuhinja.html">Tradicionalna kuhinja</a>
                 <a class="dropdown-item" href="Slavonski_običaji.html">Slavonski običaji</a>
                 <a class="dropdown-item" href="Sajmovi.html">Sajmovi</a>
@@ -149,44 +166,61 @@
 </div>
 
 
-<!-- GALERIJA -->
+
+<!-- KOLO (static image: grayscale, color on hover/focus) -->
+<div class="content-section" style="text-align:center;">
+  <h3 style="color:#000091; margin-bottom: 50px;">Kolo - Slavonsko kolo</h3>
+  <div id="kolo-wrap" tabindex="0" aria-label="Slavonsko kolo">
+    <img class="kolo-img" src="../slike/kolo.jpg" alt="Slavonsko kolo">
+  </div>
+  <p style="margin-top:18px; max-width:720px; margin-left:auto; margin-right:auto">Kolo je tradicionalni slavonski ples u kojem ljudi plešu u krugu, držeći se za ruke. Ovdje je prikazan stilizirani prikaz sudionika koji kruže oko središta.</p>
+</div>
+
+<!-- Kolo -->
+<audio id="kolo-audio" loop preload="none" style="display:none">
+  <source src="../pjesme/kolo-dance.mp3">
+</audio>
+
 <div class="content-section">
   <h3 style="color:#000091;">Galerija slika i pjesama</h3>
 
   <div class="container">
-    <div class="row">
+    <div class="row align-items-start justify-content-center">
 
-      <div class="col-md-4">
-        <div class="card">
+      <div class="col-sm-6 col-md-4 text-center mb-4">
+        <div class="card border-0">
           <h3>Bisernica</h3>
           <div class="card-body">
-            <img class="card-img-top" src="../slike/pjesme-2.jpg" data-toggle="modal" data-target="#modal2">
+            <img class="rounded-circle instrument-circle-img" src="../slike/instrument-2.jpg" data-toggle="modal" data-target="#modal2" alt="Bisernica">
           </div>
         </div>
       </div>
 
-      <div class="col-md-4">
-        <div class="card">
+      <div class="col-sm-6 col-md-4 text-center mb-4">
+        <div class="card border-0">
           <h3>Brač</h3>
           <div class="card-body">
-            <img class="card-img-top" src="../slike/pjesme-3.jpg" data-toggle="modal" data-target="#modal3">
+            <img class="rounded-circle instrument-circle-img" src="../slike/instrument-3.jpg" data-toggle="modal" data-target="#modal3" alt="Brač">
           </div>
         </div>
       </div>
 
-      <div class="col-md-4">
-        <div class="card">
+      <div class="col-sm-6 col-md-4 text-center mb-4">
+        <div class="card border-0">
           <h3>Bugarija</h3>
           <div class="card-body">
-            <img class="card-img-top" src="../slike/pjesme-4.jpg" data-toggle="modal" data-target="#modal4">
+            <img class="rounded-circle instrument-circle-img" src="../slike/instrument-4.jpg" data-toggle="modal" data-target="#modal4" alt="Bugarija">
           </div>
         </div>
       </div>
 
+    </div>
+
+    <div class="row audio-row mt-4">
       <div class="col-md-4">
         <div class="card">
           <h3>Šokački bećarac</h3>
-          <div class="card-body">
+          <div class="card-body mt-2">
             <audio controls>
               <source src="../pjesme/Šokački bećarac (za dušu).mp3">
             </audio>
@@ -197,7 +231,7 @@
       <div class="col-md-4">
         <div class="card">
           <h3>Slavonski dukati</h3>
-          <div class="card-body">
+          <div class="card-body mt-2">
             <audio controls>
               <source src="../pjesme/SLAVONSKI DUKATI - BEĆARAC.mp3">
             </audio>
@@ -208,7 +242,7 @@
       <div class="col-md-4">
         <div class="card">
           <h3>Slavonske Lole</h3>
-          <div class="card-body">
+          <div class="card-body mt-2">
             <audio controls>
               <source src="../pjesme/Slavonske Lole - Bečarac.mp3">
             </audio>
@@ -217,46 +251,37 @@
       </div>
 
     </div>
-  </div>
-</div>
 
-
-<!-- VIDEO -->
-<div class="content-section">
-  <h3 style="color:#000091;">Video</h3>
-
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/PThGeq_PCAA" allowfullscreen></iframe>
   </div>
 </div>
 
 
 <!-- MODALI -->
-<div class="modal fade" id="modal2">
+<div class="modal fade instrument-modal" id="modal2">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-body">
-        <img class="img-fluid" src="../slike/pjesme-2.jpg">
+      <div class="modal-body p-0">
+        <img class="img-fluid w-80" src="../slike/instrument-2.jpg">
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal fade" id="modal3">
+<div class="modal fade instrument-modal" id="modal3">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-body">
-        <img class="img-fluid" src="../slike/pjesme-3.jpg">
+      <div class="modal-body p-0">
+        <img class="img-fluid w-80" src="../slike/instrument-3.jpg">
       </div>
     </div>
   </div>
 </div>
 
-<div class="modal fade" id="modal4">
+<div class="modal fade instrument-modal" id="modal4">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-body">
-        <img class="img-fluid" src="../slike/pjesme-4.jpg">
+      <div class="modal-body p-0">
+        <img class="img-fluid w-80" src="../slike/instrument-4.jpg">
       </div>
     </div>
   </div>
