@@ -64,6 +64,16 @@
     max-width: 100%;
     border-radius: 4px;
     }
+
+    .audio-card {
+    background: #ffffff;
+    border: 1px solid #eee !important;
+    border-radius: 20px !important;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+  }
+
   </style>
 </head>
 
@@ -182,79 +192,81 @@
 </audio>
 
 <div class="content-section">
-  <h3 style="color:#000091;">Galerija slika i pjesama</h3>
+  <h3 style="color:#000091; font-weight: bold;">Galerija slika i pjesama</h3>
 
   <div class="container">
     <div class="row align-items-start justify-content-center">
-
-      <div class="col-sm-6 col-md-4 text-center mb-4">
+      <div class="col-sm-6 col-md-4 text-center mb-5">
         <div class="card border-0">
           <h3>Bisernica</h3>
           <div class="card-body">
-            <img class="rounded-circle instrument-circle-img" src="../slike/instrument-2.jpg" data-toggle="modal" data-target="#modal2" alt="Bisernica">
+            <img class="rounded-circle instrument-circle-img shadow" src="../slike/instrument-2.jpg" data-bs-toggle="modal" data-bs-target="#modal2" alt="Bisernica" style="cursor: pointer;">
           </div>
         </div>
       </div>
 
-      <div class="col-sm-6 col-md-4 text-center mb-4">
+      <div class="col-sm-6 col-md-4 text-center mb-5">
         <div class="card border-0">
           <h3>Brač</h3>
           <div class="card-body">
-            <img class="rounded-circle instrument-circle-img" src="../slike/instrument-3.jpg" data-toggle="modal" data-target="#modal3" alt="Brač">
+            <img class="rounded-circle instrument-circle-img shadow" src="../slike/instrument-3.jpg" data-bs-toggle="modal" data-bs-target="#modal3" alt="Brač" style="cursor: pointer;">
           </div>
         </div>
       </div>
 
-      <div class="col-sm-6 col-md-4 text-center mb-4">
+      <div class="col-sm-6 col-md-4 text-center mb-5">
         <div class="card border-0">
           <h3>Bugarija</h3>
           <div class="card-body">
-            <img class="rounded-circle instrument-circle-img" src="../slike/instrument-4.jpg" data-toggle="modal" data-target="#modal4" alt="Bugarija">
+            <img class="rounded-circle instrument-circle-img shadow" src="../slike/instrument-4.jpg" data-bs-toggle="modal" data-bs-target="#modal4" alt="Bugarija" style="cursor: pointer;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h4 style="color:#000091; font-weight: bold; margin-bottom: 40px; text-align: left;">Glazbeni sastavi</h4>
+
+  <div class="container">
+    <div class="row audio-row mt-2">
+      
+      <div class="col-md-4 mb-4">
+        <div class="card audio-card text-center">
+          <h3 class="audio-title">Šokački bećarac</h3>
+          <div class="card-body p-0 mt-2">
+            <audio controls class="custom-audio">
+              <source src="../pjesme/Šokački bećarac (za dušu).mp3" type="audio/mpeg">
+              Vaš preglednik ne podržava audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card audio-card text-center">
+          <h3 class="audio-title">Slavonski dukati</h3>
+          <div class="card-body p-0 mt-2">
+            <audio controls class="custom-audio">
+              <source src="../pjesme/SLAVONSKI DUKATI - BEĆARAC.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card audio-card text-center">
+          <h3 class="audio-title">Slavonske Lole</h3>
+          <div class="card-body p-0 mt-2">
+            <audio controls class="custom-audio">
+              <source src="../pjesme/Slavonske Lole - Bečarac.mp3" type="audio/mpeg">
+            </audio>
           </div>
         </div>
       </div>
 
     </div>
-
-    <div class="row audio-row mt-4">
-      <div class="col-md-4">
-        <div class="card">
-          <h3>Šokački bećarac</h3>
-          <div class="card-body mt-2">
-            <audio controls>
-              <source src="../pjesme/Šokački bećarac (za dušu).mp3">
-            </audio>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <h3>Slavonski dukati</h3>
-          <div class="card-body mt-2">
-            <audio controls>
-              <source src="../pjesme/SLAVONSKI DUKATI - BEĆARAC.mp3">
-            </audio>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <h3>Slavonske Lole</h3>
-          <div class="card-body mt-2">
-            <audio controls>
-              <source src="../pjesme/Slavonske Lole - Bečarac.mp3">
-            </audio>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
   </div>
 </div>
-
 
 <!-- MODALI -->
 <div class="modal fade instrument-modal" id="modal2">

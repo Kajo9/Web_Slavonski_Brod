@@ -2,7 +2,9 @@ div.container-fluid {
     height: 300px;
     width: auto;
   }
-
+  .card-text{
+    font-size: 20px;
+  }
   a{
       color: white;
   }
@@ -12,15 +14,10 @@ div.container-fluid {
   .nav-item{
     padding-right: 20px;
   }
-  .card-img-top-1{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-  }
 
   .card-img-top{
     width: 100%;
-    height: 250px;
+    height: 400px;
     object-fit: cover;
   }
 
@@ -34,28 +31,25 @@ div.container-fluid {
     height: 100%;
   }
 
+ 
   .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    flex-grow: 1;
-    text-align: center;
-  }
+  padding: 20px;
+  justify-content: flex-start;
+  flex-grow: 1;
+  text-align: center;
+}
 
   .card-title {
-    margin-bottom: 15px;
-    font-size: 24px;
+    font-size: 30px;
   }
 
   .card-body .btn {
-    align-self: center;
-    margin-top: 10px;
-  }
+  align-self: center;
+  margin-top: auto;
+}
 
   .card:hover {
-    transform: translateY(10px);
+    transform: translateY(-10px);
   }
 hr{
   background-color: #FFC107; 

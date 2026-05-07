@@ -2,6 +2,12 @@
     height: 300px;
     width: auto;
   }
+  .card-text{
+    font-size: 20px;
+  }
+  .card-title{
+    font-size: 30px;
+  }
   .display-5{
     text-align: left;
   }
@@ -22,12 +28,17 @@
   }
 
   .card:hover {
-    transform: translateY(10px);
+    transform: translateY(-10px);
   }
   .card-img-top {
     object-fit: cover;
     height: 400px;
   }
+  .card-body {
+    padding: 20px;
+    justify-content: flex-start;
+  }
+  
 hr{
   background-color: #FFC107;
   height: 3px;
@@ -48,37 +59,37 @@ hr{
   /* ========================= */
 
   footer.footer {
-    background: #000091;
-    color: #fff;
-    padding: 60px 20px 30px;
-  }
+  background: #000091;
+  color: #fff;
+  padding: 60px 20px 30px;
+}
 
-  /* container da nije preuzak */
-  .footer .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+/* container da nije preuzak */
+.footer .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  /* GRID layout */
-  .footer-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    align-items: start;
-  }
+/* GRID layout */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  align-items: start;
+}
 
-  /* FLEXBOX layout za footer-columns */
-  .footer-columns {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 40px;
-  }
+/* FLEXBOX layout za footer-columns */
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
 
-  .footer-column {
-    flex: 0 0 calc(33.333% - 27px);
-  }
+.footer-column {
+  flex: 0 0 calc(33.333% - 27px);
+}
 
   /* tablet */
   @media (max-width: 992px) {
