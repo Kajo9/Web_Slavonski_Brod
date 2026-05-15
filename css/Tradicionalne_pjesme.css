@@ -2,20 +2,45 @@
 
 a {
   color: white;
+  text-decoration: none;
 }
 
 p.opis {
   border-bottom: 10px solid transparent;
 }
 
+/* FOCUS ACCESSIBILITY */
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid #FFD700;
+  outline-offset: 2px;
+}
+
+/* TYPOGRAPHY */
+
+p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+}
+
+h1, h2, h3, h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 30px;
+}
+
+/* LAYOUT */
+
 .row {
   display: flex;
   flex-wrap: wrap;
-}
-
-.container h1 p {
-  background-color: #00006b;
-  color: white;
 }
 
 div.container-fluid {
@@ -23,6 +48,10 @@ div.container-fluid {
   width: auto;
 }
 
+.container h1 p {
+  background-color: #00006b;
+  color: white;
+}
 
 /* NAVBAR */
 
@@ -40,15 +69,29 @@ nav.navbar {
   padding-right: 20px;
 }
 
-
 /* HERO / JUMBOTRON */
 
 .jumbotron {
+  background-size: cover;
+  background-position: center;
+  color: white;
   background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
+/* CONTENT */
 
-/* GALLERY */
+.content-section {
+  margin: 40px 0;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 615px;
+  border: none;
+}
+
+/* GALLERY / CARDS */
 
 .card-group {
   padding: 30px;
@@ -61,31 +104,12 @@ nav.navbar {
   padding-left: 30px;
 }
 
-.gallery-row {
-  gap: 20px;
-}
-
-.gallery-row > .col-md-4 {
-  flex: 0 0 33.333333%;
-  max-width: 33.333333%;
-}
-
-@media (max-width: 767.98px) {
-  .gallery-row > .col-md-4 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
-
-
 /* MODAL */
 
 .modal-dialog {
   width: 100%;
   max-width: 800px;
-  height: 100%;
-  margin-left: 380px;
-  margin-top: -8px;
+  margin: auto;
 }
 
 .modal-content {
@@ -106,7 +130,6 @@ nav.navbar {
   height: auto;
   object-fit: cover;
 }
-
 
 /* FOOTER */
 
@@ -132,6 +155,8 @@ footer.footer {
 .footer-column {
   flex: 0 0 calc(33.333% - 27px);
 }
+
+/* FOOTER TEXT */
 
 .footer h5 {
   margin-bottom: 15px;
@@ -185,6 +210,8 @@ footer.footer {
   font-size: 14px;
   color: #ccc;
 }
+
+/* RESPONSIVE */
 
 @media (max-width: 992px) {
   .footer-columns {

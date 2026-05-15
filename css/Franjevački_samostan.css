@@ -1,15 +1,68 @@
+/* FOCUS (ACCESSIBILITY) */
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid #FFD700;
+  outline-offset: 2px;
+}
+
+/* TYPOGRAPHY */
+
+p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 30px;
+}
+
+/* NAVBAR */
+
+.jumbotron {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+nav.navbar {
+  background-color: #000091;
+}
+
 .navbar-brand img {
   height: 36px;
   width: auto;
   margin-right: 8px;
 }
-p.opis{
-  border-bottom: 10px solid transparent;
+
+.nav-item {
+  padding-right: 20px;
 }
-.row{
+
+a {
+  color: white;
+}
+
+/* LAYOUT / GLOBAL */
+
+.row {
   display: flex;
 }
-.container h1 p{
+
+.container h1 p {
   background-color: #00006b;
   color: white;
 }
@@ -19,63 +72,7 @@ div.container-fluid {
   width: auto;
 }
 
-a{
-    color: white;
-}
-nav.navbar {
-  background-color: #000091;
-}
-.nav-item{
-  padding-right: 20px;
-}
-.jumbotron{
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.modal-dialog {
-  width: 100%;
-  max-width: 800px;
-  height: 100%;
-  margin-left: 380px;
-  margin-top: -8px;
-}
-
-.modal-content {
-  height: 100%;
-  border: none;
-}
-
-.modal-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-}
-
-.modal-body img {
-  max-width: 100%;
-  height: 600px;
-  object-fit: cover;
-  width: 100%;
-}
-
-.carousel-item img {
-  height: 600px;
-  object-fit: cover;
-  width: 100%;
-}
-
-.card-img-t{
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  padding-left: 30px;
-}
-.card-group{
-  padding: 30px;
-}
-/* ========================= */
-/* FOOTER (MODERNI GRID) */
-/* ========================= */
+/* FOOTER */
 
 footer.footer {
   background: #000091;
@@ -83,14 +80,13 @@ footer.footer {
   padding: 60px 20px 30px;
 }
 
-/* container da nije preuzak */
 .footer .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* GRID layout */
+/* GRID / STRUCTURE */
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -98,7 +94,6 @@ footer.footer {
   align-items: start;
 }
 
-/* FLEXBOX layout za footer-columns */
 .footer-columns {
   display: flex;
   flex-wrap: wrap;
@@ -110,45 +105,11 @@ footer.footer {
   flex: 0 0 calc(33.333% - 27px);
 }
 
-/* tablet */
-@media (max-width: 992px) {
-  .footer-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .footer-columns {
-    gap: 30px;
-  }
-  
-  .footer-column {
-    flex: 0 0 calc(50% - 15px);
-  }
-}
-
-/* mobitel */
-@media (max-width: 576px) {
-  .footer-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  
-  .footer-columns {
-    flex-direction: column;
-    gap: 30px;
-  }
-  
-  .footer-column {
-    flex: 0 0 100%;
-    text-align: center;
-  }
-}
-
-/* naslovi */
+/* TEXT */
 .footer h5 {
   margin-bottom: 15px;
 }
 
-/* liste */
 .footer ul {
   list-style: none;
   padding: 0;
@@ -158,7 +119,7 @@ footer.footer {
   margin-bottom: 10px;
 }
 
-/* linkovi u footeru */
+/* LINKS */
 .footer a {
   color: #ddd;
   transition: 0.3s;
@@ -168,14 +129,6 @@ footer.footer {
   color: #FFC107;
 }
 
-/* ikone u footeru Mediji sekcija */
-.footer-column a i {
-  display: block;
-  margin-bottom: 15px;
-  font-size: 24px;
-}
-
-/* linkovi kao blok elementi */
 .footer .nav-link {
   display: block;
   margin-bottom: 10px;
@@ -186,14 +139,20 @@ footer.footer {
   color: #FFC107 !important;
 }
 
-/* ikone */
+/* ICONS */
 .footer-icons a {
   display: inline-block;
   margin-right: 15px;
   font-size: 20px;
 }
 
-/* donji dio */
+.footer-column a i {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+/* BOTTOM */
 .footer-bottom {
   margin-top: 40px;
   text-align: center;
@@ -201,4 +160,37 @@ footer.footer {
   padding-top: 15px;
   font-size: 14px;
   color: #ccc;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-columns {
+    gap: 30px;
+  }
+
+  .footer-column {
+    flex: 0 0 calc(50% - 15px);
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-column {
+    flex: 0 0 100%;
+    text-align: center;
+  }
 }

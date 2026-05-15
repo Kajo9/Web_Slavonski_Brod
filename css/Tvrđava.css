@@ -1,4 +1,4 @@
-/* TIPOGRAFIJA               */
+/* TIPOGRAFIJA */
 
 p {
   font-family: 'Quicksand', sans-serif;
@@ -14,7 +14,7 @@ h5 {
   font-size: 30px;
 }
 
-/* PRISTUPAČNOST             */
+/* PRISTUPAČNOST */
 
 a:focus,
 button:focus,
@@ -25,14 +25,10 @@ textarea:focus {
   outline-offset: 2px;
 }
 
-/* NAVBAR                    */
+/* NAVBAR */
 
 nav.navbar {
   background-color: #000091;
-}
-
-.navbar .container {
-  color: white;
 }
 
 .navbar-brand {
@@ -45,7 +41,6 @@ nav.navbar {
 .navbar-brand img {
   height: 36px;
   width: auto;
-  margin-right: 8px;
 }
 
 .navbar-nav .nav-link {
@@ -53,25 +48,21 @@ nav.navbar {
   padding-left: 25px;
 }
 
-.navbar .dropdown-toggle {
-  color: white;
-}
-
 .nav-item {
   padding-right: 20px;
 }
 
-/* HERO (CARD S OVERLAYEM)   */
-
-.hero-card {
-  margin-bottom: 20px;
-}
+/* HERO */
 
 .jumbotron {
+  background-size: cover;
+  background-position: center;
+  color: white;
   background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* SADRŽAJ STRANICE          */
+/* SADRŽAJ */
 
 .content-section {
   padding: 20px;
@@ -81,14 +72,14 @@ nav.navbar {
 
 .section-title {
   color: #000091;
-  margin: 40px 0 20px 0;
+  margin: 40px 0 20px;
 }
 
 p.opis {
   border-bottom: 10px solid transparent;
 }
 
-/* GALERIJA                  */
+/* GALERIJA */
 
 .card-group {
   padding: 30px;
@@ -101,37 +92,7 @@ p.opis {
   cursor: pointer;
 }
 
-/* MODAL                     */
-
-.modal-dialog {
-  width: 100%;
-  max-width: 800px;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -8px;
-}
-
-.modal-content {
-  height: 100%;
-  border: none;
-}
-
-.modal-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-}
-
-.modal-body img {
-  max-width: 100%;
-  height: 600px;
-  object-fit: cover;
-  width: 100%;
-}
-
-/* CAROUSEL                  */
+/* CAROUSEL */
 
 .carousel-item img {
   height: 600px;
@@ -139,7 +100,7 @@ p.opis {
   width: 100%;
 }
 
-/* VIDEO                     */
+/* VIDEO */
 
 .video-container {
   width: 100%;
@@ -160,7 +121,33 @@ p.opis {
   }
 }
 
-/* FOOTER                    */
+/* MODAL */
+
+.modal-dialog {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.modal-content {
+  border: none;
+}
+
+.modal-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.modal-body img {
+  max-width: 100%;
+  height: 600px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* FOOTER */
 
 footer.footer {
   background: #000091;
@@ -198,21 +185,13 @@ footer.footer {
   margin-bottom: 10px;
 }
 
-.footer a {
+.footer a,
+.footer .nav-link {
   color: #ddd;
   transition: color 0.3s;
 }
 
-.footer a:hover {
-  color: #FFC107;
-}
-
-.footer .nav-link {
-  display: block;
-  margin-bottom: 10px;
-  color: #ddd;
-}
-
+.footer a:hover,
 .footer .nav-link:hover {
   color: #FFC107;
 }
@@ -232,7 +211,7 @@ footer.footer {
   color: #ccc;
 }
 
-/* RESPONZIVNOST             */
+/* RESPONSIVE */
 
 @media (max-width: 992px) {
   .footer-columns {

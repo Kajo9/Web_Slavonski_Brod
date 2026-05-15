@@ -1,16 +1,60 @@
+/* FOCUS */
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid #FFD700;
+  outline-offset: 2px;
+}
+
+/* TYPOGRAPHY */
+
+p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 30px;
+}
+
+/* NAVBAR */
+
+nav.navbar {
+  background-color: #000091;
+}
+
 .navbar-brand img {
   height: 36px;
   width: auto;
   margin-right: 8px;
 }
 
-p.opis{
-  border-bottom: 10px solid transparent;
+.nav-item {
+  padding-right: 20px;
 }
-.row{
+
+a {
+  color: white;
+}
+
+/* LAYOUT */
+
+.row {
   display: flex;
 }
-.container h1 p{
+
+.container h1 p {
   background-color: #00006b;
   color: white;
 }
@@ -20,18 +64,47 @@ div.container-fluid {
   width: auto;
 }
 
-a{
-    color: white;
+p.opis {
+  border-bottom: 10px solid transparent;
 }
-nav.navbar {
-  background-color: #000091;
+
+/* CONTENT */
+
+.content-section {
+  margin: 40px 0;
 }
-.nav-item{
-  padding-right: 20px;
+
+.video-container iframe {
+  width: 100%;
+  height: 615px;
+  border: none;
 }
-.jumbotron{
+
+/* CARDS / GALLERY */
+
+.card-group {
+  padding: 30px;
+}
+
+.card-img-t {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* JUMBOTRON */
+
+.jumbotron {
+  background-size: cover;
+  background-position: center;
+  color: white;
   background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
+
+/* MODAL */
+
 .modal-dialog {
   width: 100%;
   max-width: 800px;
@@ -59,21 +132,16 @@ nav.navbar {
   width: 100%;
 }
 
+/* CAROUSEL */
+
 .carousel-item img {
   height: 600px;
   object-fit: cover;
   width: 100%;
 }
 
-.card-img-t{
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  padding-left: 30px;
-}
-.card-group{
-  padding: 30px;
-}
+/* FOOTER */
+
 footer.footer {
   background-color: #000091;
   color: white;
@@ -89,6 +157,8 @@ footer.footer {
   flex: 0 0 100%;
   margin-bottom: 20px;
 }
+
+/* RESPONSIVE FOOTER */
 
 @media (min-width: 576px) {
   .footer-column {

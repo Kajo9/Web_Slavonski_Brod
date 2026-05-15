@@ -4,253 +4,301 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Slavonski Brod</title>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/Franjevački_samostan.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
-  <title>Slavonski Brod</title>
-  <style>
-    a:focus, button:focus, input:focus, select:focus, textarea:focus {
-      outline: 3px solid #FFD700;
-      outline-offset: 2px;
-    }
-   p{
-      font-family: 'Quicksand', sans-serif;
-      font-size: 20px;
-    }
-    h1,h2,h3,h5{
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-    }
-    h5{
-      font-size: 30px;
-    }
-  </style>
 </head>
+
 <body>
-    <nav class="navbar navbar-dark navbar-expand-lg" role="navigation" aria-label="Glavna navigacija">
-    <div class="container">
-      <a class="navbar-brand" href="Početna_v2.html">
-        <img src="../slike/grb_SB.png" alt="Grb Slavonski Brod"> Grad Slavonski Brod
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="../Početna_v2.html">
-              <i class="fa fa-home" aria-hidden="true"></i> Home
+
+<nav class="navbar navbar-dark navbar-expand-lg" role="navigation" aria-label="Glavna navigacija">
+  <div class="container">
+
+      <a class="navbar-brand" href="../Početna_v2.html">
+      <img src="../slike/grb_SB.png" alt="Grb Slavonski Brod"> Grad Slavonski Brod
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="../Početna_v2.html">
+            <i class="fa fa-home" aria-hidden="true"></i> Home
+          </a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <button class="btn btn-outline-warning dropdown-toggle" type="button"
+            id="dropdownAtrakcije" data-toggle="dropdown">
+            Atrakcije
+          </button>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownAtrakcije">
+            <a class="dropdown-item" href="Atrakcije.html">Sve atrakcije</a>
+            <a class="dropdown-item" href="Tvrđava.html">Tvrđava</a>
+            <a class="dropdown-item" href="Korzo.html">Korzo</a>
+            <a class="dropdown-item" href="Industrijski_park.html">Industrijski park</a>
+            <a class="dropdown-item" href="Šetalište_pokraj_Save.html">Šetalište pokraj Save</a>
+            <a class="dropdown-item" href="Franjevački_samostan.html">Franjevački samostan</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <button class="btn btn-outline-warning dropdown-toggle" type="button"
+            id="dropdownTradicije" data-toggle="dropdown">
+            Tradicije
+          </button>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownTradicije">
+            <a class="dropdown-item" href="Tradicija.html">Sve tradicije</a>
+            <a class="dropdown-item" href="Tradicionalne_pjesme.html">Tradicionalne pjesme</a>
+            <a class="dropdown-item" href="Tradicionalna_kuhinja.html">Tradicionalna kuhinja</a>
+            <a class="dropdown-item" href="Slavonski_običaji.html">Slavonski običaji</a>
+            <a class="dropdown-item" href="Sajmovi.html">Sajmovi</a>
+            <a class="dropdown-item" href="Narodne_nošnje.html">Narodne nošnje</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="O_gradu_v2.html">O gradu</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="Smještaj.html">Smještaj</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="Kontakt.html">Kontakt</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="card bg-dark text-white" style="margin-bottom: 20px;">
+  <img class="card-img" src="../slike/samostan-2.jpg" alt="Card image">
+
+  <div class="card-img-overlay">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+
+        <h1 class="display-4">Franjevački samostan</h1>
+
+        <p class="lead">Adresa: Trg Sv. Trojstva 1, 35000, Slavonski Brod</p>
+
+        <div>
+          <a href="https://www.google.com/maps/place/Franjeva%C4%8Dki+samostan+Slavonski+Brod/@45.1614412,18.0154199,17z/data=!3m1!4b1!4m5!3m4!1s0x475c7e9f8b0c6e7f:0x9c8a5e5b2c5e5b2!8m2!3d45.1614412!4d18.0176086"
+            target="_blank" class="btn btn-primary">
+            Pogledaj na karti
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-section">
+
+  <h2 style="color:#000091; margin:40px 0 20px 0;">
+    Općenito o Franjevačkom samostanu
+  </h2>
+
+  <p class="opis">
+    Samostan u Brodu je izgrađen krajem 17. stoljeća i prvotno je pripadao Provinciji Bosne Srebrene...
+  </p>
+
+  <p class="opis">
+    Prvi pisani tragovi o djelovanju franjevaca u Brodskoj župi potječu iz 1623. godine...
+  </p>
+
+  <p class="opis">
+    Gradnja zidane franjevačke građevine započela je 12. kolovoza 1727. godine...
+  </p>
+
+</div>
+
+<div class="content-section">
+
+  <h2 style="color: #000091; margin: 40px 0 20px 0; font-family: 'PT Sans Caption', sans-serif;">
+    Galerija slika
+  </h2>
+
+  <div class="card-group">
+    <div class="card border-0">
+      <div class="card-group">
+
+        <div class="card">
+          <img class="card-img-t gallery-thumb" data-index="0"
+            src="https://franjevacki-samostan.hr/wp-content/uploads/2021/09/galerija_franjevacki_samostan_slavonski_brod-4.jpg">
+        </div>
+
+        <div class="card">
+          <img class="card-img-t gallery-thumb" data-index="1"
+            src="https://franjevacki-samostan.hr/wp-content/uploads/2021/09/galerija_franjevacki_samostan_slavonski_brod-7.jpg">
+        </div>
+
+        <div class="card">
+          <img class="card-img-t gallery-thumb" data-index="2"
+            src="https://franjevacki-samostan.hr/wp-content/uploads/2021/09/galerija_franjevacki_samostan_slavonski_brod-1.jpg">
+        </div>
+
+        <div class="card">
+          <img class="card-img-t gallery-thumb" data-index="3"
+            src="../slike/samostan-3.jpg">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="galleryModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Galerija</h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <img class="d-block w-100"
+                  src="https://franjevacki-samostan.hr/wp-content/uploads/2021/09/galerija_franjevacki_samostan_slavonski_brod-4.jpg">
+              </div>
+
+              <div class="carousel-item">
+                <img class="d-block w-100"
+                  src="https://franjevacki-samostan.hr/wp-content/uploads/2021/09/galerija_franjevacki_samostan_slavonski_brod-7.jpg">
+              </div>
+
+              <div class="carousel-item">
+                <img class="d-block w-100"
+                  src="https://franjevacki-samostan.hr/wp-content/uploads/2021/09/galerija_franjevacki_samostan_slavonski_brod-1.jpg">
+              </div>
+
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../slike/samostan-3.jpg">
+              </div>
+
+            </div>
+
+            <a class="carousel-control-prev" href="#galleryCarousel" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
             </a>
-          </li>
-          <li class="nav-item dropdown">
-            <button class="btn btn-outline-warning dropdown-toggle" type="button"
-              id="dropdownAtrakcije" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Atrakcije
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownAtrakcije">
-              <a class="dropdown-item" href="Atrakcije.html">Sve atrakcije</a>
-              <a class="dropdown-item" href="Tvrđava.html">Tvrđava</a>
-              <a class="dropdown-item" href="Korzo.html">Korzo</a>
-              <a class="dropdown-item" href="Industrijski_park.html">Industrijski park</a>
-              <a class="dropdown-item" href="Šetalište_pokraj_Save.html">Šetalište pokraj Save</a>
-              <a class="dropdown-item" href="Franjevački_samostan.html">Franjevački samostan</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <button class="btn btn-outline-warning dropdown-toggle" type="button"
-              id="dropdownTradicije" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Tradicije
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownTradicije">
-              <a class="dropdown-item" href="Tradicija.html">Sve tradicije</a>
-              <a class="dropdown-item" href="Tradicionalne_pjesme.html">Tradicionalne pjesme</a>
-              <a class="dropdown-item dropdown-item--highlight" href="Tamburaski_Sastav.html">🎸 Tamburaški Sastav (Interaktivno)</a>
-              <a class="dropdown-item" href="Tradicionalna_kuhinja.html">Tradicionalna kuhinja</a>
-              <a class="dropdown-item" href="Slavonski_običaji.html">Slavonski običaji</a>
-              <a class="dropdown-item" href="Sajmovi.html">Sajmovi</a>
-              <a class="dropdown-item" href="Narodne_nošnje.html">Narodne nošnje</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="O_gradu_v2.html">O gradu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Smještaj.html">Smještaj</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Kontakt.html">Kontakt</a>
-          </li>
+
+            <a class="carousel-control-next" href="#galleryCarousel" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="content-section">
+
+  <h2 style="color: #000091; margin: 40px 0 20px 0;">
+    Video
+  </h2>
+
+  <div class="video-container">
+    <iframe style="border: none; width: 100%; height: 615px;"
+      src="https://www.youtube.com/embed/O18Itu_37yY"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer-columns">
+
+      <div class="footer-column">
+        <h5>Kontakt</h5>
+        <ul>
+          <li>Slavonski Brod</li>
+          <li>Telefon: 099/782-790</li>
+          <li>Email: sbturizam@gmail.com</li>
         </ul>
       </div>
+
+      <div class="footer-column">
+        <h5>Mediji</h5>
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="fa fa-instagram fa-lg"></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <i class="fa fa-facebook-official fa-lg"></i>
+        </a>
+      </div>
+
+      <div class="footer-column">
+        <h5>Korisni linkovi</h5>
+
+        <a class="nav-link" href="../Početna_v2.html">Home</a>
+        <a class="nav-link" href="Atrakcije.html">Atrakcije</a>
+        <a class="nav-link" href="Tradicija.html">Tradicije</a>
+        <a class="nav-link" href="Smještaj.html">Smještaj</a>
+        <a class="nav-link" href="O_gradu_v2.html">O gradu</a>
+        <a class="nav-link" href="Kontakt.html">Kontakt</a>
+
+      </div>
+
     </div>
-  </nav>
-  
-    <div class="card bg-dark text-white" style="margin-bottom: 20px;">
-      <img class="card-img" src="../slike/samostan-2.jpg" alt="Card image">
-      <div class="card-img-overlay">
-        <div class="jumbotron jumbotron-fluid">
-          <div class="container">
-            <h1 class="display-4">Franjevački samostan</h1>
-            <p class="lead">Adresa: Trg Sv. Trojstva 1, 35000, Slavonski Brod</p>
-            <div>
-              <a href="https://www.google.com/maps/place/Franjeva%C4%8Dki+samostan+Slavonski+Brod/@45.1614412,18.0154199,17z/data=!3m1!4b1!4m5!3m4!1s0x475c7e9f8b0c6e7f:0x9c8a5e5b2c5e5b2!8m2!3d45.1614412!4d18.0176086" target="_blank" class="btn btn-primary">Pogledaj na karti</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-      <div class="content-section">
-          <h2 style="color:#000091; margin:40px 0 20px 0;">
-    Općenito o Franjevačkom samostanu</h2>
-        <p class="opis">
-            Samostan u Brodu je izgrađen krajem 17. stoljeća i prvotno je pripadao Provinciji Bosne Srebrene. Kasnije, 1757. godine, samostan je prešao pod jurisdikciju Provincije sv. Ivana Kapistrana, koja je obuhvaćala franjevačke samostane na području Habsburške Monarhije. Godine 1900. osnovana je Hrvatska franjevačka provincija sv. Ćirila i Metoda, kojoj je brodski samostan tada pripao.
+  </div>
+</footer>
 
-            Samostan je barokni kompleks sagrađen u potpunosti od opeke. Sastoji se od jednobrodne crkve Presvetog Trojstva s tri para bočnih kapela, niskog zvonika uz sjevernu stranu svetišta te četverokrilnog jednokatnog samostana koji se nalazi uz južnu stranu crkve.
-        </p>
-        <p class="opis">
-            Prvi pisani tragovi o djelovanju franjevaca u Brodskoj župi potječu iz 1623. godine, što znači da su franjevci bili prisutni i ranije. Franjevci su obavljali dušobrižničku službu u Brodu i vjerojatno su imali i svoju kuću i crkvu. Samostanske kronike koje su se redovito vodile od 1737. godine pružaju obilje informacija o životu franjevaca, ali i o političkim i društvenim događanjima u Brodu i široj zajednici od sredine 18. stoljeća do suvremenog doba.
+<script>
+(function () {
+  var thumbs = document.querySelectorAll('.gallery-thumb');
 
-            Godine 1694., nakon oslobođenja Broda od Osmanlija, franjevačka kuća u Velikoj je proglašena rezidencijom zahvaljujući djelovanju oca Augustina Jarića, koji je postao zapovjednik Broda. Franjevački samostan i crkva od drva izgrađeni su tada i trajali su od 1694. do 1727. godine. Postoji naznaka da je samostan imao dva trakta i bio je izgrađen nešto istočnije od današnjeg položaja, ali nema potvrde za tu tvrdnju osim pisanih zapisa.
-      </p>
-      <p class="opis">
-        Gradnja zidane franjevačke građevine započela je 12. kolovoza 1727. godine polaganjem kamena temeljca crkve. Gradnja kompleksa je trajala dugi niz godina i odvijala se u fazama, ovisno o donacijama i darovima Brođana te trudu i strpljenju braće franjevaca. Zapadno krilo samostana izgrađeno je 1727., južno 1729., a istočno između 1768. i 1770. godine. 
-        
-        Gradnja crkve je također započela 1727., prekinuta je nakratko, a starija drvena crkva se koristila u međuvremenu. Radovi su nastavljeni 1743. i završeni oko 1753. godine. Tijekom sljedećih desetljeća obavljeno je uređenje i opremanje crkve.
+  thumbs.forEach(function (t) {
+    t.style.cursor = 'pointer';
 
-        1787. godine, dekretom cara Josipa II, ukinut je brodski franjevački samostan zajedno s drugim redovničkim zajednicama. Samostan je tada služio u prosvjetne i gospodarske svrhe sve do 1806. godine, kada je ponovno uspostavljen. Tijekom tog razdoblja, franjevci su obavljali popravke, preinake i uređenja samostana kako bi zadovoljili potrebe franjevačke i šire zajednice.
+    t.addEventListener('click', function () {
+      var idx = parseInt(this.getAttribute('data-index')) || 0;
 
-        Za vrijeme Prvog svjetskog rata samostan je služio kao vojna bolnica od 1914. do 1918. godine. Nakon odlaska vojske, samostan je ostao u lošem stanju. Veća obnova samostana, uključujući obnovu baroknog inventara, provedena je 1919. godine pod vodstvom graditelja oltara Alojzija Zorattija iz Maribora.
-      </p>
-      </div>
-      <div class="content-section">
-        <div>
-          <h2 style="color: #000091; margin: 40px 0 20px 0; font-family: 'PT Sans Caption', sans-serif;">Galerija slika</h2>
-        <div class="card-group">
-          <div class="card border-0">
-          <div class="content-section">
-            <div class="card-group">
-              <div class="card">
-                <img class="card-img-t gallery-thumb" data-index="0" src="https://franjevacki-samostan.hr/wp-content/uploads/2021/09/galerija_franjevacki_samostan_slavonski_brod-4.jpg" alt="Card image cap">
-              </div>
-              <div class="card">
-                <img class="card-img-t gallery-thumb" data-index="1" src="https://franjevacki-samostan.hr/wp-content/uploads/2021/09/galerija_franjevacki_samostan_slavonski_brod-7.jpg" alt="Card image cap">
-              </div>
-              <div class="card">
-                <img class="card-img-t gallery-thumb" data-index="2" src="https://franjevacki-samostan.hr/wp-content/uploads/2021/09/galerija_franjevacki_samostan_slavonski_brod-1.jpg" alt="Card image cap">
-              </div>
-              <div class="card">
-                <img class="card-img-t gallery-thumb" data-index="3" src="../slike/samostan-3.jpg" alt="Card image cap">
-              </div>
-            </div>
-          </div>
+      $('#galleryModal').modal('show');
+      $('#galleryCarousel').carousel(idx);
+    });
+  });
+})();
+</script>
 
-          <div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="galleryModalLabel">Galerija</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img class="d-block w-100" src="https://franjevacki-samostan.hr/wp-content/uploads/2021/09/galerija_franjevacki_samostan_slavonski_brod-4.jpg" alt="slide-1">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="https://franjevacki-samostan.hr/wp-content/uploads/2021/09/galerija_franjevacki_samostan_slavonski_brod-7.jpg" alt="slide-2">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="https://franjevacki-samostan.hr/wp-content/uploads/2021/09/galerija_franjevacki_samostan_slavonski_brod-1.jpg" alt="slide-3">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="../slike/samostan-3.jpg" alt="slide-4">
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#galleryCarousel" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#galleryCarousel" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <script>
-            (function(){
-              var thumbs = document.querySelectorAll('.gallery-thumb');
-              thumbs.forEach(function(t){
-                t.style.cursor = 'pointer';
-                t.addEventListener('click', function(){
-                  var idx = parseInt(this.getAttribute('data-index')) || 0;
-                  $('#galleryModal').modal('show');
-                  $('#galleryCarousel').carousel(idx);
-                });
-              });
-            })();
-          </script>
-          </div>
-      </div>
-
-      <div class="content-section">
-        <h2 style="color: #000091; margin: 40px 0 20px 0; font-family: 'PT Sans Caption', sans-serif;">Video</h2>
-        <div class="video-container">
-          <iframe style="border: none; width: 100%; height: 615px;" src="https://www.youtube.com/embed/O18Itu_37yY" title="YouTube video" allowfullscreen></iframe>
-        </div>
-      </div>
-<footer class="footer">
-        <div class="container">
-      <div class="footer-columns">
-        <div class="footer-column">
-          <h5>Kontakt</h5>
-          <ul>
-            <li>Slavonski Brod</li>
-            <li>Telefon: 099/782-790</li>
-            <li>Email: sbturizam@gmail.com</li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h5>Mediji</h5>
-            <a href="https://www.instagram.com/your_instagram_username" target="_blank">
-              <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
-            </a>   
-            <a href="https://twitter.com/" target="_blank">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.facebook.com/" target="_blank">
-              <i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
-            </a>   
-        </div>
-        <div class="footer-column">
-          <h5>Korisni linkovi</h5>
-            <a class="nav-link" href="../Početna_v2.html" style="color: white;">Home</a>
-            <a class="nav-link" href="Atrakcije.html" style="color: white;">Atrakacije</a>
-            <a class="nav-link" href="Tradicija.html" style="color: white;">Tradicije</a>
-            <a class="nav-link" href="Smještaj.html" style="color: white;">Smještaj</a>
-            <a class="nav-link" href="O_gradu_v2.html" style="color: white;">O gradu</a>
-            <a class="nav-link" href="Kontakt.html" style="color: white;">Kontakt</a>
-        </div>
-        </div>
-      </div>
-  </footer>
 </body>
 </html>
