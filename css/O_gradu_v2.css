@@ -1,3 +1,9 @@
+.navbar-brand img {
+  height: 36px;
+  width: auto;
+  margin-right: 8px;
+}
+
 .jumbotron{
     padding: 30px;
     color: white;

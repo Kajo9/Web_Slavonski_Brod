@@ -1,3 +1,8 @@
+.navbar-brand img {
+  height: 36px;
+  width: auto;
+  margin-right: 8px;
+}
 p.opis{
   border-bottom: 10px solid transparent;
 }

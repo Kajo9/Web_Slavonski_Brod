@@ -39,66 +39,63 @@
   </style>
 </head>
 <body>
-<nav class="navbar navbar-dark navbar-expand-lg" role="navigation" aria-label="Glavna navigacija">
-    <div class="container" style="color: white;">
-      <a class="navbar-brand" href="../Početna_v2.html" style="display: flex; align-items: center; gap: 10px;">
-        <img src="../slike/grb_SB.png" alt="Grb Slavonski Brod" style="height:36px; width:auto; margin-right:8px;"> Grad Slavonski Brod
+  <nav class="navbar navbar-dark navbar-expand-lg" role="navigation" aria-label="Glavna navigacija">
+    <div class="container">
+      <a class="navbar-brand" href="Početna_v2.html">
+        <img src="../slike/grb_SB.png" alt="Grb Slavonski Brod"> Grad Slavonski Brod
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: -170px;">
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="../Početna_v2.html" style="color: white; padding-left: 20px;">
+            <a class="nav-link" href="../Početna_v2.html">
               <i class="fa fa-home" aria-hidden="true"></i> Home
             </a>
           </li>
-          <li class="nav-item">
-            <div class="dropdown" style="padding-right: 10px;">
-              <button class="btn btn-outline-warning dropdown-toggle" style="color: white;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Atrakcije
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="Atrakcije.html">Sve atrakcije</a>
-                <a class="dropdown-item" href="Tvrđava.html">Tvrđava</a>
-                <a class="dropdown-item" href="Korzo.html">Korzo</a>
-                <a class="dropdown-item" href="Industrijski_park.html">Industrijski park</a>
-                <a class="dropdown-item" href="Šetalište_pokraj_Save.html">Šetalište pokraj Save</a>
-                <a class="dropdown-item" href="Franjevački_samostan.html">Franjevački samostan</a>
-              </div>
+          <li class="nav-item dropdown">
+            <button class="btn btn-outline-warning dropdown-toggle" type="button"
+              id="dropdownAtrakcije" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Atrakcije
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownAtrakcije">
+              <a class="dropdown-item" href="Atrakcije.html">Sve atrakcije</a>
+              <a class="dropdown-item" href="Tvrđava.html">Tvrđava</a>
+              <a class="dropdown-item" href="Korzo.html">Korzo</a>
+              <a class="dropdown-item" href="Industrijski_park.html">Industrijski park</a>
+              <a class="dropdown-item" href="Šetalište_pokraj_Save.html">Šetalište pokraj Save</a>
+              <a class="dropdown-item" href="Franjevački_samostan.html">Franjevački samostan</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <button class="btn btn-outline-warning dropdown-toggle" type="button"
+              id="dropdownTradicije" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Tradicije
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownTradicije">
+              <a class="dropdown-item" href="Tradicija.html">Sve tradicije</a>
+              <a class="dropdown-item" href="Tradicionalne_pjesme.html">Tradicionalne pjesme</a>
+              <a class="dropdown-item dropdown-item--highlight" href="Tamburaski_Sastav.html">🎸 Tamburaški Sastav (Interaktivno)</a>
+              <a class="dropdown-item" href="Tradicionalna_kuhinja.html">Tradicionalna kuhinja</a>
+              <a class="dropdown-item" href="Slavonski_običaji.html">Slavonski običaji</a>
+              <a class="dropdown-item" href="Sajmovi.html">Sajmovi</a>
+              <a class="dropdown-item" href="Narodne_nošnje.html">Narodne nošnje</a>
             </div>
           </li>
           <li class="nav-item">
-            <div class="dropdown" style="padding-left: 10px;">
-              <button class="btn btn-outline-warning dropdown-toggle" style="color: white;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Tradicije
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="Tradicija.html">Sve tradicija</a>
-                <a class="dropdown-item" href="Tradicionalne_pjesme.html">Tradicionalne pjesme</a>
-                <a class="dropdown-item" href="Tradicionalna_kuhinja.html">Tradicionalna kuhinja</a>
-                <a class="dropdown-item" href="Slavonski_običaji.html">Slavonski običaji</a>
-                <a class="dropdown-item" href="Sajmovi.html">Sajmovi</a>
-                <a class="dropdown-item" href="Narodne_nošnje.html">Narodne nošnje</a>
-              </div>
-            </div>
+            <a class="nav-link" href="O_gradu_v2.html">O gradu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="O_gradu_v2.html" style="color: white; padding-left: 35px;">O gradu</a>
+            <a class="nav-link" href="Smještaj.html">Smještaj</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Smještaj.html" style="color: white; padding-left: 35px;">Smještaj</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Kontakt.html" style="color: white; padding-left: 30px;">Kontakt</a>
+            <a class="nav-link" href="Kontakt.html">Kontakt</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-warning my-2 my-sm-0" style="color: white;" type="submit">Search</button>
-        </form>
       </div>
     </div>
   </nav>

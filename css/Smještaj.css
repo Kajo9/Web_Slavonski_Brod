@@ -1,6 +1,9 @@
-/* ========================= */
 /* GLOBAL */
-/* ========================= */
+.navbar-brand img {
+  height: 36px;
+  width: auto;
+  margin-right: 8px;
+}
 
 html, body {
   height: 100%;
@@ -12,23 +15,18 @@ body {
   margin: 0;
 }
 
-/* glavni sadržaj da gura footer dolje */
 .main-content {
   flex: 1;
 }
 
-/* ========================= */
 /* LINKOVI */
-/* ========================= */
 
 a {
   color: white;
   text-decoration: none;
 }
 
-/* ========================= */
 /* NAVBAR */
-/* ========================= */
 
 nav.navbar {
   background-color: #000091;
@@ -38,9 +36,7 @@ nav.navbar {
   padding-right: 20px;
 }
 
-/* ========================= */
 /* JUMBOTRON */
-/* ========================= */
 
 .jumbotron {
   padding: 30px;
@@ -48,9 +44,7 @@ nav.navbar {
   background-color: #00006b;
 }
 
-/* ========================= */
 /* KARTICE */
-/* ========================= */
 
 .card {
   transition: transform 0.3s ease;
@@ -69,28 +63,19 @@ nav.navbar {
   transform: translateY(-10px);
 }
 
-/* ========================= */
-/* HR */
-/* ========================= */
-
 hr {
   background-color: #FFC107;
   height: 3px;
   margin-top: 15px;
 }
 
-/* ========================= */
-/* ZVIJEZDICE */
-/* ========================= */
 
 .star {
   color: gold;
   font-size: 20px;
 }
 
-/* ========================= */
 /* FOOTER (MODERNI GRID) */
-/* ========================= */
 
 footer.footer {
   background: #000091;
@@ -98,7 +83,6 @@ footer.footer {
   padding: 60px 20px 30px;
 }
 
-/* container da nije preuzak */
 .footer .container {
   width: 100%;
   max-width: 1200px;
@@ -125,7 +109,6 @@ footer.footer {
   flex: 0 0 calc(33.333% - 27px);
 }
 
-/* tablet */
 @media (max-width: 992px) {
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -140,7 +123,6 @@ footer.footer {
   }
 }
 
-/* mobitel */
 @media (max-width: 576px) {
   .footer-grid {
     grid-template-columns: 1fr;
@@ -158,12 +140,10 @@ footer.footer {
   }
 }
 
-/* naslovi */
 .footer h5 {
   margin-bottom: 15px;
 }
 
-/* liste */
 .footer ul {
   list-style: none;
   padding: 0;
@@ -173,7 +153,6 @@ footer.footer {
   margin-bottom: 10px;
 }
 
-/* linkovi u footeru */
 .footer a {
   color: #ddd;
   transition: 0.3s;
@@ -183,14 +162,12 @@ footer.footer {
   color: #FFC107;
 }
 
-/* ikone u footeru Mediji sekcija */
 .footer-column a i {
   display: block;
   margin-bottom: 15px;
   font-size: 24px;
 }
 
-/* linkovi kao blok elementi */
 .footer .nav-link {
   display: block;
   margin-bottom: 10px;
@@ -201,14 +178,12 @@ footer.footer {
   color: #FFC107 !important;
 }
 
-/* ikone */
 .footer-icons a {
   display: inline-block;
   margin-right: 15px;
   font-size: 20px;
 }
 
-/* donji dio */
 .footer-bottom {
   margin-top: 40px;
   text-align: center;

@@ -1,3 +1,9 @@
+.navbar-brand img {
+  height: 36px;
+  width: auto;
+  margin-right: 8px;
+}
+
 div.container-fluid {
     height: 300px;
     width: auto;
