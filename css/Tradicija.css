@@ -31,8 +31,11 @@
     transform: translateY(-10px);
   }
   .card-img-top {
-    object-fit: cover;
+    width: 100%;
     height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
   }
   .card-body {
     padding: 20px;
@@ -54,9 +57,7 @@ hr{
   background-color: white;
 }
 
-  /* ========================= */
   /* FOOTER (MODERNI GRID) */
-  /* ========================= */
 
   footer.footer {
   background: #000091;
@@ -64,14 +65,12 @@ hr{
   padding: 60px 20px 30px;
 }
 
-/* container da nije preuzak */
 .footer .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* GRID layout */
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -79,7 +78,6 @@ hr{
   align-items: start;
 }
 
-/* FLEXBOX layout za footer-columns */
 .footer-columns {
   display: flex;
   flex-wrap: wrap;
@@ -91,7 +89,6 @@ hr{
   flex: 0 0 calc(33.333% - 27px);
 }
 
-  /* tablet */
   @media (max-width: 992px) {
     .footer-grid {
       grid-template-columns: repeat(2, 1fr);
@@ -106,7 +103,6 @@ hr{
     }
   }
 
-  /* mobitel */
   @media (max-width: 576px) {
     .footer-grid {
       grid-template-columns: 1fr;
@@ -124,12 +120,10 @@ hr{
     }
   }
 
-  /* naslovi */
   .footer h5 {
     margin-bottom: 15px;
   }
 
-  /* liste */
   .footer ul {
     list-style: none;
     padding: 0;
@@ -139,7 +133,6 @@ hr{
     margin-bottom: 10px;
   }
 
-  /* linkovi u footeru */
   .footer a {
     color: #ddd;
     transition: 0.3s;
@@ -149,14 +142,12 @@ hr{
     color: #FFC107;
   }
 
-  /* ikone u footeru Mediji sekcija */
   .footer-column a i {
     display: block;
     margin-bottom: 15px;
     font-size: 24px;
   }
 
-  /* linkovi kao blok elementi */
   .footer .nav-link {
     display: block;
     margin-bottom: 10px;
@@ -167,14 +158,12 @@ hr{
     color: #FFC107 !important;
   }
 
-  /* ikone */
   .footer-icons a {
     display: inline-block;
     margin-right: 15px;
     font-size: 20px;
   }
 
-  /* donji dio */
   .footer-bottom {
     margin-top: 40px;
     text-align: center;

@@ -1,126 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atrakcije - Slavonski Brod</title>
+  <meta name="description" content="Sve atrakcije Slavonskog Broda - tvrđava, korzo, industrijski park i više.">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="../css/Atrakcije.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
-  <title>Slavonski Brod</title>
-  <style>
-    a:focus, button:focus, input:focus, select:focus, textarea:focus {
-      outline: 3px solid #FFD700;
-      outline-offset: 2px;
-    }
-   p{
-      font-family: 'Quicksand', sans-serif;
-      font-size: 20px;
-    }
-    h1,h2,h3,h5{
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-    }
-    h5{
-      font-size: 30px;
-    }
-    
-  </style>
 </head>
 <body>
+
+  <!-- ==================== NAVBAR ==================== -->
   <nav class="navbar navbar-dark navbar-expand-lg" role="navigation" aria-label="Glavna navigacija">
-    <div class="container" style="color: white;">
-      <a class="navbar-brand" href="../Početna_v2.html" style="display: flex; align-items: center; gap: 10px;">
-        <img src="../slike/grb_SB.png" alt="Grb Slavonski Brod" style="height:36px; width:auto; margin-right:8px;"> Grad Slavonski Brod
+    <div class="container">
+      <a class="navbar-brand" href="../Početna_v2.html">
+        <img src="../slike/grb_SB.png" alt="Grb Slavonski Brod"> Grad Slavonski Brod
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: -170px;">
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="../Početna_v2.html" style="color: white; padding-left: 20px;">
+            <a class="nav-link" href="../Početna_v2.html">
               <i class="fa fa-home" aria-hidden="true"></i> Home
             </a>
           </li>
-          <li class="nav-item">
-            <div class="dropdown" style="padding-right: 10px;">
-              <button class="btn btn-outline-warning dropdown-toggle" style="color: white;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Atrakcije
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="Atrakcije.html">Sve atrakcije</a>
-                <a class="dropdown-item" href="Tvrđava.html">Tvrđava</a>
-                <a class="dropdown-item" href="Korzo.html">Korzo</a>
-                <a class="dropdown-item" href="Industrijski_park.html">Industrijski park</a>
-                <a class="dropdown-item" href="Šetalište_pokraj_Save.html">Šetalište pokraj Save</a>
-                <a class="dropdown-item" href="Franjevački_samostan.html">Franjevački samostan</a>
-              </div>
+          <li class="nav-item dropdown">
+            <button class="btn btn-outline-warning dropdown-toggle" type="button"
+              id="dropdownAtrakcije" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Atrakcije
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownAtrakcije">
+              <a class="dropdown-item" href="Atrakcije.html">Sve atrakcije</a>
+              <a class="dropdown-item" href="Tvrđava.html">Tvrđava</a>
+              <a class="dropdown-item" href="Korzo.html">Korzo</a>
+              <a class="dropdown-item" href="Industrijski_park.html">Industrijski park</a>
+              <a class="dropdown-item" href="Šetalište_pokraj_Save.html">Šetalište pokraj Save</a>
+              <a class="dropdown-item" href="Franjevački_samostan.html">Franjevački samostan</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <button class="btn btn-outline-warning dropdown-toggle" type="button"
+              id="dropdownTradicije" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Tradicije
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownTradicije">
+              <a class="dropdown-item" href="Tradicija.html">Sve tradicije</a>
+              <a class="dropdown-item" href="Tradicionalne_pjesme.html">Tradicionalne pjesme</a>
+              <a class="dropdown-item" href="Tradicionalna_kuhinja.html">Tradicionalna kuhinja</a>
+              <a class="dropdown-item" href="Slavonski_običaji.html">Slavonski običaji</a>
+              <a class="dropdown-item" href="Sajmovi.html">Sajmovi</a>
+              <a class="dropdown-item" href="Narodne_nošnje.html">Narodne nošnje</a>
             </div>
           </li>
           <li class="nav-item">
-            <div class="dropdown" style="padding-left: 10px;">
-              <button class="btn btn-outline-warning dropdown-toggle" style="color: white;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Tradicije
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="Tradicija.html">Sve tradicija</a>
-                <a class="dropdown-item" href="Tradicionalne_pjesme.html">Tradicionalne pjesme</a>
-                <a class="dropdown-item" href="Tradicionalna_kuhinja.html">Tradicionalna kuhinja</a>
-                <a class="dropdown-item" href="Slavonski_običaji.html">Slavonski običaji</a>
-                <a class="dropdown-item" href="Sajmovi.html">Sajmovi</a>
-                <a class="dropdown-item" href="Narodne_nošnje.html">Narodne nošnje</a>
-              </div>
-            </div>
+            <a class="nav-link" href="O_gradu_v2.html">O gradu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="O_gradu_v2.html" style="color: white; padding-left: 35px;">O gradu</a>
+            <a class="nav-link" href="Smještaj.html">Smještaj</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Smještaj.html" style="color: white; padding-left: 35px;">Smještaj</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Kontakt.html" style="color: white; padding-left: 30px;">Kontakt</a>
+            <a class="nav-link" href="Kontakt.html">Kontakt</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-warning my-2 my-sm-0" style="color: white;" type="submit">Search</button>
-        </form>
       </div>
     </div>
   </nav>
-    <div class="jumbotron jumbotron-fluid" style="background-color: #00006B;color: white; padding: 30px;">
-        <div class="container">
-          <h1 class="display-5">Atrakacije</h1>
-          <hr>
-        </div>
-      </div>   
 
-      <div class="row justify-content-center" style="padding-left: 15px; padding-right: 15px;">
-      <div class="col-sm-12 col-md-6 col-lg-4"> 
+  <!-- ==================== JUMBOTRON ==================== -->
+  <div class="jumbotron jumbotron-fluid page-header">
+    <div class="container">
+      <h1 class="display-5">Atrakcije</h1>
+      <hr>
+    </div>
+  </div>
+
+  <!-- ==================== KARTICE ==================== -->
+  <main class="container-fluid cards-grid" id="main-content" role="main">
+    <div class="row justify-content-center">
+
+      <div class="col-sm-12 col-md-6 col-lg-4">
         <div class="card mb-4 text-center">
-          <img class="card-img-top" class="img-fluid" src="../slike/tvrđava-1.jpg" alt="Card image cap">
+          <img class="card-img-top img-fluid" src="../slike/tvrđava-1.jpg" alt="Tvrđava Slavonski Brod - povijesni utvrđeni kompleks">
           <div class="card-body">
             <h5 class="card-title">Tvrđava</h5>
-            <p class="card-text">Tvrđava Slavonski Brod je povijesni utvrđeni kompleks smješten na desnoj obali rijeke Save u Slavonskom Brodu,...</p>
+            <p class="card-text">Tvrđava Slavonski Brod je povijesni utvrđeni kompleks smješten na desnoj obali rijeke Save u Slavonskom Brodu...</p>
             <a href="Tvrđava.html" class="btn btn-primary">Saznaj više</a>
           </div>
         </div>
       </div>
+
       <div class="col-sm-12 col-md-6 col-lg-4">
         <div class="card mb-4 text-center">
-          <img class="card-img-top" class="img-fluid" src="../slike/korzo-1.jpg" alt="Card image cap">
+          <img class="card-img-top img-fluid" src="../slike/korzo-1.jpg" alt="Korzo - šetališna zona u centru Slavonskog Broda">
           <div class="card-body">
             <h5 class="card-title">Korzo</h5>
             <p class="card-text">Korzo Slavonski Brod je slikovita šetališna zona u samom središtu grada, prepuna trgovina...</p>
@@ -128,9 +113,10 @@
           </div>
         </div>
       </div>
+
       <div class="col-sm-12 col-md-6 col-lg-4">
         <div class="card mb-4 text-center">
-          <img class="card-img-top" class="img-fluid" src="../slike/cvlak-1.jpg" alt="Card image cap">
+          <img class="card-img-top img-fluid" src="../slike/cvlak-1.jpg" alt="Industrijski park - lokomotiva u muzejskoj postavci">
           <div class="card-body">
             <h5 class="card-title">Industrijski park</h5>
             <p class="card-text">Nalazi se u kontaktnoj zoni tvrđave Brod, u Ulici Hanibala Lucića. U parku su postavljeni vozila i mehanizacija proizvedeni...</p>
@@ -138,30 +124,37 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4" style="padding-top: 30px; padding-bottom: 20px;">
+
+      <div class="col-sm-12 col-md-6 col-lg-4 card-row-second">
         <div class="card mb-4 text-center">
-          <img class="card-img-top" class="img-fluid" src="../slike/sava-1.jpg" alt="Card image cap">
+          <img class="card-img-top img-fluid" src="../slike/sava-1.jpg" alt="Šetalište pokraj rijeke Save u Slavonskom Brodu">
           <div class="card-body">
             <h5 class="card-title">Šetalište pokraj Save</h5>
-            <p class="card-text">Šetalište pokraj Save u Slavonskom Brodu je prekrasno mjesto koje nudi opuštanje i uživanje u prirodi... </p>
+            <p class="card-text">Šetalište pokraj Save u Slavonskom Brodu je prekrasno mjesto koje nudi opuštanje i uživanje u prirodi...</p>
             <a href="Šetalište_pokraj_Save.html" class="btn btn-primary">Saznaj više</a>
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4" style="padding-top: 30px; padding-bottom: 20px;">
+
+      <div class="col-sm-12 col-md-6 col-lg-4 card-row-second">
         <div class="card mb-4 text-center">
-          <img class="card-img-top" class="img-fluid" src="../slike/samostan.jpg" alt="Card image cap">
+          <img class="card-img-top img-fluid" src="../slike/samostan.jpg" alt="Franjevački samostan u Slavonskom Brodu">
           <div class="card-body">
             <h5 class="card-title">Franjevački samostan</h5>
-            <p class="card-text">Franjevci djeluju u Slavoniji od 13. st. i najvjerojatnije i u samom gradu Brodu. Stoga oni daju Slavonskom Brodu vjersku,... </p>
+            <p class="card-text">Franjevci djeluju u Slavoniji od 13. st. i najvjerojatnije i u samom gradu Brodu. Stoga oni daju Slavonskom Brodu vjersku...</p>
             <a href="Franjevački_samostan.html" class="btn btn-primary">Saznaj više</a>
           </div>
         </div>
       </div>
+
     </div>
-<footer class="footer">
-        <div class="container">
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
       <div class="footer-columns">
+
         <div class="footer-column">
           <h5>Kontakt</h5>
           <ul>
@@ -170,29 +163,38 @@
             <li>Email: sbturizam@gmail.com</li>
           </ul>
         </div>
+
         <div class="footer-column">
           <h5>Mediji</h5>
-            <a href="https://www.instagram.com/your_instagram_username" target="_blank">
+          <div class="footer-icons">
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
               <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
-            </a>   
-            <a href="https://twitter.com/" target="_blank">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
             </a>
-            <a href="https://www.facebook.com/" target="_blank">
+            <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+              <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
               <i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
-            </a>   
+            </a>
+          </div>
         </div>
+
         <div class="footer-column">
           <h5>Korisni linkovi</h5>
-            <a class="nav-link" href="../Početna_v2.html" style="color: white;">Home</a>
-            <a class="nav-link" href="Atrakcije.html" style="color: white;">Atrakacije</a>
-            <a class="nav-link" href="Tradicija.html" style="color: white;">Tradicije</a>
-            <a class="nav-link" href="Smještaj.html" style="color: white;">Smještaj</a>
-            <a class="nav-link" href="O_gradu_v2.html" style="color: white;">O gradu</a>
-            <a class="nav-link" href="Kontakt.html" style="color: white;">Kontakt</a>
+          <a class="nav-link" href="../Početna_v2.html">Home</a>
+          <a class="nav-link" href="Atrakcije.html">Atrakcije</a>
+          <a class="nav-link" href="Tradicija.html">Tradicije</a>
+          <a class="nav-link" href="Smještaj.html">Smještaj</a>
+          <a class="nav-link" href="O_gradu_v2.html">O gradu</a>
+          <a class="nav-link" href="Kontakt.html">Kontakt</a>
         </div>
-        </div>
+
       </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Grad Slavonski Brod. Sva prava pridržana.</p>
+    </div>
   </footer>
+
 </body>
 </html>
