@@ -130,7 +130,7 @@ hr {
   margin-top: auto;
 }
 
-/* FOOTER                    */
+/* FOOTER */
 
 footer.footer {
   background: #000091;
@@ -201,8 +201,6 @@ footer.footer {
   font-size: 14px;
   color: #ccc;
 }
-
-/* RESPONZIVNOST             */
 
 @media (max-width: 992px) {
   .footer-columns {

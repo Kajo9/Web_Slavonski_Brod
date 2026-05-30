@@ -81,11 +81,8 @@ p.opis {
 /* MODAL */
 
 .modal-dialog {
-  width: 100%;
   max-width: 800px;
-  height: 100%;
-  margin-left: 380px;
-  margin-top: -8px;
+  margin: 30px auto;
 }
 
 .modal-content {
@@ -102,10 +99,35 @@ p.opis {
 
 .modal-body img {
   max-width: 100%;
+  max-height: 75vh;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
+
+/* CAROUSEL */
+
+.carousel-item img {
   height: 600px;
   object-fit: cover;
   width: 100%;
 }
+
+/* GALLERY */
+
+.card-group {
+  padding: 30px;
+  display: flex;
+  gap: 5px;
+}
+
+.card-img-t {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
 
 /* CAROUSEL */
 
