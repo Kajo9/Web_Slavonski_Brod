@@ -80,15 +80,16 @@
     </div>
   </nav>
  
-    <div class="jumbotron jumbotron-fluid" style="background-color: #00006B;color: white; padding: 30px;">
+    <div class="jumbotron jumbotron-fluid page-header">
       <div class="container">
         <h1 class="display-5">Tradicija</h1>
         <hr>
       </div>
-    </div>                  
-    
-    <div class="row justify-content-center" style="padding-left: 15px; padding-right: 15px;">
-      <div class="col-sm-12 col-md-6 col-lg-4">
+    </div>
+
+    <main class="container-fluid cards-grid" id="main-content" role="main">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-6 col-lg-4">
         <div class="card mb-4 text-center">
           <img class="card-img-top" class="img-fluid" src="../slike/trad_pjesme.jpg" alt="Card image cap" data-toggle="modal" data-target="#modal1">
           <div class="card-body">
@@ -118,9 +119,9 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4" style="padding-top: 20px;">
+      <div class="col-sm-12 col-md-6 col-lg-4 card-row-second">
         <div class="card mb-4 text-center">
-          <img class="card-img-top" class="img-fluid" src="../slike/sajam-1.jpg" alt="Card image cap" data-toggle="modal" data-target="#modal4">
+          <img class="card-img-top img-fluid" src="../slike/sajam-1.jpg" alt="Card image cap" data-toggle="modal" data-target="#modal4">
           <div class="card-body">
             <h5 class="card-title">Sajmovi</h5>
             <p class="card-text">Sajmovi u Slavoniji predstavljaju važan dio gospodarske i kulturne scene regije. Oni okupljaju izlagače iz različitih...</p>
@@ -128,9 +129,9 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4" style="padding-top: 20px;">
+      <div class="col-sm-12 col-md-6 col-lg-4 card-row-second">
         <div class="card mb-4 text-center">
-          <img class="card-img-top" class="img-fluid" src="../slike/nošnja-1.jpeg" alt="Card image cap" data-toggle="modal" data-target="#modal5">
+          <img class="card-img-top img-fluid" src="../slike/nošnja-1.jpeg" alt="Card image cap" data-toggle="modal" data-target="#modal5">
           <div class="card-body">
             <h5 class="card-title">Narodne nošnje</h5>
             <p class="card-text">Tradicijski odjevni stil negrađanskoga stanovništva u predindustrijsko doba. Obuhvaća sve odjevne predmete...</p>
@@ -138,10 +139,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
 
-<footer class="footer">
-        <div class="container">
+  <footer class="footer">
+    <div class="container">
       <div class="footer-columns">
         <div class="footer-column">
           <h5>Kontakt</h5>
@@ -153,27 +154,32 @@
         </div>
         <div class="footer-column">
           <h5>Mediji</h5>
-            <a href="https://www.instagram.com/your_instagram_username" target="_blank">
+          <div class="footer-icons">
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
               <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
-            </a>   
-            <a href="https://twitter.com/" target="_blank">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
             </a>
-            <a href="https://www.facebook.com/" target="_blank">
+            <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+              <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
               <i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
-            </a>   
+            </a>
+          </div>
         </div>
         <div class="footer-column">
           <h5>Korisni linkovi</h5>
-            <a class="nav-link" href="../Početna_v2.html" style="color: white;">Home</a>
-            <a class="nav-link" href="Atrakcije.html" style="color: white;">Atrakacije</a>
-            <a class="nav-link" href="Tradicija.html" style="color: white;">Tradicije</a>
-            <a class="nav-link" href="Smještaj.html" style="color: white;">Smještaj</a>
-            <a class="nav-link" href="O_gradu_v2.html" style="color: white;">O gradu</a>
-            <a class="nav-link" href="Kontakt.html" style="color: white;">Kontakt</a>
-        </div>
+          <a class="nav-link" href="../Početna_v2.html">Home</a>
+          <a class="nav-link" href="Atrakcije.html">Atrakcije</a>
+          <a class="nav-link" href="Tradicija.html">Tradicije</a>
+          <a class="nav-link" href="Smještaj.html">Smještaj</a>
+          <a class="nav-link" href="O_gradu_v2.html">O gradu</a>
+          <a class="nav-link" href="Kontakt.html">Kontakt</a>
         </div>
       </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Grad Slavonski Brod. Sva prava pridržana.</p>
+    </div>
   </footer>
 </body>
 </html>
