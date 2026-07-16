@@ -68,6 +68,27 @@ nav.navbar {
   padding-right: 20px;
 }
 
+/* Ensure navbar appearance matches Početna_v2 */
+.navbar .container {
+  color: white;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  padding-left: 25px;
+}
+
+.navbar .dropdown-toggle {
+  color: white;
+}
+
 /* JUMBOTRON */
 
 .jumbotron {

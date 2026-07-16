@@ -41,6 +41,7 @@ nav.navbar {
 .navbar-brand img {
   height: 36px;
   width: auto;
+  margin-right: 8px;
 }
 
 .navbar-nav .nav-link {
@@ -48,8 +49,16 @@ nav.navbar {
   padding-left: 25px;
 }
 
+.navbar .container {
+  color: white;
+}
+
 .nav-item {
   padding-right: 20px;
+}
+
+.navbar .dropdown-toggle {
+  color: white;
 }
 
 /* HERO */
