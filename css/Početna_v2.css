@@ -26,6 +26,22 @@ h5 {
   font-size: 30px;
 }
 
+.btn.btn-primary{
+  background-color: #000091;
+  border-color: #000091;
+}
+
+.btn.btn-primary {
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.btn.btn-primary:hover {
+    background-color: #FFC107; 
+}
+
 @keyframes ct2 {
   100% {
     background-position: right -50px top 0;
@@ -143,9 +159,40 @@ nav.navbar {
 
 .quote-text {
   text-align: center;
-  margin: 200px 20px 40px 20px;
-  font-size: 40px;
+  margin: 180px 20px 40px 20px;
+  font-size: 34px; /* reduced size to lower visual dominance */
   font-style: italic;
+}
+
+/* Redesigned 'Atrakcije' pill with thin gold border */
+.section-strip {
+  background: #ffffff; /* white pill */
+  color: #0a1a4a; /* dark blue text */
+  border: 2px solid #FFC107; /* thin gold line */
+  border-radius: 28px; /* pill shape */
+  padding: 12px 28px;
+  text-align: center;
+  font-weight: 700;
+  max-width: 1100px;
+  margin: 12px auto 28px;
+  box-shadow: 0 2px 8px rgba(10,26,74,0.04);
+}
+
+@media (max-width: 768px) {
+  .section-strip {
+    padding: 10px 16px;
+    border-radius: 20px;
+    margin: 10px 12px 20px;
+    font-size: 18px;
+  }
+}
+
+/* Normalize card/carousel/modal images: subtle color grading */
+.card-img-top,
+.carousel-item img,
+.modal-body img {
+  filter: contrast(1.06) saturate(1.06) brightness(1.01);
+  transition: filter 200ms ease;
 }
 
 /* KARTICE (ATRAKCIJE)       */
