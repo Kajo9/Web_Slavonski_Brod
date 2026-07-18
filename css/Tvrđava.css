@@ -6,7 +6,7 @@ p {
 }
 
 h1, h2, h3, h5 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'PT Sans Caption', sans-serif;
   font-weight: 700;
 }
 
@@ -23,6 +23,22 @@ select:focus,
 textarea:focus {
   outline: 3px solid #FFD700;
   outline-offset: 2px;
+}
+
+.btn.btn-primary{
+  background-color: #000091;
+  border-color: #000091;
+}
+
+.btn.btn-primary {
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.btn.btn-primary:hover {
+    background-color: #FFC107; 
 }
 
 /* NAVBAR */

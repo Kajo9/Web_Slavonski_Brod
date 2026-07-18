@@ -53,6 +53,22 @@ a {
   color: white;
 }
 
+.btn.btn-primary{
+  background-color: #000091;
+  border-color: #000091;
+}
+
+.btn.btn-primary {
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.btn.btn-primary:hover {
+    background-color: #FFC107; 
+}
+
 .navbar-brand {
   display: flex;
   align-items: center;

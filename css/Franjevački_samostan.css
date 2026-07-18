@@ -46,6 +46,22 @@ textarea:focus {
   }
 }
 
+.btn.btn-primary{
+  background-color: #000091;
+  border-color: #000091;
+}
+
+.btn.btn-primary {
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.btn.btn-primary:hover {
+    background-color: #FFC107; 
+}
+
 /* TYPOGRAPHY */
 
 p {
@@ -55,12 +71,12 @@ p {
 
 h1,
 h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'PT Sans Caption', sans-serif;
   font-weight: 700;
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'PT Sans Caption', sans-serif;
   font-weight: 700;
   background: linear-gradient(to right, yellow, #FFC107, yellow) left -1500px top 0 / 1500px 33px repeat white;
   text-align: center;
@@ -70,7 +86,7 @@ h3 {
 }
 
 h5 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'PT Sans Caption', sans-serif;
   font-weight: 600;
   font-size: 30px;
 }
@@ -146,6 +162,17 @@ nav.navbar {
 div.container-fluid {
   height: 300px;
   width: auto;
+}
+
+.content-section {
+  padding: 20px 40px;
+  margin: 0 auto 40px;
+  max-width: 1500px;
+}
+
+.content-section h2 {
+  color: #000091;
+  margin: 40px 0 20px 0;
 }
 
 /* FOOTER */
