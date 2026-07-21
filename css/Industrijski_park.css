@@ -98,6 +98,9 @@ h5 {
 }
 
 /* NAVBAR */
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
 
 nav.navbar {
   background-color: #000091;

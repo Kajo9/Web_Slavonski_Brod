@@ -117,6 +117,10 @@ nav.navbar {
   margin-right: 8px;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
 .navbar-nav .nav-link {
   color: white;
   padding-left: 25px;
@@ -160,16 +164,15 @@ nav.navbar {
 .quote-text {
   text-align: center;
   margin: 180px 20px 40px 20px;
-  font-size: 34px; /* reduced size to lower visual dominance */
+  font-size: 34px; 
   font-style: italic;
 }
 
-/* Redesigned 'Atrakcije' pill with thin gold border */
 .section-strip {
-  background: #ffffff; /* white pill */
-  color: #0a1a4a; /* dark blue text */
-  border: 2px solid #FFC107; /* thin gold line */
-  border-radius: 28px; /* pill shape */
+  background: #ffffff; 
+  color: #0a1a4a; 
+  border: 2px solid #FFC107; 
+  border-radius: 28px; 
   padding: 12px 28px;
   text-align: center;
   font-weight: 700;
@@ -187,7 +190,6 @@ nav.navbar {
   }
 }
 
-/* Normalize card/carousel/modal images: subtle color grading */
 .card-img-top,
 .carousel-item img,
 .modal-body img {
@@ -210,7 +212,7 @@ nav.navbar {
   transition: transform 0.3s;
   background-color: #fff;
   border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 7px 6px rgba(0, 1, 0, 0.4);
   display: flex;
   flex-direction: column;
   height: 100%;

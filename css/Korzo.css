@@ -48,7 +48,10 @@ a {
   color: white;
 }
 
-/* Ensure navbar appearance matches Početna_v2 */
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
 .navbar .container {
   color: white;
 }
