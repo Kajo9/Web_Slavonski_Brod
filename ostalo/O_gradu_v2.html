@@ -87,19 +87,146 @@
         <h1>Slavonski Brod</h1>
         <p>Grad na Savi, srce Slavonije.</p>
       </div>
+    <a href="#history" class="hero-scroll-indicator" aria-label="Pomakni se na kratku povijest">
+      <span class="hero-scroll-arrow"></span>
+    </a>
     </section>
 
-    <section class="history-section">
+    <section class="history-section" id="history">
       <div class="history-inner">
-        <h2>Kratka povijest</h2>
+        <h2 class="history-reveal">Kratka povijest</h2>
 
-        <div class="history-timeline" aria-label="Povijesni razvoj Slavonskog Broda">
-          <svg class="history-timeline-svg" viewBox="0 0 1200 220" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M20 118 C 140 30, 230 30, 300 118 S 450 200, 550 118 S 700 32, 820 118 S 980 200, 1180 118" fill="none" stroke="#DCEBFA" stroke-width="4" stroke-linecap="round"/>
-            <path d="M20 134 C 140 72, 220 78, 300 136 S 470 196, 560 126 S 700 66, 820 136 S 980 188, 1180 132" fill="none" stroke="rgba(0, 0, 145, 0.08)" stroke-width="18" stroke-linecap="round"/>
-          </svg>
+        <div class="history-timeline history-reveal" aria-label="Povijesni razvoj Slavonskog Broda">
+    <svg 
+    class="history-timeline-svg" 
+    viewBox="0 0 1200 240" 
+    preserveAspectRatio="none" 
+    aria-hidden="true">
 
-          <div class="history-point-wrap">
+    <!-- SUPTILAN TOK SAVE -->
+    <path 
+        class="river-flow"
+        d="M10 165
+           C140 145 250 155 370 165
+           S600 185 740 160
+           S980 145 1190 165" />
+
+    <!-- GLAVNI KOLNIK MOSTA -->
+    <path 
+        class="bridge-deck"
+        d="M55 112 L1145 112" />
+
+    <!-- DONJI RUB MOSTA -->
+    <path 
+        class="bridge-lower"
+        d="M55 130 L1145 130" />
+
+    <!-- GORNJI LUK LIJEVO -->
+    <path 
+        class="bridge-arch"
+        d="
+        M55 112
+        C150 112 185 32 300 32
+        C415 32 450 112 545 112
+        " />
+
+    <!-- GORNJI LUK DESNO -->
+    <path 
+        class="bridge-arch"
+        d="
+        M655 112
+        C750 112 785 32 900 32
+        C1015 32 1050 112 1145 112
+        " />
+
+    <!-- DIJAGONALNA KONSTRUKCIJA LIJEVO -->
+    <path 
+        class="bridge-truss"
+        d="
+        M75 110 L125 72
+        M125 72 L175 110
+
+        M175 110 L225 72
+        M225 72 L275 110
+
+        M275 110 L325 72
+        M325 72 L375 110
+
+        M375 110 L425 72
+        M425 72 L475 110
+
+        M475 110 L525 72
+        M525 72 L545 112
+        " />
+
+    <!-- DIJAGONALNA KONSTRUKCIJA DESNO -->
+    <path 
+        class="bridge-truss"
+        d="
+        M675 110 L725 72
+        M725 72 L775 110
+
+        M775 110 L825 72
+        M825 72 L875 110
+
+        M875 110 L925 72
+        M925 72 L975 110
+
+        M975 110 L1025 72
+        M1025 72 L1075 110
+
+        M1075 110 L1125 72
+        M1125 72 L1145 112
+        " />
+
+    <!-- SREDIŠNJI VERTIKALNI NOSAČI -->
+    <path 
+        class="bridge-support"
+        d="
+        M175 110 L175 158
+        M300 32 L300 158
+        M425 110 L425 158
+
+        M775 110 L775 158
+        M900 32 L900 158
+        M1025 110 L1025 158
+        " />
+
+    <!-- DODATNI VERTIKALNI NOSAČI -->
+    <path 
+        class="bridge-support"
+        d="
+        M110 110 L110 145
+        M240 110 L240 145
+        M360 110 L360 145
+        M485 110 L485 145
+
+        M715 110 L715 145
+        M840 110 L840 145
+        M960 110 L960 145
+        M1090 110 L1090 145
+        " />
+
+    <!-- STUPOVI LIJEVO -->
+    <path 
+        class="bridge-pillar"
+        d="
+        M280 158 L320 158
+        M290 158 L290 128
+        M310 158 L310 128
+        " />
+
+    <!-- STUPOVI DESNO -->
+    <path 
+        class="bridge-pillar"
+        d="
+        M880 158 L920 158
+        M890 158 L890 128
+        M910 158 L910 128
+        " />
+</svg>
+
+          <div class="history-point-wrap history-reveal delay-1">
             <button type="button" class="history-point" data-history-title="Brod" data-history-year="13. stoljeće" data-history-image="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=80" data-history-text="Rani tragovi naselja na brodskom području datiraju još iz praistorije, a prostor uz Savu bio je važno prometno i trgovačko sjecište. Brod je kroz stoljeća bio središte života, razmjene i regionalnog razvoja." aria-label="Brod, 13. stoljeće">
               <span></span>
             </button>
@@ -118,7 +245,7 @@
             </div>
           </div>
 
-          <div class="history-point-wrap">
+          <div class="history-point-wrap history-reveal delay-2">
             <button type="button" class="history-point" data-history-title="Tvrđava Brod" data-history-year="16. stoljeće" data-history-image="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=900&q=80" data-history-text="U 16. stoljeću izgrađena je tvrđava koja je jačala obrambeni položaj grada i utjecala na njegov strateški značaj. Danas je ona jedan od najprepoznatljivijih simbola slavonskog nasljeđa." aria-label="Tvrđava Brod, 16. stoljeće">
               <span></span>
             </button>
@@ -137,7 +264,7 @@
             </div>
           </div>
 
-          <div class="history-point-wrap">
+          <div class="history-point-wrap history-reveal delay-3">
             <button type="button" class="history-point" data-history-title="18./19. stoljeće" data-history-year="Razvoj i procvat" data-history-image="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=900&q=80" data-history-text="U 18. i 19. stoljeću grad jača kao trgovačko i prometno središte. Razvijaju se obrt, promet, kulturni i gospodarski život, a Brod dobiva obilježja suvremenog regionalnog centra." aria-label="18./19. stoljeće, razvoj i procvat">
               <span></span>
             </button>
@@ -156,7 +283,7 @@
             </div>
           </div>
 
-          <div class="history-point-wrap">
+          <div class="history-point-wrap history-reveal delay-4">
             <button type="button" class="history-point" data-history-title="Slavonski Brod danas" data-history-year="21. stoljeće" data-history-image="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=900&q=80" data-history-text="Danas je Slavonski Brod grad s bogatom kulturnom baštinom, aktivnim turističkim životom i važnim mjestom u slavonskoj Posavini. Njegova povijest ostaje vidljiva u arhitekturi, tradiciji i svakodnevnom životu grada." aria-label="Slavonski Brod danas, 21. stoljeće">
               <span></span>
             </button>
@@ -222,6 +349,36 @@
         modalImage.alt = title;
 
         $('#historyModal').modal('show');
+      });
+    });
+
+    document.querySelector('.hero-scroll-indicator').addEventListener('click', function (event) {
+      event.preventDefault();
+      const scrollBehavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        ? 'auto'
+        : 'smooth';
+
+      document.getElementById('history').scrollIntoView({ behavior: scrollBehavior });
+    });
+
+    /* SCROLL REVEAL */
+    document.addEventListener('DOMContentLoaded', function () {
+      const revealElements = document.querySelectorAll('.about-page .history-reveal');
+
+      const observer = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -40px 0px'
+      });
+
+      revealElements.forEach(function (element) {
+        observer.observe(element);
       });
     });
   </script>
