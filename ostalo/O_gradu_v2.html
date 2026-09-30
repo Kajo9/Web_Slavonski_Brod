@@ -44,10 +44,13 @@
             <div class="dropdown-menu" aria-labelledby="dropdownAtrakcije">
               <a class="dropdown-item" href="Atrakcije.html">Sve atrakcije</a>
               <div class="dropdown-divider" style="border-top: 2px solid #ffc107;"></div>
-              <a class="dropdown-item" href="Tvrđava.html">Tvrđava</a>
+              <a class="dropdown-item" href="Tvrđava.html">Tvrđava Brod</a>
+              <a class="dropdown-item" href="Kuca_Tambure.html">Kuća Tambure</a>
+              <a class="dropdown-item" href="Franjevački_samostan.html">Franjevački samostan</a>
+              <a class="dropdown-item" href="Kuca_Brlicevih.html">Kuća Brlićevih</a>
+              <a class="dropdown-item" href="Muzej.html">Muzej Brodskog Posavlja</a>
               <a class="dropdown-item" href="Korzo.html">Korzo</a>
               <a class="dropdown-item" href="Šetalište_pokraj_Save.html">Šetalište pokraj Save</a>
-              <a class="dropdown-item" href="Franjevački_samostan.html">Franjevački samostan</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -305,10 +308,24 @@
         </div>
       </div>
     </section>
-    <section class="history-section" aria-labelledby="industrial-heritage-title">
-      <div class="history-inner">
+    <section class="history-section industrial-section" aria-labelledby="industrial-heritage-title">
+      <div class="history-inner industrial-inner">
         <h2 id="industrial-heritage-title">Industrijska baština</h2>
-        <p>Industrijski park predstavlja industrijsku baštinu Slavonskog Broda kroz vozila i strojeve proizvedene u tvornici Đuro Đaković. Nalazi se u kontaktnoj zoni Tvrđave Brod.</p>
+        <svg class="industrial-timeline-svg" viewBox="0 0 800 400" width="100%" height="auto" role="img" aria-labelledby="industrial-svg-title industrial-svg-desc">
+          <title id="industrial-svg-title">Povijesni parni vlak</title>
+          <desc id="industrial-svg-desc">Stilizirani prikaz starog parnog vlaka na željezničkoj pruzi.</desc>
+          <defs>
+            <linearGradient id="industrial-light-grad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#f6e05e" stop-opacity="0.8"/><stop offset="100%" stop-color="#f6e05e" stop-opacity="0"/></linearGradient>
+          </defs>
+          <rect width="800" height="400" class="industrial-bg" rx="12" />
+          <g class="industrial-smoke"><circle cx="530" cy="110" r="18"/><circle cx="560" cy="85" r="28"/><circle cx="610" cy="60" r="40"/><circle cx="670" cy="35" r="55"/></g>
+          <polygon points="585,185 780,140 780,290" class="industrial-light-beam" />
+          <g class="industrial-railway"><path class="industrial-tie" d="M60 310 v15 M100 310 v15 M140 310 v15 M180 310 v15 M220 310 v15 M260 310 v15 M300 310 v15 M340 310 v15 M380 310 v15 M420 310 v15 M460 310 v15 M500 310 v15 M540 310 v15 M580 310 v15 M620 310 v15 M660 310 v15 M700 310 v15 M740 310 v15"/><line x1="40" y1="310" x2="760" y2="310" class="industrial-rail"/></g>
+          <g class="industrial-tender"><path d="M90 225 Q110 210 130 220 Q150 205 170 225 Z" class="industrial-coal"/><rect x="80" y="225" width="100" height="55" class="industrial-train-dark" rx="2"/><rect x="75" y="270" width="110" height="10" class="industrial-train-accent"/><circle cx="100" cy="292" r="12"/><circle cx="130" cy="292" r="12"/><circle cx="160" cy="292" r="12"/></g>
+          <g class="industrial-locomotive"><rect x="190" y="160" width="80" height="120" class="industrial-train-dark" rx="3"/><path d="M185 160 Q230 150 275 160 Z" class="industrial-train-accent"/><rect x="210" y="175" width="40" height="30" class="industrial-gold" rx="2"/><line x1="230" y1="175" x2="230" y2="205" class="industrial-dark-line"/><rect x="270" y="185" width="280" height="95" class="industrial-train-dark" rx="5"/><rect x="300" y="180" width="12" height="10" class="industrial-gold"/><rect x="360" y="170" width="25" height="20" class="industrial-train-metal" rx="3"/><path d="M520 185 L515 135 L545 135 L540 185 Z" class="industrial-train-dark"/><rect x="510" y="130" width="40" height="7" class="industrial-train-accent" rx="2"/><path d="M550 185 Q570 232 550 280 Z" class="industrial-train-metal"/><rect x="560" y="180" width="20" height="18" class="industrial-gold" rx="2"/><circle cx="580" cy="189" r="6" class="industrial-lamp"/><polygon points="550,280 610,305 550,305" class="industrial-train-accent"/><line x1="560" y1="285" x2="560" y2="305" class="industrial-white-line"/><line x1="575" y1="290" x2="575" y2="305" class="industrial-white-line"/><line x1="590" y1="295" x2="590" y2="305" class="industrial-white-line"/><rect x="180" y="275" width="380" height="10" class="industrial-train-accent"/><g class="industrial-driving-wheel"><circle cx="300" cy="280" r="26"/><circle cx="365" cy="280" r="26"/><circle cx="430" cy="280" r="26"/></g><circle cx="495" cy="292" r="14" class="industrial-train-metal"/><circle cx="530" cy="292" r="14" class="industrial-train-metal"/><line x1="300" y1="288" x2="480" y2="270" class="industrial-rod"/></g>
+        </svg>
+        </svg>
+        <p class="industrial-caption">Industrijski park predstavlja industrijsku baštinu Slavonskog Broda kroz vozila i strojeve proizvedene u tvornici Đuro Đaković.</p>
         <a class="btn btn-primary" href="Industrijski_park.html">Industrijski park Đure Đakovića</a>
       </div>
     </section>

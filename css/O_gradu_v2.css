@@ -339,6 +339,316 @@ footer.footer {
   transform: translateY(-50%);
 }
 
+.about-page .industrial-section {
+  padding: 28px 0 56px;
+}
+
+.about-page .industrial-inner {
+  padding: 0 24px;
+}
+
+.about-page .industrial-section h2 {
+  margin-bottom: 28px;
+}
+
+.about-page .industrial-timeline {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 350px;
+  overflow: visible;
+}
+
+.about-page .industrial-landscape,
+.about-page .industrial-cloud,
+.about-page .industrial-trees,
+.about-page .industrial-rail,
+.about-page .industrial-sleeper,
+.about-page .industrial-building,
+.about-page .industrial-train,
+.about-page .industrial-marker path {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.about-page .industrial-landscape {
+  stroke: #dceafa;
+  stroke-width: 7;
+  opacity: 0.75;
+}
+
+.about-page .industrial-cloud {
+  fill: #dceafa;
+  stroke: none;
+  opacity: 0.7;
+}
+
+.about-page .industrial-trees {
+  fill: none;
+  stroke: #b8d6f8;
+  stroke-width: 3;
+  opacity: 0.72;
+}
+
+.about-page .industrial-rail {
+  stroke: #b8d6f8;
+  stroke-width: 5;
+}
+
+.about-page .industrial-sleeper {
+  stroke: rgba(31, 79, 163, 0.28);
+  stroke-width: 2;
+}
+
+.about-page .industrial-building,
+.about-page .industrial-train {
+  stroke: rgba(31, 79, 163, 0.48);
+  stroke-width: 3;
+}
+
+.about-page .industrial-train circle {
+  fill: #f7fbff;
+  stroke: rgba(31, 79, 163, 0.48);
+  stroke-width: 3;
+}
+
+.about-page .industrial-marker circle {
+  fill: #ffc107;
+  stroke: #fff;
+  stroke-width: 7;
+  filter: drop-shadow(0 0 5px rgba(255, 193, 7, 0.35));
+}
+
+.about-page .industrial-marker path {
+  stroke: rgba(0, 0, 145, 0.28);
+  stroke-width: 2.4;
+}
+
+.about-page .industrial-marker text {
+  fill: #000091;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.about-page .industrial-marker .industrial-marker-year {
+  fill: #7185b6;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.about-page .industrial-caption {
+  max-width: 760px;
+  margin: 18px auto 22px;
+  color: #000091;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+.about-page .industrial-section .btn {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.about-page .industrial-timeline-svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 330px;
+  margin: 10px auto 0;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.about-page .industrial-landscape,
+.about-page .industrial-landscape-soft {
+  fill: none;
+  stroke: rgba(130, 165, 220, 0.28);
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.about-page .industrial-landscape-soft {
+  stroke: rgba(130, 165, 220, 0.18);
+  stroke-width: 3;
+}
+
+.about-page .industrial-factory,
+.about-page .industrial-modern {
+  fill: none;
+  stroke: rgba(95, 135, 210, 0.78);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.about-page .industrial-train {
+  fill: none;
+  stroke: rgba(85, 125, 205, 0.88);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.about-page .industrial-railway {
+  fill: none;
+  stroke: rgba(90, 130, 210, 0.55);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.about-page .industrial-trees {
+  fill: none;
+  stroke: rgba(130, 165, 220, 0.45);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.about-page .industrial-marker-ring {
+  fill: #fff;
+  stroke: rgba(255, 215, 0, 0.35);
+  stroke-width: 5;
+}
+
+.about-page .industrial-marker {
+  fill: #FFD700;
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+.about-page .industrial-old-marker path,
+.about-page .industrial-modern-marker path {
+  fill: none;
+  stroke: rgba(0, 0, 145, 0.28);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+}
+
+.about-page .industrial-old-marker text,
+.about-page .industrial-modern-marker text {
+  fill: #000091;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.about-page .industrial-old-marker .industrial-marker-year,
+.about-page .industrial-modern-marker .industrial-marker-year {
+  fill: #7185b6;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.about-page .industrial-timeline-svg .industrial-bg {
+  fill: #1a202c;
+}
+
+.about-page .industrial-timeline-svg .industrial-rail {
+  stroke: #718096;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.about-page .industrial-timeline-svg .industrial-tie {
+  stroke: #4a5568;
+  stroke-width: 6;
+}
+
+.about-page .industrial-timeline-svg .industrial-train-dark {
+  fill: #2d3748;
+  stroke: #1a202c;
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
+.about-page .industrial-timeline-svg .industrial-train-metal {
+  fill: #4a5568;
+  stroke: #1a202c;
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
+.about-page .industrial-timeline-svg .industrial-train-accent {
+  fill: #e53e3e;
+}
+
+.about-page .industrial-timeline-svg .industrial-gold {
+  fill: #ecc94b;
+}
+
+.about-page .industrial-timeline-svg .industrial-smoke {
+  fill: #e2e8f0;
+  opacity: 0.25;
+}
+
+.about-page .industrial-timeline-svg .industrial-light-beam {
+  fill: url(#industrial-light-grad);
+  opacity: 0.6;
+}
+
+.about-page .industrial-timeline-svg .industrial-tender,
+.about-page .industrial-timeline-svg .industrial-locomotive {
+  stroke: #1a202c;
+  stroke-linejoin: round;
+}
+
+.about-page .industrial-timeline-svg .industrial-tender circle,
+.about-page .industrial-timeline-svg .industrial-locomotive .industrial-driving-wheel circle {
+  fill: #4a5568;
+  stroke: #cbd5e0;
+  stroke-width: 3;
+}
+
+.about-page .industrial-timeline-svg .industrial-driving-wheel circle + circle {
+  fill: none;
+}
+
+.about-page .industrial-timeline-svg .industrial-rod {
+  stroke: #e2e8f0;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.about-page .industrial-timeline-svg .industrial-lamp {
+  fill: #fff5f5;
+}
+
+.about-page .industrial-timeline-svg .industrial-dark-line {
+  stroke: #1a202c;
+  stroke-width: 2;
+}
+
+.about-page .industrial-timeline-svg .industrial-white-line {
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+@media (max-width: 768px) {
+  .about-page .industrial-section {
+    padding-top: 20px;
+    padding-bottom: 42px;
+  }
+
+  .about-page .industrial-timeline-svg {
+    height: 250px;
+    margin-top: 2px;
+  }
+
+  .about-page .industrial-old-marker text,
+  .about-page .industrial-modern-marker text {
+    font-size: 17px;
+  }
+
+  .about-page .industrial-old-marker .industrial-marker-year,
+  .about-page .industrial-modern-marker .industrial-marker-year {
+    font-size: 14px;
+  }
+}
+
 /* TIMELINE */
 .about-page .history-timeline {
   position: relative;
