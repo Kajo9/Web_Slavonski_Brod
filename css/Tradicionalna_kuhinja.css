@@ -45,6 +45,10 @@ nav.navbar {
   background-color: #000091;
 }
 
+.navbar .dropdown-toggle {
+  color: white;
+}
+
 .nav-item {
   padding-right: 20px;
 }

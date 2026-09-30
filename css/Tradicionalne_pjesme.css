@@ -59,6 +59,10 @@ nav.navbar {
   background-color: #000091;
 }
 
+.navbar .dropdown-toggle {
+  color: white;
+}
+
 .navbar-brand img {
   height: 36px;
   width: auto;
