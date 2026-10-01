@@ -1,0 +1,583 @@
+.tambure-exhibit {
+  --tambure-blue: #000091;
+  --tambure-blue-light: #83b5e5;
+  --tambure-yellow: #FFD700;
+  --tambure-white: #f7faff;
+  padding: 28px 24px 38px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.tambure-exhibit,
+.tambure-exhibit * {
+  box-sizing: border-box;
+}
+
+.tambure-panel {
+  position: relative;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 28px 30px 64px;
+  overflow: hidden;
+  color: var(--tambure-white);
+  background: var(--tambure-blue);
+  border: 1px solid rgba(151, 190, 238, 0.34);
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(0, 0, 70, 0.16);
+}
+
+.tambure-header {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(230px, 0.9fr) minmax(480px, 1.5fr);
+  align-items: start;
+  gap: 30px;
+}
+
+.tambure-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.tambure-dash {
+  flex: 0 0 28px;
+  height: 3px;
+  background: var(--tambure-yellow);
+}
+
+.tambure-heading h2 {
+  margin: 0;
+  color: var(--tambure-white);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.tambure-intro > p {
+  max-width: 370px;
+  margin: 12px 0 0 42px;
+  color: rgba(247, 250, 255, 0.86);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+/* INSTRUMENT CARDS */
+.instrument-picker {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(84px, 1fr));
+  gap: 12px;
+}
+
+.instrument-option {
+  display: flex;
+  min-width: 0;
+  min-height: 104px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 9px 8px 8px;
+  color: rgba(247, 250, 255, 0.93);
+  font: 600 13px/1.2 'Quicksand', sans-serif;
+  background: rgba(0, 0, 80, 0.2);
+  border: 1px solid rgba(105, 159, 225, 0.38);
+  border-radius: 11px;
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+  transition: transform 150ms ease, border-color 150ms ease, background-color 150ms ease;
+}
+
+.instrument-option:hover,
+.instrument-option:focus-visible,
+.instrument-option[aria-pressed="true"] {
+  color: #fff;
+  background: rgba(28, 69, 158, 0.62);
+  border-color: rgba(255, 215, 0, 0.82);
+  outline: none;
+  transform: translateY(-2px);
+}
+
+.instrument-option:active,
+.instrument-option.is-dragging {
+  cursor: grabbing;
+}
+
+.instrument-icon {
+  width: 38px;
+  height: 62px;
+  overflow: visible;
+  color: #dbeaff;
+}
+
+.instrument-neck,
+.instrument-body,
+.instrument-detail {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.instrument-neck {
+  stroke-width: 3.2;
+}
+
+.instrument-body {
+  stroke: var(--tambure-yellow);
+  stroke-width: 3.2;
+}
+
+.instrument-detail {
+  stroke-width: 1.4;
+}
+
+.instrument-option[data-instrument="celo"] .instrument-body {
+  stroke: #a8c9ec;
+}
+
+.instrument-option[data-instrument="bugarija"] .instrument-body {
+  stroke: #f2cb75;
+}
+
+.instrument-option[data-instrument="brac"] .instrument-body {
+  stroke: #c4d7ee;
+}
+
+.instrument-drag-preview {
+  position: fixed;
+  z-index: 10000;
+  display: flex;
+  width: 112px;
+  min-height: 92px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #fff;
+  font: 600 13px/1.2 'Quicksand', sans-serif;
+  pointer-events: none;
+  background: var(--tambure-blue);
+  border: 1px solid var(--tambure-yellow);
+  border-radius: 10px;
+  box-shadow: 0 8px 22px rgba(0, 0, 35, 0.32);
+  opacity: 0.96;
+  transform: translate(-50%, -50%);
+}
+
+.instrument-drag-preview .instrument-icon {
+  width: 30px;
+  height: 48px;
+}
+
+/* MUSICIAN */
+.tambure-stage {
+  position: relative;
+  height: 355px;
+  margin-top: 18px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.025);
+  border-radius: 10px;
+}
+
+.tambure-waves {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: rgba(91, 145, 213, 0.28);
+  stroke-width: 1.4;
+  pointer-events: none;
+}
+
+.musician-illustration {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 50%;
+  width: 350px;
+  height: 284px;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.musician-illustration svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.musician-seat {
+  fill: none;
+  stroke: #5981b9;
+  stroke-linecap: round;
+  stroke-width: 6;
+}
+
+.musician-trousers {
+  fill: #143a84;
+  stroke: #9dc3ea;
+  stroke-width: 2;
+}
+
+.musician-shoes {
+  fill: #081b53;
+  stroke: #9dc3ea;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.musician-shirt {
+  fill: #eaf3fd;
+  stroke: #9bbce0;
+  stroke-width: 2;
+}
+
+.musician-vest {
+  fill: #24539a;
+  stroke: #a8c8eb;
+  stroke-width: 2;
+}
+
+.musician-arm {
+  fill: none;
+  stroke: #eaf3fd;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 17;
+}
+
+.musician-hand,
+.musician-face {
+  fill: #d4e4f5;
+  stroke: #8cafda;
+  stroke-width: 2;
+}
+
+.musician-neck {
+  fill: #d4e4f5;
+  stroke: #8cafda;
+  stroke-width: 1.5;
+}
+
+.musician-hair {
+  fill: #132c5f;
+}
+
+.musician-hat {
+  fill: #071747;
+  stroke: #6c9bd0;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.musician-face-detail {
+  fill: none;
+  stroke: #315c91;
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+
+.instrument-holder {
+  position: absolute;
+  z-index: 3;
+  bottom: 76px;
+  left: 50%;
+  display: grid;
+  width: 154px;
+  height: 154px;
+  place-items: center;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.holder-ring {
+  position: absolute;
+  inset: 4px;
+  border: 1px dashed rgba(255, 215, 0, 0.58);
+  border-radius: 50%;
+  transition: background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.instrument-holder.is-over .holder-ring,
+.tambure-stage.has-instrument .holder-ring {
+  background: rgba(255, 215, 0, 0.08);
+  border-color: var(--tambure-yellow);
+  box-shadow: 0 0 0 5px rgba(255, 215, 0, 0.08);
+}
+
+.attached-instrument[hidden] {
+  display: none !important;
+}
+
+.attached-instrument {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  width: 112px;
+  height: 142px;
+  place-items: center;
+  padding: 4px;
+  color: var(--tambure-yellow);
+  cursor: grab;
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  touch-action: none;
+  transition: filter 150ms ease;
+}
+
+.attached-instrument:hover,
+.attached-instrument:focus-visible {
+  filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.58));
+  outline: 2px solid rgba(255, 215, 0, 0.76);
+  outline-offset: 4px;
+}
+
+.attached-instrument:active {
+  cursor: grabbing;
+}
+
+.attached-instrument svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  transform: rotate(var(--instrument-angle, 0deg));
+  transition: transform 70ms linear;
+}
+
+.tambure-notes {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  color: var(--tambure-yellow);
+  pointer-events: none;
+}
+
+.music-note {
+  position: absolute;
+  opacity: 0;
+  transform: translateY(8px) scale(0.85);
+}
+
+.music-note--one {
+  top: 34%;
+  left: calc(50% - 185px);
+  font-size: 22px;
+}
+
+.music-note--two {
+  top: 20%;
+  left: calc(50% + 146px);
+  font-size: 25px;
+}
+
+.music-note--three {
+  top: 48%;
+  left: calc(50% + 177px);
+  font-size: 19px;
+}
+
+.tambure-stage.is-playing .music-note {
+  animation: tambure-note-rise 850ms ease-out both;
+}
+
+.tambure-stage.is-playing .music-note--two {
+  animation-delay: 80ms;
+}
+
+.tambure-stage.is-playing .music-note--three {
+  animation-delay: 150ms;
+}
+
+@keyframes tambure-note-rise {
+  15% {
+    opacity: 0.92;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-24px) scale(1.08);
+  }
+}
+
+.tambure-play-hint {
+  position: absolute;
+  z-index: 5;
+  top: 12px;
+  left: 20px;
+  margin: 0;
+  color: rgba(247, 250, 255, 0.78);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+/* AUDIO CONTROL */
+.tambure-audio-control {
+  position: absolute;
+  right: 22px;
+  bottom: 16px;
+  z-index: 4;
+  display: flex;
+  width: 168px;
+  height: 38px;
+  align-items: center;
+  gap: 10px;
+  padding: 0 12px;
+  background: rgba(0, 15, 78, 0.52);
+  border: 1px solid rgba(112, 162, 224, 0.46);
+  border-radius: 20px;
+}
+
+.tambure-mute {
+  display: grid;
+  width: 24px;
+  height: 28px;
+  flex: 0 0 24px;
+  place-items: center;
+  padding: 0;
+  color: var(--tambure-white);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.tambure-mute:hover,
+.tambure-mute:focus-visible {
+  color: var(--tambure-yellow);
+  outline: 2px solid var(--tambure-yellow);
+  outline-offset: 2px;
+}
+
+.tambure-mute i {
+  font-size: 15px;
+}
+
+.tambure-audio-control input[type="range"] {
+  width: 100%;
+  height: 4px;
+  margin: 0;
+  accent-color: var(--tambure-yellow);
+  cursor: pointer;
+}
+
+.tambure-exhibit :focus-visible {
+  outline-color: var(--tambure-yellow);
+}
+
+@media (max-width: 900px) {
+  .tambure-header {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .tambure-intro > p {
+    max-width: 540px;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .tambure-exhibit {
+    padding: 22px 12px 28px;
+  }
+
+  .tambure-panel {
+    padding: 20px 16px 62px;
+    border-radius: 12px;
+  }
+
+  .tambure-heading {
+    gap: 10px;
+  }
+
+  .tambure-heading h2 {
+    font-size: 21px;
+  }
+
+  .tambure-intro > p {
+    margin-left: 38px;
+    font-size: 14px;
+  }
+
+  .instrument-picker {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+  }
+
+  .instrument-option {
+    min-height: 88px;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 8px 12px;
+  }
+
+  .instrument-icon {
+    width: 30px;
+    height: 52px;
+  }
+
+  .tambure-stage {
+    height: 300px;
+    margin-top: 14px;
+  }
+
+  .musician-illustration {
+    width: 290px;
+    height: 235px;
+  }
+
+  .instrument-holder {
+    bottom: 58px;
+    width: 136px;
+    height: 136px;
+  }
+
+  .attached-instrument {
+    width: 100px;
+    height: 126px;
+  }
+
+  .music-note--one {
+    left: calc(50% - 145px);
+  }
+
+  .music-note--two {
+    left: calc(50% + 110px);
+  }
+
+  .music-note--three {
+    left: calc(50% + 132px);
+  }
+
+  .tambure-play-hint {
+    top: 8px;
+    left: 10px;
+    max-width: calc(100% - 170px);
+    font-size: 11px;
+  }
+
+  .tambure-audio-control {
+    right: 12px;
+    bottom: 12px;
+    width: 150px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tambure-exhibit *,
+  .tambure-exhibit *::before,
+  .tambure-exhibit *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

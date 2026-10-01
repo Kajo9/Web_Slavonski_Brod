@@ -7,10 +7,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/Atrakcije.css">
+  <link rel="stylesheet" href="../css/tambure-interaction.css">
   <link rel="stylesheet" href="../css/scroll-reveal.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Quicksand:wght@400;500&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-dark navbar-expand-lg" role="navigation" aria-label="Glavna navigacija">
@@ -33,12 +34,129 @@
     </div>
   </nav>
 
-  <main class="container content-section" id="main-content">
-    <div class="jumbotron jumbotron-fluid page-header"><div class="container"><h1 class="display-5">Kuća Tambure</h1><hr></div></div>
-    <p class="opis">Detaljniji sadržaj o Kući Tambure bit će dodan naknadno.</p>
+  <div class="card bg-dark text-white tambure-hero">
+    <img class="card-img" src="../slike/muzej_tambura_kartica.jpg" alt="Zbirka tamburaških instrumenata u Kući Tambure">
+    <div class="card-img-overlay">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Kuća Tambure</h1>
+          <p class="lead">U sklopu Tvrđave Brod, Slavonski Brod</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Ku%C4%87a+Tambure%2C+Slavonski+Brod" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Pogledaj na karti</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <div class="content-section">
+      <h2>Općenito o Kući Tambure</h2>
+      <p class="opis">Kuća Tambure smještena je u sklopu Tvrđave Brod i posvećena je bogatoj tradiciji tambure, jednog od prepoznatljivih simbola slavonske glazbene baštine.</p>
+      <p class="opis">Kroz vrijednu zbirku tamburaških instrumenata, multimedijalne sadržaje i interaktivne postave, posjetitelji mogu upoznati razvoj tambure, njezinu izradu i važnost u kulturnom životu Slavonije.</p>
+    </div>
+
+    <section class="tambure-exhibit" aria-labelledby="tambure-exhibit-title" data-tambure-exhibit>
+      <div class="tambure-panel">
+        <header class="tambure-header">
+          <div class="tambure-intro">
+            <div class="tambure-heading">
+              <span class="tambure-dash" aria-hidden="true"></span>
+              <h2 id="tambure-exhibit-title">Isprobajte tambure</h2>
+            </div>
+            <p>Povucite instrument na svirača i otkrijte kako svaki instrument zvuči.</p>
+          </div>
+
+          <div class="instrument-picker" role="group" aria-label="Odaberite instrument">
+            <button class="instrument-option" type="button" data-instrument="tambura" aria-pressed="false">
+              <svg class="instrument-icon" viewBox="0 0 80 140" aria-hidden="true" focusable="false">
+                <path class="instrument-neck" d="M40 18v71m-8-59h16m-16 9h16m-16 9h16m-16 9h16m-16 9h16m-16 9h16" />
+                <path class="instrument-body" d="M40 78c-13 0-19 10-14 22 3 7 2 19 14 27 12-8 11-20 14-27 5-12-1-22-14-22Z" />
+                <path class="instrument-detail" d="M34 111h12m-6-39v5m-7 34 14 1" />
+              </svg>
+              <span>Tambura</span>
+            </button>
+            <button class="instrument-option" type="button" data-instrument="celo" aria-pressed="false">
+              <svg class="instrument-icon instrument-icon--celo" viewBox="0 0 80 140" aria-hidden="true" focusable="false">
+                <path class="instrument-neck" d="M40 12v70m-9-58h18m-18 10h18m-18 10h18m-18 10h18m-18 10h18" />
+                <path class="instrument-body" d="M40 74c-18 0-25 12-19 27 4 8 3 19 19 29 16-10 15-21 19-29 6-15-1-27-19-27Z" />
+                <path class="instrument-detail" d="M31 112h18m-9-42v5m-10 38 20 1" />
+              </svg>
+              <span>Ćelo</span>
+            </button>
+            <button class="instrument-option" type="button" data-instrument="bugarija" aria-pressed="false">
+              <svg class="instrument-icon instrument-icon--bugarija" viewBox="0 0 80 140" aria-hidden="true" focusable="false">
+                <path class="instrument-neck" d="M40 18v71m-8-59h16m-16 9h16m-16 9h16m-16 9h16m-16 9h16" />
+                <path class="instrument-body" d="M40 80c-15-2-23 8-18 19l5 8c-8 12 1 22 13 25 12-3 21-13 13-25l5-8c5-11-3-21-18-19Z" />
+                <path class="instrument-detail" d="M33 112h14m-7-38v5m-8 35 16 1" />
+              </svg>
+              <span>Bugarija</span>
+            </button>
+            <button class="instrument-option" type="button" data-instrument="brac" aria-pressed="false">
+              <svg class="instrument-icon instrument-icon--brac" viewBox="0 0 80 140" aria-hidden="true" focusable="false">
+                <path class="instrument-neck" d="M40 16v72m-8-60h16m-16 9h16m-16 9h16m-16 9h16m-16 9h16" />
+                <path class="instrument-body" d="M40 77c-14-1-21 10-16 22 3 8 2 19 16 28 14-9 13-20 16-28 5-12-2-23-16-22Z" />
+                <path class="instrument-detail" d="M33 111h14m-7-39v5m-8 34 16 1" />
+              </svg>
+              <span>Brač</span>
+            </button>
+          </div>
+        </header>
+
+        <div class="tambure-stage" data-tambure-stage>
+          <svg class="tambure-waves" viewBox="0 0 1200 360" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 168c130-52 190 48 320 0s190-52 320 0 190 48 320 0 170-46 240 0" />
+            <path d="M0 190c130-44 190 42 320 0s190-44 320 0 190 42 320 0 170-38 240 0" />
+          </svg>
+
+          <div class="musician-illustration" aria-hidden="true">
+            <svg viewBox="0 0 420 340" role="presentation">
+              <path class="musician-seat" d="M145 266h130m-112 0-21 62m115-62 21 62m-145 0h171" />
+              <path class="musician-trousers" d="M154 215c20-14 91-14 112 0l-9 54-36 8-15-44-14 44-35-8Z" />
+              <path class="musician-shoes" d="M174 269c-13 4-25 17-22 25h43l7-14m29 2 8 12h40c2-9-10-21-26-25" />
+              <path class="musician-shirt" d="M164 122c8-14 26-22 46-22s39 8 47 22l22 70c-15 20-44 28-69 28s-54-8-69-28Z" />
+              <path class="musician-vest" d="m179 112 31 19 31-19 18 71-26 20-23-14-23 14-26-20Z" />
+              <path class="musician-arm" d="M166 126c-21 10-35 27-38 47l30 12 23-29m77-30c20 10 35 27 38 47l-30 12-23-29" />
+              <path class="musician-hand" d="M154 183c-8 0-15 5-15 12s7 12 15 12 13-5 13-12-5-12-13-12Zm112 0c-8 0-15 5-15 12s7 12 15 12 13-5 13-12-5-12-13-12Z" />
+              <path class="musician-neck" d="M196 87h29v27h-29z" />
+              <path class="musician-face" d="M180 53c0-22 13-36 31-36s31 14 31 36v20c0 20-14 34-31 34s-31-14-31-34Z" />
+              <path class="musician-hair" d="M180 67c8 7 14 5 19-1l9-12c8 12 19 16 34 13v12c-2 25-14 39-31 39-18 0-30-15-31-38Zm-5-17c0-31 17-45 39-45 20 0 36 13 39 40-16 1-29-5-39-18-9 15-21 22-39 23Z" />
+              <path class="musician-hat" d="M165 49c11-7 65-9 91 0 4 2 4 7 0 9-26 10-76 8-92-1-3-2-2-6 1-8Zm18-8 7-22c17-8 38-8 53 1l8 22" />
+              <path class="musician-face-detail" d="M218 62h9m-11 18 8 2" />
+            </svg>
+          </div>
+
+          <div class="tambure-notes" aria-hidden="true">
+            <span class="music-note music-note--one">♪</span>
+            <span class="music-note music-note--two">♫</span>
+            <span class="music-note music-note--three">♪</span>
+          </div>
+
+          <div class="instrument-holder" data-drop-zone aria-label="Mjesto za instrument na sviraču">
+            <span class="holder-ring" aria-hidden="true"></span>
+            <button class="attached-instrument" type="button" data-attached-instrument hidden aria-label="Zakrenite instrument za sviranje"></button>
+          </div>
+
+          <p class="tambure-play-hint" data-play-hint aria-live="polite">Odaberite instrument za sviranje.</p>
+        </div>
+
+        <div class="tambure-audio-control" aria-label="Kontrola zvuka">
+          <button class="tambure-mute" type="button" data-mute aria-label="Isključi zvuk" aria-pressed="false" title="Isključi zvuk">
+            <i class="fa fa-volume-up" aria-hidden="true"></i>
+          </button>
+          <input type="range" data-volume min="0" max="100" value="55" aria-label="Glasnoća zvuka">
+        </div>
+      </div>
+    </section>
+
+    <div class="content-section">
+      <h2>Galerija slika</h2>
+    </div>
+
+    <div class="content-section">
+      <h2>Video</h2>
+    </div>
   </main>
 
   <footer class="footer"><div class="container"><div class="footer-columns"><div class="footer-column"><h5>Kontakt</h5><ul><li>Slavonski Brod</li><li>Telefon: 099/782-790</li><li>Email: sbturizam@gmail.com</li></ul></div><div class="footer-column"><h5>Mediji</h5><div class="footer-icons"><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a><a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a><a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a></div></div><div class="footer-column"><h5>Korisni linkovi</h5><a class="nav-link" href="../Početna_v2.html">Home</a><a class="nav-link" href="Atrakcije.html">Atrakcije</a><a class="nav-link" href="Tradicija.html">Tradicije</a><a class="nav-link" href="Smještaj.html">Smještaj</a><a class="nav-link" href="O_gradu_v2.html">O gradu</a><a class="nav-link" href="Kontakt.html">Kontakt</a></div></div></div><div class="footer-bottom"><p>&copy; 2024 Grad Slavonski Brod. Sva prava pridržana.</p></div></footer>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script><script src="../js/scroll-reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script><script src="../js/tambure-interaction.js"></script><script src="../js/scroll-reveal.js"></script>
 </body>
 </html>
