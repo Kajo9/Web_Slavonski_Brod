@@ -93,7 +93,7 @@ nav.navbar {
 /* SADRŽAJ */
 
 .content-section {
-  padding: 20px;
+  padding: 20px 40px;
   margin: 0 auto;
   max-width: 1500px;
 }
@@ -252,6 +252,16 @@ footer.footer {
 }
 
 @media (max-width: 576px) {
+  .fortress-hero .card-img {
+    height: 360px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .fortress-hero .display-4 {
+    font-size: 2rem;
+  }
+
   .footer-columns {
     flex-direction: column;
     gap: 30px;
