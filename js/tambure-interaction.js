@@ -131,6 +131,7 @@
     icon.classList.add('attached-instrument-art');
     attachedInstrument.replaceChildren(icon);
     attachedInstrument.hidden = false;
+    attachedInstrument.setAttribute('data-instrument', instrumentId);
     attachedInstrument.setAttribute('aria-label', 'Zakrenite instrument: ' + option.textContent.trim());
     activeInstrumentId = instrumentId;
     rotation = 0;

@@ -108,44 +108,94 @@
 }
 
 .instrument-icon {
-  width: 38px;
-  height: 62px;
+  width: 48px;
+  height: 78px;
   overflow: visible;
   color: #dbeaff;
 }
 
-.instrument-neck,
-.instrument-body,
-.instrument-detail {
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
+.instrument-body {
+  fill: #a96032;
+  stroke: #eac18b;
+  stroke-width: 1.3;
   stroke-linejoin: round;
 }
 
 .instrument-neck {
-  stroke-width: 3.2;
+  fill: #75472b;
+  stroke: #e1bd83;
+  stroke-width: 1.2;
+  stroke-linejoin: round;
 }
 
-.instrument-body {
-  stroke: var(--tambure-yellow);
-  stroke-width: 3.2;
+.instrument-headstock {
+  fill: #704328;
+  stroke: #e1bd83;
+  stroke-width: 1.2;
+  stroke-linejoin: round;
 }
 
-.instrument-detail {
-  stroke-width: 1.4;
+.instrument-strings {
+  fill: none;
+  stroke: #f6e8c5;
+  stroke-width: 0.55;
+}
+
+.instrument-frets {
+  fill: none;
+  stroke: #35251d;
+  stroke-width: 0.9;
+}
+
+.instrument-bridge {
+  fill: none;
+  stroke: #2f211b;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.instrument-soundhole {
+  fill: #2d2019;
+  stroke: #f0d39c;
+  stroke-width: 1;
+}
+
+.instrument-peg {
+  fill: #d7c18e;
+  stroke: #38271e;
+  stroke-width: 0.8;
+}
+
+.instrument-grain {
+  fill: none;
+  stroke: rgba(92, 48, 25, 0.55);
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .instrument-option[data-instrument="celo"] .instrument-body {
-  stroke: #a8c9ec;
+  fill: #b37a4b;
 }
 
 .instrument-option[data-instrument="bugarija"] .instrument-body {
-  stroke: #f2cb75;
+  fill: #8e4d2a;
 }
 
 .instrument-option[data-instrument="brac"] .instrument-body {
-  stroke: #c4d7ee;
+  fill: #994a35;
+}
+
+.attached-instrument[data-instrument="celo"] .instrument-body {
+  fill: #b37a4b;
+}
+
+.attached-instrument[data-instrument="bugarija"] .instrument-body {
+  fill: #8e4d2a;
+}
+
+.attached-instrument[data-instrument="brac"] .instrument-body {
+  fill: #994a35;
 }
 
 .instrument-drag-preview {
@@ -170,8 +220,8 @@
 }
 
 .instrument-drag-preview .instrument-icon {
-  width: 30px;
-  height: 48px;
+  width: 34px;
+  height: 56px;
 }
 
 /* MUSICIAN */

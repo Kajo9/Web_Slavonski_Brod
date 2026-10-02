@@ -1,0 +1,316 @@
+.attraction-page {
+  --detail-navy: #000091;
+  --detail-yellow: #FFD700;
+  width: 100%;
+  color: #23314b;
+  background: #fff;
+  overflow: hidden;
+}
+
+.attraction-page,
+.attraction-page * {
+  box-sizing: border-box;
+}
+
+/* SHARED HERO */
+.attraction-page .attraction-hero {
+  position: relative;
+  width: 100%;
+  height: 620px;
+  margin: 0;
+  overflow: hidden;
+  color: #fff;
+  background: #071b4b;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.attraction-page .attraction-hero > .card-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.attraction-page .attraction-hero .card-img-overlay {
+  position: absolute;
+  inset: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.attraction-page .attraction-hero .jumbotron {
+  width: 100%;
+  margin: 0;
+  padding: 30px 0;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.54);
+  border-radius: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.65);
+}
+
+.attraction-page .attraction-hero .jumbotron .container {
+  width: 100%;
+  max-width: 1160px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.attraction-page .attraction-hero h1 {
+  margin: 0 0 12px;
+  color: #fff;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.attraction-page .attraction-hero .lead {
+  margin: 0 0 18px;
+  color: rgba(255, 255, 255, 0.95);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.attraction-page .attraction-hero .btn-primary {
+  color: #fff;
+  background: #000091;
+  border-color: #000091;
+}
+
+/* ATTRACTION PAGE SPACING */
+.attraction-page .attraction-section {
+  width: calc(100% - 48px);
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 36px 0;
+}
+
+.attraction-page .attraction-section h2 {
+  margin: 0 0 22px;
+  color: var(--detail-navy);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.attraction-page .attraction-section p {
+  max-width: 1050px;
+  margin: 0 0 14px;
+  color: #34435b;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.attraction-page .attraction-section p:last-child {
+  margin-bottom: 0;
+}
+
+.attraction-page .attraction-section--empty {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.attraction-page .attraction-section--empty h2 {
+  margin-bottom: 0;
+}
+
+/* ATTRACTION PAGE GALLERY */
+.attraction-page .attraction-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.attraction-page .attraction-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.attraction-page .attraction-gallery .gallery-thumb {
+  cursor: zoom-in;
+  transition: filter 180ms ease, transform 180ms ease;
+}
+
+.attraction-page .attraction-gallery .gallery-thumb:hover,
+.attraction-page .attraction-gallery .gallery-thumb:focus-visible {
+  filter: brightness(1.04);
+  transform: scale(1.015);
+}
+
+.attraction-gallery-modal .modal-body img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.attraction-gallery-modal .modal-dialog.modal-lg {
+  width: 94vw;
+  max-width: 1600px;
+  margin: 16px auto;
+}
+
+.attraction-gallery-modal .modal-content {
+  display: flex;
+  height: calc(100vh - 32px);
+  max-height: calc(100vh - 32px);
+  flex-direction: column;
+}
+
+.attraction-gallery-modal .modal-body {
+  display: flex;
+  min-height: 0;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0 16px 16px;
+}
+
+.attraction-gallery-modal .modal-body .carousel,
+.attraction-gallery-modal .modal-body .carousel-inner,
+.attraction-gallery-modal .modal-body .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+.attraction-gallery-modal .modal-body .carousel-item img {
+  aspect-ratio: 16 / 10;
+  margin: 0 auto;
+}
+
+/* ATTRACTION PAGE VIDEO */
+.attraction-page .attraction-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #000;
+  border-radius: 10px;
+}
+
+.attraction-page .attraction-video iframe {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* TAMBOURINE PANEL WIDTH */
+.attraction-page > .tambure-exhibit {
+  width: calc(100% - 48px);
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 24px 0 34px;
+}
+
+.attraction-page .tambure-panel {
+  max-width: none;
+}
+
+@media (max-width: 900px) {
+  .attraction-page .attraction-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .attraction-page .attraction-hero {
+    height: 420px;
+  }
+
+  .attraction-page .attraction-hero h1 {
+    font-size: 32px;
+  }
+
+  .attraction-page .attraction-hero .lead {
+    font-size: 16px;
+  }
+
+  .attraction-page .attraction-hero .jumbotron {
+    padding: 24px 0;
+  }
+
+  .attraction-page .attraction-hero .card-img-overlay {
+    padding: 12px;
+  }
+
+  .attraction-page .attraction-hero .jumbotron .container {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .attraction-page .attraction-section,
+  .attraction-page > .tambure-exhibit {
+    width: calc(100% - 36px);
+  }
+
+  .attraction-page .attraction-section {
+    padding: 24px 0;
+  }
+
+  .attraction-page .attraction-section h2 {
+    margin-bottom: 18px;
+    font-size: 24px;
+  }
+
+  .attraction-page .attraction-section p {
+    font-size: 16px;
+  }
+
+  .attraction-page .attraction-section--empty {
+    padding-top: 14px;
+    padding-bottom: 12px;
+  }
+
+  .attraction-page .attraction-gallery {
+    gap: 10px;
+  }
+
+  .attraction-page > .tambure-exhibit {
+    padding: 18px 0 24px;
+  }
+
+  .attraction-gallery-modal .modal-dialog.modal-lg {
+    width: calc(100vw - 20px);
+    max-width: calc(100vw - 20px);
+    margin: 10px auto;
+  }
+
+  .attraction-gallery-modal .modal-content {
+    height: auto;
+    max-height: calc(100vh - 20px);
+  }
+
+  .attraction-gallery-modal .modal-body {
+    flex: 0 1 auto;
+    overflow: auto;
+  }
+
+  .attraction-gallery-modal .modal-body .carousel,
+  .attraction-gallery-modal .modal-body .carousel-inner,
+  .attraction-gallery-modal .modal-body .carousel-item {
+    height: auto;
+  }
+
+  .attraction-gallery-modal .modal-body img {
+    width: 100%;
+    height: auto;
+    max-height: calc(100vh - 140px);
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+}
