@@ -133,12 +133,25 @@ nav.navbar {
   transform: translateY(-10px);
 }
 
+.card.site-reveal {
+  transition:
+    opacity 0.75s ease var(--site-reveal-delay, 0s),
+    transform 0.3s ease;
+}
+
+.card.site-reveal:hover {
+  transform: translateY(-10px);
+}
+
 .card-img-top {
   height: 350px;
   object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  cursor: pointer;
+}
+
+.card-title {
+  min-height: 68px;
 }
 
 /* OTHER UI */
