@@ -14,6 +14,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/Franjevački_samostan.css">
+  <link rel="stylesheet" href="../css/attraction-detail.css">
   <link rel="stylesheet" href="../css/scroll-reveal.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -90,7 +91,8 @@
     </div>
   </nav>
 
-<div class="card bg-dark text-white" style="margin-bottom: 20px;">
+<main class="attraction-page" id="main-content">
+<section class="attraction-hero">
   <img class="card-img" src="../slike/samostan-2.jpg" alt="Card image">
 
   <div class="card-img-overlay">
@@ -111,9 +113,9 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="content-section">
+<section class="content-section attraction-section">
 
   <h2>Općenito o Franjevačkom samostanu</h2>
 
@@ -129,41 +131,27 @@
     Gradnja zidane franjevačke građevine započela je 12. kolovoza 1727. godine...
   </p>
 
-</div>
+</section>
 
-<div class="content-section">
+<section class="content-section attraction-section">
 
   <h2>Galerija slika</h2>
 
-  <div class="card-group">
-    <div class="card border-0">
-      <div class="card-group">
-
-        <div class="card">
-          <img class="card-img-t gallery-thumb" data-index="0"
-            src="https://franjevacki-samostan.hr/wp-content/uploads/2021/09/galerija_franjevacki_samostan_slavonski_brod-4.jpg">
-        </div>
-
-        <div class="card">
-          <img class="card-img-t gallery-thumb" data-index="1"
-            src="https://franjevacki-samostan.hr/wp-content/uploads/2021/09/galerija_franjevacki_samostan_slavonski_brod-7.jpg">
-        </div>
-
-        <div class="card">
-          <img class="card-img-t gallery-thumb" data-index="2"
-            src="https://franjevacki-samostan.hr/wp-content/uploads/2021/09/galerija_franjevacki_samostan_slavonski_brod-1.jpg">
-        </div>
-
-        <div class="card">
-          <img class="card-img-t gallery-thumb" data-index="3"
-            src="../slike/samostan-3.jpg">
-        </div>
-
-      </div>
-    </div>
+  <div class="attraction-gallery">
+    <img class="gallery-thumb" data-index="0"
+      src="https://franjevacki-samostan.hr/wp-content/uploads/2021/09/galerija_franjevacki_samostan_slavonski_brod-4.jpg"
+      alt="Franjevački samostan u Slavonskom Brodu">
+    <img class="gallery-thumb" data-index="1"
+      src="https://franjevacki-samostan.hr/wp-content/uploads/2021/09/galerija_franjevacki_samostan_slavonski_brod-7.jpg"
+      alt="Unutrašnjost Franjevačkog samostana">
+    <img class="gallery-thumb" data-index="2"
+      src="https://franjevacki-samostan.hr/wp-content/uploads/2021/09/galerija_franjevacki_samostan_slavonski_brod-1.jpg"
+      alt="Detalj Franjevačkog samostana">
+    <img class="gallery-thumb" data-index="3"
+      src="../slike/samostan-3.jpg" alt="Franjevački samostan">
   </div>
 
-  <div class="modal fade" id="galleryModal" tabindex="-1">
+  <div class="modal fade attraction-gallery-modal" id="galleryModal" tabindex="-1">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
 
@@ -215,20 +203,18 @@
     </div>
   </div>
 
-</div>
+</section>
 
-<div class="content-section">
+<section class="content-section attraction-section">
 
   <h2>Video</h2>
 
-  <div class="video-container">
-    <iframe style="border: none; width: 100%; height: 615px;"
-      src="https://www.youtube.com/embed/O18Itu_37yY"
-      allowfullscreen>
-    </iframe>
+  <div class="attraction-video">
+    <iframe src="https://www.youtube.com/embed/O18Itu_37yY" title="Video o Franjevačkom samostanu" allowfullscreen></iframe>
   </div>
 
-</div>
+</section>
+</main>
 
 <footer class="footer">
     <div class="container">
@@ -276,7 +262,12 @@
   </footer>
 <script>
 (function () {
+  var galleryModal = document.getElementById('galleryModal');
   var thumbs = document.querySelectorAll('.gallery-thumb');
+
+  if (galleryModal && galleryModal.parentElement !== document.body) {
+    document.body.appendChild(galleryModal);
+  }
 
   thumbs.forEach(function (t) {
     t.style.cursor = 'pointer';

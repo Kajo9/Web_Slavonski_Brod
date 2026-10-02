@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/Atrakcije.css">
   <link rel="stylesheet" href="../css/tambure-interaction.css">
+  <link rel="stylesheet" href="../css/attraction-detail.css">
   <link rel="stylesheet" href="../css/scroll-reveal.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +35,8 @@
     </div>
   </nav>
 
-  <div class="card bg-dark text-white tambure-hero">
+  <main class="attraction-page" id="main-content">
+  <section class="tambure-hero attraction-hero">
     <img class="card-img" src="../slike/muzej_tambura_kartica.jpg" alt="Zbirka tamburaških instrumenata u Kući Tambure">
     <div class="card-img-overlay">
       <div class="jumbotron jumbotron-fluid">
@@ -45,14 +47,13 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <main id="main-content">
-    <div class="content-section">
+    <section class="content-section attraction-section">
       <h2>Općenito o Kući Tambure</h2>
       <p class="opis">Kuća Tambure smještena je u sklopu Tvrđave Brod i posvećena je bogatoj tradiciji tambure, jednog od prepoznatljivih simbola slavonske glazbene baštine.</p>
       <p class="opis">Kroz vrijednu zbirku tamburaških instrumenata, multimedijalne sadržaje i interaktivne postave, posjetitelji mogu upoznati razvoj tambure, njezinu izradu i važnost u kulturnom životu Slavonije.</p>
-    </div>
+    </section>
 
     <section class="tambure-exhibit" aria-labelledby="tambure-exhibit-title" data-tambure-exhibit>
       <div class="tambure-panel">
@@ -68,33 +69,69 @@
           <div class="instrument-picker" role="group" aria-label="Odaberite instrument">
             <button class="instrument-option" type="button" data-instrument="tambura" aria-pressed="false">
               <svg class="instrument-icon" viewBox="0 0 80 140" aria-hidden="true" focusable="false">
-                <path class="instrument-neck" d="M40 18v71m-8-59h16m-16 9h16m-16 9h16m-16 9h16m-16 9h16m-16 9h16" />
-                <path class="instrument-body" d="M40 78c-13 0-19 10-14 22 3 7 2 19 14 27 12-8 11-20 14-27 5-12-1-22-14-22Z" />
-                <path class="instrument-detail" d="M34 111h12m-6-39v5m-7 34 14 1" />
+                <path class="instrument-headstock" d="M35 8h10l3 15-5 5h-6l-5-5Z" />
+                <path class="instrument-neck" d="M35 25h10v62H35z" />
+                <path class="instrument-body" d="M40 78c-13 0-19 9-15 19 3 7 2 9-1 16-4 10 4 20 16 25 12-5 20-15 16-25-3-7-4-9-1-16 4-10-2-19-15-19Z" />
+                <path class="instrument-strings" d="M36.5 14v112m1.4-89v88m1.4-88v89m1.4-89v89m1.4-89v88m1.4-88v87" />
+                <path class="instrument-frets" d="M35 34h10m-10 7h10m-10 7h10m-10 7h10m-10 7h10m-10 7h10m-10 7h10" />
+                <path class="instrument-bridge" d="M34 112h12m-10 2h8" />
+                <ellipse class="instrument-soundhole" cx="40" cy="99" rx="4" ry="5" />
+                <path class="instrument-grain" d="M29 91c5-5 17-5 22 0m-21 29c5 4 16 4 20 0" />
+                <circle class="instrument-peg" cx="32" cy="13" r="2" />
+                <circle class="instrument-peg" cx="48" cy="13" r="2" />
+                <circle class="instrument-peg" cx="32" cy="20" r="2" />
+                <circle class="instrument-peg" cx="48" cy="20" r="2" />
               </svg>
               <span>Tambura</span>
             </button>
             <button class="instrument-option" type="button" data-instrument="celo" aria-pressed="false">
               <svg class="instrument-icon instrument-icon--celo" viewBox="0 0 80 140" aria-hidden="true" focusable="false">
-                <path class="instrument-neck" d="M40 12v70m-9-58h18m-18 10h18m-18 10h18m-18 10h18m-18 10h18" />
-                <path class="instrument-body" d="M40 74c-18 0-25 12-19 27 4 8 3 19 19 29 16-10 15-21 19-29 6-15-1-27-19-27Z" />
-                <path class="instrument-detail" d="M31 112h18m-9-42v5m-10 38 20 1" />
+                <path class="instrument-headstock" d="M34 5h12l4 18-6 6h-8l-6-6Z" />
+                <path class="instrument-neck" d="M34 25h12v60H34z" />
+                <path class="instrument-body" d="M40 74c-17 0-24 10-19 21 4 7 3 11-1 18-5 11 5 21 20 25 15-4 25-14 20-25-4-7-5-11-1-18 5-11-2-21-19-21Z" />
+                <path class="instrument-strings" d="M35.5 12v115m1.8-89v89m1.8-89v89m1.8-89v89m1.8-89v89m1.8-89v89" />
+                <path class="instrument-frets" d="M34 33h12m-12 7h12m-12 7h12m-12 7h12m-12 7h12m-12 7h12" />
+                <path class="instrument-bridge" d="M32 113h16m-14 2h12" />
+                <ellipse class="instrument-soundhole" cx="40" cy="98" rx="4.5" ry="5.5" />
+                <path class="instrument-grain" d="M23 88c8-6 26-6 34 0m-34 35c8 6 26 6 34 0" />
+                <circle class="instrument-peg" cx="30" cy="11" r="2.2" />
+                <circle class="instrument-peg" cx="50" cy="11" r="2.2" />
+                <circle class="instrument-peg" cx="30" cy="19" r="2.2" />
+                <circle class="instrument-peg" cx="50" cy="19" r="2.2" />
               </svg>
               <span>Ćelo</span>
             </button>
             <button class="instrument-option" type="button" data-instrument="bugarija" aria-pressed="false">
               <svg class="instrument-icon instrument-icon--bugarija" viewBox="0 0 80 140" aria-hidden="true" focusable="false">
-                <path class="instrument-neck" d="M40 18v71m-8-59h16m-16 9h16m-16 9h16m-16 9h16m-16 9h16" />
-                <path class="instrument-body" d="M40 80c-15-2-23 8-18 19l5 8c-8 12 1 22 13 25 12-3 21-13 13-25l5-8c5-11-3-21-18-19Z" />
-                <path class="instrument-detail" d="M33 112h14m-7-38v5m-8 35 16 1" />
+                <path class="instrument-headstock" d="M35 8h10l4 16-6 6h-6l-6-6Z" />
+                <path class="instrument-neck" d="M35 27h10v61H35z" />
+                <path class="instrument-body" d="M40 79c-12-2-18 5-17 13 0 5 5 8 5 12-9 12-2 25 12 31 14-6 21-19 12-31 0-4 5-7 5-12 1-8-5-15-17-13Z" />
+                <path class="instrument-strings" d="M36.5 14v114m1.4-85v87m1.4-87v88m1.4-88v88m1.4-88v87m1.4-87v86" />
+                <path class="instrument-frets" d="M35 36h10m-10 7h10m-10 7h10m-10 7h10m-10 7h10m-10 7h10" />
+                <path class="instrument-bridge" d="M34 112h12m-10 2h8" />
+                <ellipse class="instrument-soundhole" cx="40" cy="98" rx="4" ry="5" />
+                <path class="instrument-grain" d="M26 88c7-5 21-5 28 0m-25 37c6 4 19 4 23 0" />
+                <circle class="instrument-peg" cx="32" cy="14" r="2" />
+                <circle class="instrument-peg" cx="48" cy="14" r="2" />
+                <circle class="instrument-peg" cx="32" cy="21" r="2" />
+                <circle class="instrument-peg" cx="48" cy="21" r="2" />
               </svg>
               <span>Bugarija</span>
             </button>
             <button class="instrument-option" type="button" data-instrument="brac" aria-pressed="false">
               <svg class="instrument-icon instrument-icon--brac" viewBox="0 0 80 140" aria-hidden="true" focusable="false">
-                <path class="instrument-neck" d="M40 16v72m-8-60h16m-16 9h16m-16 9h16m-16 9h16m-16 9h16" />
-                <path class="instrument-body" d="M40 77c-14-1-21 10-16 22 3 8 2 19 16 28 14-9 13-20 16-28 5-12-2-23-16-22Z" />
-                <path class="instrument-detail" d="M33 111h14m-7-39v5m-8 34 16 1" />
+                <path class="instrument-headstock" d="M35 8h10l3 16-5 5h-6l-5-5Z" />
+                <path class="instrument-neck" d="M35 27h10v61H35z" />
+                <path class="instrument-body" d="M40 77c-14-1-21 8-17 18 3 7 5 10 2 16-5 11 2 22 15 28 13-6 20-17 15-28-3-6-1-9 2-16 4-10-3-19-17-18Z" />
+                <path class="instrument-strings" d="M36.5 14v112m1.4-84v87m1.4-87v88m1.4-88v88m1.4-88v87m1.4-87v84" />
+                <path class="instrument-frets" d="M35 36h10m-10 7h10m-10 7h10m-10 7h10m-10 7h10m-10 7h10" />
+                <path class="instrument-bridge" d="M34 112h12m-10 2h8" />
+                <ellipse class="instrument-soundhole" cx="40" cy="98" rx="4" ry="5" />
+                <path class="instrument-grain" d="M25 87c7-5 23-5 30 0m-28 37c7 5 21 5 26 0" />
+                <circle class="instrument-peg" cx="32" cy="14" r="2" />
+                <circle class="instrument-peg" cx="48" cy="14" r="2" />
+                <circle class="instrument-peg" cx="32" cy="21" r="2" />
+                <circle class="instrument-peg" cx="48" cy="21" r="2" />
               </svg>
               <span>Brač</span>
             </button>
@@ -147,13 +184,13 @@
       </div>
     </section>
 
-    <div class="content-section">
+    <section class="content-section attraction-section attraction-section--empty">
       <h2>Galerija slika</h2>
-    </div>
+    </section>
 
-    <div class="content-section">
+    <section class="content-section attraction-section attraction-section--empty">
       <h2>Video</h2>
-    </div>
+    </section>
   </main>
 
   <footer class="footer"><div class="container"><div class="footer-columns"><div class="footer-column"><h5>Kontakt</h5><ul><li>Slavonski Brod</li><li>Telefon: 099/782-790</li><li>Email: sbturizam@gmail.com</li></ul></div><div class="footer-column"><h5>Mediji</h5><div class="footer-icons"><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a><a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a><a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a></div></div><div class="footer-column"><h5>Korisni linkovi</h5><a class="nav-link" href="../Početna_v2.html">Home</a><a class="nav-link" href="Atrakcije.html">Atrakcije</a><a class="nav-link" href="Tradicija.html">Tradicije</a><a class="nav-link" href="Smještaj.html">Smještaj</a><a class="nav-link" href="O_gradu_v2.html">O gradu</a><a class="nav-link" href="Kontakt.html">Kontakt</a></div></div></div><div class="footer-bottom"><p>&copy; 2024 Grad Slavonski Brod. Sva prava pridržana.</p></div></footer>

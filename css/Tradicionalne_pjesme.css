@@ -239,3 +239,382 @@ footer.footer {
     text-align: center;
   }
 }
+
+/* TRADITIONAL SONGS PAGE */
+.music-page {
+  color: #24334d;
+  background: #fff;
+  overflow: hidden;
+}
+
+.music-page,
+.music-page * {
+  box-sizing: border-box;
+}
+
+.music-hero {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  color: #fff;
+  background: #071b4b;
+}
+
+.music-hero > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 46%;
+}
+
+.music-hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(4, 20, 59, 0.72) 0%, rgba(4, 20, 59, 0.43) 45%, rgba(4, 20, 59, 0.08) 100%);
+}
+
+.music-hero-content {
+  width: calc(100% - 48px);
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.music-kicker {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #FFD700;
+  font: 700 12px/1.2 'Montserrat', sans-serif;
+}
+
+.music-hero h1 {
+  max-width: 800px;
+  margin: 0;
+  color: #fff;
+  font: 700 54px/1.12 'Montserrat', sans-serif;
+}
+
+.music-hero-content > p {
+  margin: 18px 0 0;
+  color: rgba(255, 255, 255, 0.93);
+  font: 500 20px/1.5 'Quicksand', sans-serif;
+}
+
+.music-section {
+  width: calc(100% - 48px);
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 72px 0;
+}
+
+.music-section-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.music-section-dash {
+  flex: 0 0 28px;
+  height: 3px;
+  margin-top: 16px;
+  background: #FFD700;
+}
+
+.music-section-heading h2 {
+  margin: 0;
+  color: #000091;
+  font: 700 32px/1.28 'Montserrat', sans-serif;
+}
+
+.music-intro-copy {
+  max-width: 1040px;
+  padding-left: 44px;
+}
+
+.music-intro-copy p,
+.instruments-intro,
+.kolo-intro,
+.becarac-inner p {
+  margin: 0 0 14px;
+  color: #34435b;
+  font: 400 18px/1.65 'Quicksand', sans-serif;
+}
+
+.music-intro-copy p:last-child,
+.becarac-inner p:last-child {
+  margin-bottom: 0;
+}
+
+.becarac-section {
+  padding: 54px 24px;
+  background: #f7fbff;
+  border-top: 1px solid rgba(0, 0, 145, 0.07);
+  border-bottom: 1px solid rgba(0, 0, 145, 0.07);
+}
+
+.becarac-inner {
+  display: grid;
+  width: 100%;
+  max-width: 1120px;
+  grid-template-columns: 84px minmax(0, 1fr);
+  align-items: center;
+  gap: 28px;
+  margin: 0 auto;
+}
+
+.becarac-mark {
+  display: grid;
+  width: 72px;
+  height: 72px;
+  place-items: center;
+  color: #000091;
+  font: 400 42px/1 'Montserrat', sans-serif;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 145, 0.12);
+  border-radius: 50%;
+}
+
+.becarac-inner .music-section-heading {
+  margin-bottom: 14px;
+}
+
+.kolo-section {
+  text-align: center;
+}
+
+.kolo-section .music-section-heading {
+  justify-content: center;
+  text-align: left;
+}
+
+.kolo-intro {
+  max-width: 820px;
+  margin: 0 auto 22px;
+}
+
+.kolo-figure {
+  max-width: 930px;
+  margin: 0 auto;
+}
+
+.kolo-figure img {
+  display: block;
+  width: 100%;
+  max-height: 580px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 22px rgba(17, 33, 69, 0.09);
+}
+
+.kolo-figure figcaption {
+  margin-top: 12px;
+  color: #68758a;
+  font: 400 14px/1.55 'Quicksand', sans-serif;
+  text-align: left;
+}
+
+.instruments-section {
+  padding-top: 54px;
+  padding-bottom: 76px;
+}
+
+.instruments-intro {
+  max-width: 960px;
+  margin: 0 0 28px 44px;
+}
+
+.instrument-grid,
+.audio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.instrument-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 145, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 5px 16px rgba(17, 33, 69, 0.055);
+}
+
+.instrument-card > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 0.64;
+  object-fit: cover;
+  object-position: center;
+  background: #f7fbff;
+}
+
+.instrument-card-body {
+  display: flex;
+  min-height: 72px;
+  align-items: center;
+  padding: 16px 20px;
+}
+
+.instrument-card h3 {
+  margin: 0;
+  color: #000091;
+  font: 700 21px/1.3 'Montserrat', sans-serif;
+}
+
+.examples-section {
+  padding-top: 0;
+  padding-bottom: 84px;
+}
+
+.audio-card {
+  display: flex;
+  min-width: 0;
+  min-height: 138px;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 145, 0.12);
+  border-radius: 12px;
+}
+
+.audio-card h3 {
+  margin: 0;
+  color: #000091;
+  font: 700 18px/1.35 'Montserrat', sans-serif;
+}
+
+.audio-card audio {
+  display: block;
+  width: 100%;
+  height: 42px;
+}
+
+@media (max-width: 900px) {
+  .music-hero {
+    height: 450px;
+  }
+
+  .music-hero h1 {
+    max-width: 680px;
+    font-size: 46px;
+  }
+
+  .instrument-grid,
+  .audio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .music-hero {
+    height: 390px;
+  }
+
+  .music-hero > img {
+    object-position: 54% center;
+  }
+
+  .music-hero-overlay {
+    background: linear-gradient(90deg, rgba(4, 20, 59, 0.68), rgba(4, 20, 59, 0.25));
+  }
+
+  .music-hero-content,
+  .music-section {
+    width: calc(100% - 36px);
+  }
+
+  .music-hero h1 {
+    font-size: 36px;
+    line-height: 1.18;
+  }
+
+  .music-hero-content > p {
+    max-width: 330px;
+    font-size: 17px;
+  }
+
+  .music-section {
+    padding: 54px 0;
+  }
+
+  .music-section-heading {
+    gap: 11px;
+    margin-bottom: 18px;
+  }
+
+  .music-section-dash {
+    flex-basis: 20px;
+    margin-top: 12px;
+  }
+
+  .music-section-heading h2 {
+    font-size: 24px;
+  }
+
+  .music-intro-copy,
+  .instruments-intro {
+    padding-left: 31px;
+    margin-left: 0;
+  }
+
+  .music-intro-copy p,
+  .instruments-intro,
+  .kolo-intro,
+  .becarac-inner p {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .becarac-section {
+    padding: 40px 18px;
+  }
+
+  .becarac-inner {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .becarac-mark {
+    width: 54px;
+    height: 54px;
+    font-size: 32px;
+  }
+
+  .kolo-section .music-section-heading {
+    justify-content: flex-start;
+  }
+
+  .kolo-intro {
+    margin-bottom: 18px;
+    text-align: left;
+  }
+
+  .kolo-figure img {
+    max-height: none;
+    aspect-ratio: 4 / 3;
+  }
+
+  .instrument-grid,
+  .audio-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .instruments-section {
+    padding-bottom: 54px;
+  }
+
+  .examples-section {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+}

@@ -10,6 +10,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/Tvrđava.css">
+  <link rel="stylesheet" href="../css/attraction-detail.css">
   <link rel="stylesheet" href="../css/scroll-reveal.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -85,7 +86,8 @@
     </div>
   </nav>
 
-    <div class="card bg-dark text-white fortress-hero" style="margin-bottom: 20px;">
+  <main class="attraction-page" id="main-content">
+    <section class="fortress-hero attraction-hero">
       <img class="card-img" src="../slike/tvrđava-6.jpg" alt="Card image">
       <div class="card-img-overlay">
         <div class="jumbotron jumbotron-fluid">
@@ -98,10 +100,9 @@
           </div>
         </div>
       </div>
-    </div>
-        <div class="content-section">
-  <h2 style="color:#000091; margin:40px 0 20px 0;">
-    Općenito o Tvrđavi</h2>
+    </section>
+    <section class="content-section attraction-section">
+      <h2>Općenito o Tvrđavi</h2>
 
   <p>
     Tvrđava Slavonski Brod je povijesni utvrđeni kompleks smješten na desnoj obali rijeke Save u Slavonskom Brodu.
@@ -122,34 +123,19 @@
     Unutarnji dio čine bastioni i bedemi, dok su vanjski dijelovi služili za obranu i nadzor prostora.
     Tvrđava nikada nije bila izravno napadnuta, već je služila kao obrambeni sustav.
   </p>
-</div>
-      <div class="content-section">
-  <h2 style="color:#000091; margin:40px 0 20px 0;">
-    Galerija slika
-  </h2>
-
-  <div class="card-group">
-    <div class="card">
-      <img class="card-img-t gallery-thumb" data-index="0" src="../slike/tvrđava-2.jpg" alt="Tvrđava">
-    </div>
-
-    <div class="card">
-      <img class="card-img-t gallery-thumb" data-index="1" src="../slike/tvrđava-3.JPG" alt="Tvrđava">
-    </div>
-
-    <div class="card">
-      <img class="card-img-t gallery-thumb" data-index="2" src="../slike/tvrđava-4.JPG" alt="Tvrđava">
-    </div>
-
-    <div class="card">
-      <img class="card-img-t gallery-thumb" data-index="3" src="../slike/tvrđava-5.JPG" alt="Tvrđava">
-    </div>
-
-  </div>
-</div>
+    </section>
+    <section class="content-section attraction-section">
+      <h2>Galerija slika</h2>
+      <div class="attraction-gallery">
+        <img class="gallery-thumb" data-index="0" src="../slike/tvrđava-2.jpg" alt="Tvrđava Brod">
+        <img class="gallery-thumb" data-index="1" src="../slike/tvrđava-3.JPG" alt="Detalj Tvrđave Brod">
+        <img class="gallery-thumb" data-index="2" src="../slike/tvrđava-4.JPG" alt="Tvrđava Brod">
+        <img class="gallery-thumb" data-index="3" src="../slike/tvrđava-5.JPG" alt="Tvrđava Brod">
+      </div>
+    </section>
 
 <!-- Carousel Modal -->
-<div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalLabel" aria-hidden="true">
+<div class="modal fade attraction-gallery-modal" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -190,7 +176,13 @@
 
 <script>
   (function(){
+    var galleryModal = document.getElementById('galleryModal');
     var thumbs = document.querySelectorAll('.gallery-thumb');
+
+    if (galleryModal && galleryModal.parentElement !== document.body) {
+      document.body.appendChild(galleryModal);
+    }
+
     thumbs.forEach(function(t){
       t.style.cursor = 'pointer';
       t.addEventListener('click', function(){
@@ -202,16 +194,13 @@
   })();
 </script>
 
-        <div class="content-section">
-  <h2 style="color:#000091; margin:40px 0 20px 0;">
-    Video
-  </h2>
-
-  <iframe style="border:none; width:100%; height:615px;"
-    src="https://www.youtube.com/embed/Pn9wIJXUb5s"
-    allowfullscreen>
-  </iframe>
+    <section class="content-section attraction-section">
+      <h2>Video</h2>
+      <div class="attraction-video">
+        <iframe src="https://www.youtube.com/embed/Pn9wIJXUb5s" title="Video o Tvrđavi Brod" allowfullscreen></iframe>
       </div>
+    </section>
+  </main>
       
 <footer class="footer">
   <div class="container">
