@@ -116,14 +116,8 @@ nav.navbar {
   object-position: center;
 }
 
-.brlic-hero .jumbotron {
-  width: 100%;
-  margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.55);
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
+.brlic-hero .jumbotron,
+.muzej-hero .jumbotron,
 .tambure-hero .jumbotron {
   width: 100%;
   margin-bottom: 0;
@@ -132,23 +126,48 @@ nav.navbar {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
+.muzej-hero {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  color: white;
+  background: #000;
+}
+
+.muzej-hero .card-img {
+  display: block;
+  width: 100%;
+  height: 738px;
+  object-fit: cover;
+  object-position: center;
+}
+
 .tambure-hero h1,
-.brlic-hero h1 {
+.brlic-hero h1,
+.muzej-hero h1 {
   font-family: 'PT Sans Caption', sans-serif;
   font-weight: 300;
 }
 
-.content-section h2 {
-  font-family: 'PT Sans Caption', sans-serif;
-  font-weight: 700;
-}
-
-.tambure-hero .lead {
+.tambure-hero .lead,
+.brlic-hero .lead,
+.muzej-hero .lead {
   color: white;
 }
 
-.brlic-hero .lead {
-  color: white;
+@media (max-width: 600px) {
+  .tambure-hero .card-img,
+  .brlic-hero .card-img,
+  .muzej-hero .card-img {
+    height: 360px;
+  }
+
+  .tambure-hero h1,
+  .brlic-hero h1,
+  .muzej-hero h1 {
+    font-size: 2rem;
+  }
 }
 
 .content-section {
