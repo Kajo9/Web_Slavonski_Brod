@@ -10,6 +10,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/Industrijski_park.css">
+  <link rel="stylesheet" href="../css/attraction-detail.css">
   <link rel="stylesheet" href="../css/scroll-reveal.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,6 +65,7 @@
               <a class="dropdown-item" href="Atrakcije.html">Sve atrakcije</a>
               <div class="dropdown-divider" style="border-top: 2px solid #ffc107;"></div>
               <a class="dropdown-item" href="Tvrđava.html">Tvrđava Brod</a>
+              <a class="dropdown-item" href="Industrijski_park.html">Industrijski park</a>
               <a class="dropdown-item" href="Kuca_Tambure.html">Kuća Tambure</a>
               <a class="dropdown-item" href="Franjevački_samostan.html">Franjevački samostan</a>
               <a class="dropdown-item" href="Kuca_Brlicevih.html">Kuća Brlićevih</a>
@@ -102,7 +104,8 @@
     </div>
   </nav>
    
-    <div class="card bg-white text-dark" style="margin-bottom: 20px;">
+  <main class="attraction-page" id="main-content">
+    <section class="attraction-hero">
       <img class="card-img" src="../slike/cvlak-2.jpg" alt="Card image">
       <div class="card-img-overlay">
         <div class="jumbotron jumbotron-fluid">
@@ -115,8 +118,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="content-section">
+    </section>
+    <section class="content-section attraction-section">
       <h2>Općenito o Industrijskom parku</h2>
       <p class="opis">
           Slavonski Brod je grad bogate tradicije industrijske baštine, a svjetski poznato ime Đure Đakovića jedan je od njegovih sinonima. Ideja parka je očuvati i prezentirati industrijsku 
@@ -133,28 +136,19 @@
         Tako su krajem prošle godine postavljena prva dva obnovljena eksponata, valjak i tramvaj, a ovih dana će im se pridružiti još dvije restaurirane lokomotive proizvedene u tvornici „Đuro Đaković“. 
         Pripremne aktivnosti za njihovo premještanje su već započele, a nakon što se postave kolosjeci, i ove dvije lokomotive će pronaći svoje mjesto u turističko- industrijskom parku.
       </p>
-    </div>
-    <div class="content-section">
+    </section>
+    <section class="content-section attraction-section">
       <h2>Galerija slika</h2>
-          <div class="card-group">
-            <div class="card">
-              <img class="card-img-t gallery-thumb" data-index="0" src="../slike/zvlak-1.jpg" alt="Card image cap">
-            </div>
-            <div class="card">
-              <img class="card-img-t gallery-thumb" data-index="1" src="../slike/valjak.jpg" alt="Card image cap">
-            </div>
-            <div class="card">
-              <img class="card-img-t gallery-thumb" data-index="2" src="../slike/cvlak-1.jpg" alt="Card image cap">
-            </div>
-            <div class="card">
-              <img class="card-img-t gallery-thumb" data-index="3" src="../slike/kip-2.jpg" alt="Card image cap">
-            </div>
-          </div>
-          </div>
-        </div>
+      <div class="attraction-gallery">
+        <img class="gallery-thumb" data-index="0" src="../slike/zvlak-1.jpg" alt="Lokomotiva u Industrijskom parku">
+        <img class="gallery-thumb" data-index="1" src="../slike/valjak.jpg" alt="Valjak izložen u Industrijskom parku">
+        <img class="gallery-thumb" data-index="2" src="../slike/cvlak-1.jpg" alt="Parna lokomotiva u Industrijskom parku">
+        <img class="gallery-thumb" data-index="3" src="../slike/kip-2.jpg" alt="Eksponat u Industrijskom parku">
+      </div>
+    </section>
 
       <!-- Single modal with carousel -->
-      <div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalLabel" aria-hidden="true">
+      <div class="modal fade attraction-gallery-modal" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -206,17 +200,16 @@
           });
         })();
       </script>
-      <div class="content-section">
+      <section class="content-section attraction-section">
           <h2>Video</h2>
-          <div class="video-container">
-            <iframe style="border: none; width: 100%; height: 615px;" src="https://www.youtube.com/embed/6XBMHReg1Tw" title="YouTube video" allowfullscreen></iframe>
+          <div class="attraction-video">
+            <iframe src="https://www.youtube.com/embed/6XBMHReg1Tw" title="Video o Industrijskom parku" allowfullscreen></iframe>
           </div>
-      </div>
+      </section>
+    </main>
 
       
-<footer class="footer">
-        <div class="container">
-      <footer class="footer">
+  <footer class="footer">
           <div class="container">
             <div class="footer-columns">
 
