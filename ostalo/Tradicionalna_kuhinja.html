@@ -2,29 +2,35 @@
 <html lang="hr">
 
 <head>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Bootstrap -->
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Font Awesome -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- Project CSS -->
-  <link rel="stylesheet" href="../css/Tradicionalna_kuhinja.css">
-  <link rel="stylesheet" href="../css/scroll-reveal.css">
+  <link rel="stylesheet"
+        href="../css/Tradicionalna_kuhinja.css">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="../css/scroll-reveal.css">
+
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
 
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap"
         rel="stylesheet">
@@ -33,14 +39,14 @@
         rel="stylesheet">
 
   <title>Tradicionalna kuhinja | Grad Slavonski Brod</title>
+
 </head>
 
 
 <body>
 
-  <!-- ========================================
-       NAVBAR
-       ======================================== -->
+
+  <!-- NAVBAR -->
 
   <nav class="navbar navbar-dark navbar-expand-lg"
        role="navigation"
@@ -48,10 +54,14 @@
 
     <div class="container">
 
-      <a class="navbar-brand" href="../Početna_v2.html">
+      <a class="navbar-brand"
+         href="../Početna_v2.html">
+
         <img src="../slike/grb_SB.png"
              alt="Grb Slavonski Brod">
+
         Grad Slavonski Brod
+
       </a>
 
 
@@ -68,7 +78,8 @@
       </button>
 
 
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse"
+           id="navbarNav">
 
         <ul class="navbar-nav ml-auto">
 
@@ -77,9 +88,12 @@
 
           <li class="nav-item">
 
-            <a class="nav-link" href="../Početna_v2.html">
+            <a class="nav-link"
+               href="../Početna_v2.html">
 
-              <i class="fa fa-home" aria-hidden="true"></i>
+              <i class="fa fa-home"
+                 aria-hidden="true"></i>
+
               Home
 
             </a>
@@ -224,7 +238,9 @@
 
             <a class="nav-link"
                href="O_gradu_v2.html">
+
               O gradu
+
             </a>
 
           </li>
@@ -236,7 +252,9 @@
 
             <a class="nav-link"
                href="Smještaj.html">
+
               Smještaj
+
             </a>
 
           </li>
@@ -248,11 +266,12 @@
 
             <a class="nav-link"
                href="Kontakt.html">
+
               Kontakt
+
             </a>
 
           </li>
-
 
         </ul>
 
@@ -263,10 +282,7 @@
   </nav>
 
 
-
-  <!-- ========================================
-       HERO
-       ======================================== -->
+  <!-- HERO -->
 
   <section class="kuhinja-hero"
            aria-label="Tradicionalna kuhinja">
@@ -289,17 +305,12 @@
   </section>
 
 
-
-  <!-- ========================================
-       MAIN CONTENT
-       ======================================== -->
+  <!-- MAIN CONTENT -->
 
   <main class="kuhinja-content">
 
 
-    <!-- ========================================
-         OPĆENITO
-         ======================================== -->
+    <!-- OPĆENITO -->
 
     <section class="kuhinja-section kuhinja-intro">
 
@@ -307,13 +318,11 @@
         Općenito o kuhinji
       </h2>
 
-
       <p>
         Ova stranica prikazuje širi slavonski kulinarski kontekst.
         Navedena jela i namirnice ne predstavljaju se kao posebnosti
         isključivo Slavonskog Broda ili Brodske Posavine.
       </p>
-
 
       <p>
         Slavonija ima okus po tradiciji, o čemu svjedoče specijaliteti
@@ -326,7 +335,6 @@
         i graševina.
       </p>
 
-
       <p>
         Kuhanje na otvorenome, pod vedrim nebom i danas je omiljena
         slavonska gastronomija u koju su ugrađeni strast, emocije i
@@ -335,7 +343,6 @@
         u močvarama Baranje, uz violine i tambure ugođaj je nesvakidašnje
         snage.
       </p>
-
 
       <p>
         Najpoznatije slavonske gastronomske zvijezde odreda su majstori
@@ -348,72 +355,131 @@
     </section>
 
 
+    <!-- GALERIJA -->
 
-    <!-- ========================================
-         GALERIJA
-         ======================================== -->
+    <section class="food-gallery">
 
-<section class="food-gallery">
-    <h2>Galerija slika</h2>
+      <h2>
+        Galerija slika
+      </h2>
 
-    <div class="food-gallery-grid">
+      <div class="food-gallery-grid">
+
 
         <div class="food-gallery-item">
-            <img src="../slike/slavonski_čobanac.jpg" alt="Slavonski čobanac">
 
-            <h3>Slavonski čobanac</h3>
+          <button type="button"
+                  class="gallery-thumb"
+                  data-index="0"
+                  aria-label="Povećaj sliku slavonskog čobanca">
 
-            <a href="https://www.coolinarika.com/recept/slavonski-cobanac/"
-               target="_blank"
-               rel="noopener noreferrer">
-                Pogledaj recept →
-            </a>
+            <img src="../slike/slavonski_čobanac.jpg"
+                 alt="Slavonski čobanac">
+
+          </button>
+
+          <h3>
+            Slavonski čobanac
+          </h3>
+
+          <a href="https://www.coolinarika.com/recept/slavonski-cobanac/"
+             target="_blank"
+             rel="noopener noreferrer">
+
+            Pogledaj recept →
+
+          </a>
+
         </div>
+
 
         <div class="food-gallery-item">
-            <img src="../slike/slavonski_čvaci.jpeg" alt="Slavonski čvarci">
 
-            <h3>Slavonski čvarci</h3>
+          <button type="button"
+                  class="gallery-thumb"
+                  data-index="1"
+                  aria-label="Povećaj sliku slavonskih čvaraka">
 
-            <a href="https://www.coolinarika.com/recept/cvarci/"
-               target="_blank"
-               rel="noopener noreferrer">
-                Pogledaj recept →
-            </a>
+            <img src="../slike/slavonski_čvaci.jpeg"
+                 alt="Slavonski čvarci">
+
+          </button>
+
+          <h3>
+            Slavonski čvarci
+          </h3>
+
+          <a href="https://www.coolinarika.com/recept/domaci-cvarci/"
+             target="_blank"
+             rel="noopener noreferrer">
+
+            Pogledaj recept →
+
+          </a>
+
         </div>
+
 
         <div class="food-gallery-item">
-            <img src="../slike/slavonski_kulen.jpg" alt="Slavonski kulen">
 
-            <h3>Slavonski kulen</h3>
+          <button type="button"
+                  class="gallery-thumb"
+                  data-index="2"
+                  aria-label="Povećaj sliku slavonskog kulena">
 
-            <a href="https://www.coolinarika.com/recept/slavonski-kulen/"
-               target="_blank"
-               rel="noopener noreferrer">
-                Pogledaj recept →
-            </a>
+            <img src="../slike/slavonski_kulen.jpg"
+                 alt="Slavonski kulen">
+
+          </button>
+
+          <h3>
+            Slavonski kulen
+          </h3>
+
+          <a href="https://www.coolinarika.com/recept/slavonski-kulen/"
+             target="_blank"
+             rel="noopener noreferrer">
+
+            Pogledaj recept →
+
+          </a>
+
         </div>
+
 
         <div class="food-gallery-item">
-            <img src="../slike/vino.jpeg" alt="Slavonsko vino">
 
-            <h3>Slavonska vina</h3>
+          <button type="button"
+                  class="gallery-thumb"
+                  data-index="3"
+                  aria-label="Povećaj sliku slavonskog vina">
 
-            <a href="https://www.coolinarika.com/recepti/pica/vino/"
-               target="_blank"
-               rel="noopener noreferrer">
-                Saznaj više →
-            </a>
+            <img src="../slike/vino.jpeg"
+                 alt="Slavonsko vino">
+
+          </button>
+
+          <h3>
+            Slavonsko vino
+          </h3>
+
+          <a href="https://www.coolinarika.com/recept/domace-vino/"
+             target="_blank"
+             rel="noopener noreferrer">
+
+            Saznaj više →
+
+          </a>
+
         </div>
 
-    </div>
-</section>
+
+      </div>
+
+    </section>
 
 
-
-    <!-- ========================================
-         VEĆA GALERIJA / MODAL
-         ======================================== -->
+    <!-- GALLERY MODAL -->
 
     <div class="modal fade"
          id="galleryModal"
@@ -422,13 +488,10 @@
          aria-labelledby="galleryModalLabel"
          aria-hidden="true">
 
-
       <div class="modal-dialog modal-lg"
            role="document">
 
-
         <div class="modal-content">
-
 
           <div class="modal-header">
 
@@ -438,7 +501,6 @@
               Galerija
 
             </h5>
-
 
             <button type="button"
                     class="close"
@@ -454,56 +516,48 @@
           </div>
 
 
-
           <div class="modal-body">
-
 
             <div id="galleryCarousel"
                  class="carousel slide"
-                 data-ride="carousel">
-
+                 data-interval="false">
 
               <div class="carousel-inner">
 
 
                 <div class="carousel-item active">
 
-                  <img
-                    src="../slike/kuhinja-3.jpeg"
-                    alt="Tradicionalno slavonsko jelo">
+                  <img src="../slike/slavonski_čobanac.jpg"
+                       alt="Slavonski čobanac">
 
                 </div>
 
 
                 <div class="carousel-item">
 
-                  <img
-                    src="../slike/kuhinja-4.jpeg"
-                    alt="Slavonska gastronomija">
+                  <img src="../slike/slavonski_čvaci.jpeg"
+                       alt="Slavonski čvarci">
 
                 </div>
 
 
                 <div class="carousel-item">
 
-                  <img
-                    src="../slike/kuhinja-5.jpg"
-                    alt="Slavonski kulen">
+                  <img src="../slike/slavonski_kulen.jpg"
+                       alt="Slavonski kulen">
 
                 </div>
 
 
                 <div class="carousel-item">
 
-                  <img
-                    src="../slike/kuhinja-6.jpeg"
-                    alt="Slavonsko vino">
+                  <img src="../slike/vino.jpeg"
+                       alt="Slavonsko vino">
 
                 </div>
 
 
               </div>
-
 
 
               <a class="carousel-control-prev"
@@ -522,7 +576,6 @@
               </a>
 
 
-
               <a class="carousel-control-next"
                  href="#galleryCarousel"
                  role="button"
@@ -538,7 +591,6 @@
 
               </a>
 
-
             </div>
 
           </div>
@@ -552,10 +604,7 @@
   </main>
 
 
-
-  <!-- ========================================
-       FOOTER
-       ======================================== -->
+  <!-- FOOTER -->
 
   <footer class="footer">
 
@@ -563,8 +612,6 @@
 
       <div class="footer-columns">
 
-
-        <!-- KONTAKT -->
 
         <div class="footer-column">
 
@@ -591,15 +638,11 @@
         </div>
 
 
-
-        <!-- MEDIJI -->
-
         <div class="footer-column">
 
           <h5>
             Mediji
           </h5>
-
 
           <div class="footer-icons">
 
@@ -643,15 +686,11 @@
         </div>
 
 
-
-        <!-- KORISNI LINKOVI -->
-
         <div class="footer-column">
 
           <h5>
             Korisni linkovi
           </h5>
-
 
           <ul>
 
@@ -699,9 +738,6 @@
       </div>
 
 
-
-      <!-- COPYRIGHT -->
-
       <div class="footer-bottom">
 
         © 2024 Grad Slavonski Brod. Sva prava pridržana.
@@ -713,39 +749,29 @@
   </footer>
 
 
+  <!-- SCRIPTS -->
 
-  <!-- ========================================
-       GALLERY JAVASCRIPT
-       ======================================== -->
+  <script src="../js/scroll-reveal.js"></script>
 
   <script>
 
-    (function () {
+    $(document).ready(function () {
 
-      var thumbs = document.querySelectorAll('.gallery-thumb');
+      $('.gallery-thumb').on('click', function () {
 
-      thumbs.forEach(function (thumb) {
+        var index = parseInt(
+          $(this).attr('data-index')
+        ) || 0;
 
-        thumb.addEventListener('click', function () {
+        $('#galleryModal').modal('show');
 
-          var index =
-            parseInt(this.getAttribute('data-index')) || 0;
-
-          $('#galleryModal').modal('show');
-
-          $('#galleryCarousel').carousel(index);
-
-        });
+        $('#galleryCarousel').carousel(index);
 
       });
 
-    })();
+    });
 
   </script>
-
-
-  <!-- Scroll reveal -->
-  <script src="../js/scroll-reveal.js"></script>
 
 
 </body>
