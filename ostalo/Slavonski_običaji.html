@@ -1,219 +1,742 @@
 <!DOCTYPE html>
 <html lang="hr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../css/Slavonski_običaji.css">
-  <link rel="stylesheet" href="../css/scroll-reveal.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
-  <title>Slavonski Brod</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="../css/Slavonski_običaji.css">
+    <link rel="stylesheet" href="../css/scroll-reveal.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap"
+          rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Bebas+Neue&display=swap"
+          rel="stylesheet">
+
+    <title>Slavonski običaji | Grad Slavonski Brod</title>
 </head>
+
+
 <body>
-    <nav class="navbar navbar-dark navbar-expand-lg" role="navigation" aria-label="Glavna navigacija">
-    <div class="container">
-      <a class="navbar-brand" href="../Početna_v2.html">
-        <img src="../slike/grb_SB.png" alt="Grb Slavonski Brod"> Grad Slavonski Brod
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="../Početna_v2.html">
-              <i class="fa fa-home" aria-hidden="true"></i> Home
-            </a>
-          </li>
-          <li class="nav-item dropdown">
-            <button class="btn btn-outline-warning dropdown-toggle" type="button"
-              id="dropdownAtrakcije" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Atrakcije
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownAtrakcije">
-              <a class="dropdown-item" href="Atrakcije.html">Sve atrakcije</a>
-              <div class="dropdown-divider" style="border-top: 2px solid #ffc107;"></div>
-              <a class="dropdown-item" href="Tvrđava.html">Tvrđava Brod</a>
-              <a class="dropdown-item" href="Industrijski_park.html">Industrijski park</a>
-              <a class="dropdown-item" href="Kuca_Tambure.html">Kuća Tambure</a>
-              <a class="dropdown-item" href="Franjevački_samostan.html">Franjevački samostan</a>
-              <a class="dropdown-item" href="Kuca_Brlicevih.html">Kuća Brlićevih</a>
-              <a class="dropdown-item" href="Muzej.html">Muzej Brodskog Posavlja</a>
-              <a class="dropdown-item" href="Korzo.html">Korzo</a>
-              <a class="dropdown-item" href="Šetalište_pokraj_Save.html">Šetalište pokraj Save</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <button class="btn btn-outline-warning dropdown-toggle" type="button"
-              id="dropdownTradicije" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Tradicije
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownTradicije">
-              <a class="dropdown-item" href="Tradicija.html">Sve tradicije</a>
-              <div class="dropdown-divider" style="border-top: 2px solid #ffc107;"></div>
-              <a class="dropdown-item" href="Tradicionalne_pjesme.html">Tradicionalne pjesme</a>
-              <a class="dropdown-item" href="Tradicionalna_kuhinja.html">Tradicionalna kuhinja</a>
-              <a class="dropdown-item" href="Slavonski_običaji.html">Slavonski običaji</a>
-              <a class="dropdown-item" href="Manifestacije.html">Manifestacije</a>
-              <a class="dropdown-item" href="Narodne%20nošnje%20Slavonije.html">Narodne nošnje</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="O_gradu_v2.html">O gradu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Smještaj.html">Smještaj</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Kontakt.html">Kontakt</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-    <div class="card bg-dark text-white" style="margin-bottom: 20px;">
-      <img class="card-img" src="../slike/običaji-5.jpg" alt="Card image">
-      <div class="card-img-overlay">
-        <div class="jumbotron jumbotron-fluid">
-          <div class="container">
-            <h1 class="display-4">Slavonski običaji</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-      <div class="content-section">
-        <h2 style="color:#000091; margin:40px 0 20px 0;">Običaji i način života</h2>
-        <p class="opis">Običaji se razlikuju od mjesta do mjesta i mijenjali su se kroz vrijeme. Ova stranica daje širi slavonski okvir, a ne popis običaja svojstvenih isključivo Slavonskom Brodu.</p>
-        <p class="opis">Težište je na tradicijskim okupljanjima i načinu života. Pjesme, kolo i odijevanje obrađeni su zasebno na stranicama o pjesmama i narodnim nošnjama.</p>
-    </div>
-    <div class="content-section">
-        <h2 style="color:#000091; margin:40px 0 20px 0;">Galerija</h2>
-        <div class="card-group">
-          <div class="card">
-            <img class="card-img-t gallery-thumb" data-index="0" src="../slike/običaji-1.jpg" alt="Card image cap">
-          </div>
-          <div class="card">
-            <img class="card-img-t gallery-thumb" data-index="1" src="../slike/običaji-2.jpg" alt="Card image cap">
-          </div>
-          <div class="card">
-            <img class="card-img-t gallery-thumb" data-index="2" src="../slike/običaji-3.jpg" alt="Card image cap">
-          </div>
-          <div class="card">
-            <img class="card-img-t gallery-thumb" data-index="3" src="../slike/običaji-6.jpg" alt="Card image cap">
-          </div>
-        </div>
-      </div>
 
-      <div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="galleryModalLabel">Galerija</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100" src="../slike/običaji-1.jpg" alt="slide-1">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="../slike/običaji-2.jpg" alt="slide-2">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="../slike/običaji-3.jpg" alt="slide-3">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="../slike/običaji-6.jpg" alt="slide-4">
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#galleryCarousel" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#galleryCarousel" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- NAVBAR -->
 
-      <script>
-        (function(){
-          var thumbs = document.querySelectorAll('.gallery-thumb');
-          thumbs.forEach(function(t){
-            t.style.cursor = 'pointer';
-            t.addEventListener('click', function(){
-              var idx = parseInt(this.getAttribute('data-index')) || 0;
-              $('#galleryModal').modal('show');
-              $('#galleryCarousel').carousel(idx);
-            });
-          });
-        })();
-      </script>
-             
-            </div>
-      <div class="content-section">
-            <h2 style="color: #000091; margin: 40px 0 20px 0; font-family: 'PT Sans Caption', sans-serif;">Video</h2>
-            <div class="video-container">
-              <iframe style="border: none; width: 100%; height: 615px;" src="https://www.youtube.com/embed/haZbR7qpgoI" title="YouTube video" allowfullscreen></iframe>
-            </div>
-      </div>
-      
-     <footer class="footer">
+    <nav class="navbar navbar-dark navbar-expand-lg"
+         role="navigation"
+         aria-label="Glavna navigacija">
+
         <div class="container">
-      <div class="footer-columns">
-        <div class="footer-column">
-          <h5>Kontakt</h5>
-          <ul>
-            <li>Slavonski Brod</li>
-            <li>Telefon: 099/782-790</li>
-            <li>Email: sbturizam@gmail.com</li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h5>Mediji</h5>
-            <a href="https://www.instagram.com/your_instagram_username" target="_blank">
-              <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
-            </a>   
-            <a href="https://twitter.com/" target="_blank">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
+
+            <a class="navbar-brand" href="../Početna_v2.html">
+                <img src="../slike/grb_SB.png"
+                     alt="Grb Slavonski Brod">
+                Grad Slavonski Brod
             </a>
-            <a href="https://www.facebook.com/" target="_blank">
-              <i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
-            </a>   
+
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Otvori navigaciju">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ml-auto">
+
+
+                    <!-- HOME -->
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="../Početna_v2.html">
+
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            Home
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- ATRAKCIJE -->
+
+                    <li class="nav-item dropdown">
+
+                        <button class="btn btn-outline-warning dropdown-toggle"
+                                type="button"
+                                id="dropdownAtrakcije"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false">
+
+                            Atrakcije
+
+                        </button>
+
+
+                        <div class="dropdown-menu"
+                             aria-labelledby="dropdownAtrakcije">
+
+                            <a class="dropdown-item"
+                               href="Atrakcije.html">
+                                Sve atrakcije
+                            </a>
+
+                            <div class="dropdown-divider"
+                                 style="border-top: 2px solid #ffc107;">
+                            </div>
+
+                            <a class="dropdown-item"
+                               href="Tvrđava.html">
+                                Tvrđava Brod
+                            </a>
+
+                            <a class="dropdown-item"
+                               href="Industrijski_park.html">
+                                Industrijski park
+                            </a>
+
+                            <a class="dropdown-item"
+                               href="Kuca_Tambure.html">
+                                Kuća Tambure
+                            </a>
+
+                            <a class="dropdown-item"
+                               href="Franjevački_samostan.html">
+                                Franjevački samostan
+                            </a>
+
+                            <a class="dropdown-item"
+                               href="Kuca_Brlicevih.html">
+                                Kuća Brlićevih
+                            </a>
+
+                            <a class="dropdown-item"
+                               href="Muzej.html">
+                                Muzej Brodskog Posavlja
+                            </a>
+
+                            <a class="dropdown-item"
+                               href="Korzo.html">
+                                Korzo
+                            </a>
+
+                            <a class="dropdown-item"
+                               href="Šetalište_pokraj_Save.html">
+                                Šetalište pokraj Save
+                            </a>
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- TRADICIJE -->
+
+                    <li class="nav-item dropdown">
+
+                        <button class="btn btn-outline-warning dropdown-toggle"
+                                type="button"
+                                id="dropdownTradicije"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false">
+
+                            Tradicije
+
+                        </button>
+
+
+                        <div class="dropdown-menu"
+                             aria-labelledby="dropdownTradicije">
+
+                            <a class="dropdown-item"
+                               href="Tradicija.html">
+                                Sve tradicije
+                            </a>
+
+                            <div class="dropdown-divider"
+                                 style="border-top: 2px solid #ffc107;">
+                            </div>
+
+                            <a class="dropdown-item"
+                               href="Tradicionalne_pjesme.html">
+                                Tradicionalne pjesme
+                            </a>
+
+                            <a class="dropdown-item"
+                               href="Tradicionalna_kuhinja.html">
+                                Tradicionalna kuhinja
+                            </a>
+
+                            <a class="dropdown-item"
+                               href="Slavonski_običaji.html">
+                                Slavonski običaji
+                            </a>
+
+                            <a class="dropdown-item"
+                               href="Manifestacije.html">
+                                Manifestacije
+                            </a>
+
+                            <a class="dropdown-item"
+                               href="Narodne%20nošnje%20Slavonije.html">
+                                Narodne nošnje
+                            </a>
+
+                        </div>
+
+                    </li>
+
+
+                    <!-- O GRADU -->
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="O_gradu_v2.html">
+                            O gradu
+                        </a>
+
+                    </li>
+
+
+                    <!-- SMJEŠTAJ -->
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="Smještaj.html">
+                            Smještaj
+                        </a>
+
+                    </li>
+
+
+                    <!-- KONTAKT -->
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="Kontakt.html">
+                            Kontakt
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
         </div>
-        <div class="footer-column">
-          <h5>Korisni linkovi</h5>
-            <a class="nav-link" href="../Početna_v2.html" style="color: white;">Home</a>
-            <a class="nav-link" href="Atrakcije.html" style="color: white;">Atrakacije</a>
-            <a class="nav-link" href="Tradicija.html" style="color: white;">Tradicije</a>
-            <a class="nav-link" href="Smještaj.html" style="color: white;">Smještaj</a>
-            <a class="nav-link" href="O_gradu_v2.html" style="color: white;">O gradu</a>
-            <a class="nav-link" href="Kontakt.html" style="color: white;">Kontakt</a>
+
+    </nav>
+
+
+
+    <!-- HERO -->
+
+    <section class="obicaji-hero"
+             aria-label="Slavonski običaji">
+
+        <img src="../slike/običaji-5.jpg"
+             alt="Slavonski običaji i tradicionalni način života">
+
+        <div class="obicaji-hero-content">
+
+            <h1>
+                Slavonski običaji
+            </h1>
+
+            <p>
+                Tradicija, način života i običaji slavonskoga kraja
+            </p>
+
         </div>
+
+    </section>
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="obicaji-content">
+
+
+        <!-- OBIČAJI I NAČIN ŽIVOTA -->
+
+        <section class="obicaji-section obicaji-intro">
+
+            <h2>
+                Običaji i način života
+            </h2>
+
+
+            <p>
+                Slavonski običaji dio su svakodnevnog života i kulturne
+                baštine ovog kraja. Razlikuju se od mjesta do mjesta,
+                a kroz vrijeme su se mijenjali i prilagođavali novim
+                okolnostima.
+            </p>
+
+
+            <p>
+                Posebno mjesto zauzimaju tradicijska okupljanja,
+                obiteljska i seoska druženja te različiti običaji
+                povezani s važnim životnim događajima i blagdanima.
+                U takvim prigodama njegovali su se zajedništvo,
+                gostoprimstvo, glazba i običaji koji se prenose
+                s generacije na generaciju.
+            </p>
+
+
+            <p>
+                Slavonska tradicija usko je povezana i s pjesmom,
+                kolom, narodnim nošnjama i domaćom gastronomijom.
+                Zbog toga su pojedini elementi obrađeni zasebno
+                na stranicama posvećenima tradicionalnim pjesmama,
+                narodnim nošnjama i tradicionalnoj kuhinji.
+            </p>
+
+        </section>
+
+
+
+        <!-- GALERIJA -->
+
+        <section class="obicaji-section obicaji-gallery">
+
+            <h2>
+                Galerija
+            </h2>
+
+
+            <div class="gallery-grid">
+
+
+                <button type="button"
+                        class="gallery-thumb"
+                        data-index="0"
+                        aria-label="Povećaj prvu fotografiju">
+
+                    <img src="../slike/običaji-1.jpg"
+                         alt="Slavonski tradicionalni običaj">
+
+                </button>
+
+
+                <button type="button"
+                        class="gallery-thumb"
+                        data-index="1"
+                        aria-label="Povećaj drugu fotografiju">
+
+                    <img src="../slike/običaji-2.jpg"
+                         alt="Tradicionalna slavonska izrada">
+
+                </button>
+
+
+                <button type="button"
+                        class="gallery-thumb"
+                        data-index="2"
+                        aria-label="Povećaj treću fotografiju">
+
+                    <img src="../slike/običaji-3.jpg"
+                         alt="Tradicionalni slavonski običaji">
+
+                </button>
+
+
+                <button type="button"
+                        class="gallery-thumb"
+                        data-index="3"
+                        aria-label="Povećaj četvrtu fotografiju">
+
+                    <img src="../slike/običaji-6.jpg"
+                         alt="Tradicionalna slavonska nošnja i uređenje">
+
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- VIDEO -->
+
+        <section class="obicaji-section obicaji-video">
+
+            <h2>
+                Video
+            </h2>
+
+
+            <div class="video-container">
+
+                <iframe
+                    src="https://www.youtube.com/embed/haZbR7qpgoI"
+                    title="Pjesma, ples i običaji u srcu Slavonije"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- GALLERY MODAL -->
+
+    <div class="modal fade"
+         id="galleryModal"
+         tabindex="-1"
+         role="dialog"
+         aria-labelledby="galleryModalLabel"
+         aria-hidden="true">
+
+
+        <div class="modal-dialog modal-lg"
+             role="document">
+
+
+            <div class="modal-content">
+
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title"
+                        id="galleryModalLabel">
+
+                        Galerija
+
+                    </h5>
+
+
+                    <button type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Zatvori">
+
+                        <span aria-hidden="true">
+                            &times;
+                        </span>
+
+                    </button>
+
+                </div>
+
+
+                <div class="modal-body">
+
+                    <div id="galleryCarousel"
+                         class="carousel slide"
+                         data-interval="false">
+
+
+                        <div class="carousel-inner">
+
+
+                            <div class="carousel-item active">
+
+                                <img src="../slike/običaji-1.jpg"
+                                     alt="Slavonski tradicionalni običaj">
+
+                            </div>
+
+
+                            <div class="carousel-item">
+
+                                <img src="../slike/običaji-2.jpg"
+                                     alt="Tradicionalna slavonska izrada">
+
+                            </div>
+
+
+                            <div class="carousel-item">
+
+                                <img src="../slike/običaji-3.jpg"
+                                     alt="Tradicionalni slavonski običaji">
+
+                            </div>
+
+
+                            <div class="carousel-item">
+
+                                <img src="../slike/običaji-6.jpg"
+                                     alt="Tradicionalna slavonska nošnja i uređenje">
+
+                            </div>
+
+
+                        </div>
+
+
+                        <a class="carousel-control-prev"
+                           href="#galleryCarousel"
+                           role="button"
+                           data-slide="prev">
+
+                            <span class="carousel-control-prev-icon"
+                                  aria-hidden="true">
+                            </span>
+
+                            <span class="sr-only">
+                                Prethodna
+                            </span>
+
+                        </a>
+
+
+                        <a class="carousel-control-next"
+                           href="#galleryCarousel"
+                           role="button"
+                           data-slide="next">
+
+                            <span class="carousel-control-next-icon"
+                                  aria-hidden="true">
+                            </span>
+
+                            <span class="sr-only">
+                                Sljedeća
+                            </span>
+
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-      </div>
-  </footer>
-<script src="../js/scroll-reveal.js"></script>
+
+    </div>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-columns">
+
+
+                <!-- KONTAKT -->
+
+                <div class="footer-column">
+
+                    <h5>
+                        Kontakt
+                    </h5>
+
+                    <ul>
+
+                        <li>
+                            Slavonski Brod
+                        </li>
+
+                        <li>
+                            Telefon: 099/782-790
+                        </li>
+
+                        <li>
+                            Email: sbturizam@gmail.com
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <!-- MEDIJI -->
+
+                <div class="footer-column">
+
+                    <h5>
+                        Mediji
+                    </h5>
+
+
+                    <div class="footer-icons">
+
+                        <a href="https://www.instagram.com/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Instagram">
+
+                            <i class="fa fa-instagram"
+                               aria-hidden="true">
+                            </i>
+
+                        </a>
+
+
+                        <a href="https://twitter.com/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Twitter">
+
+                            <i class="fa fa-twitter"
+                               aria-hidden="true">
+                            </i>
+
+                        </a>
+
+
+                        <a href="https://www.facebook.com/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Facebook">
+
+                            <i class="fa fa-facebook-official"
+                               aria-hidden="true">
+                            </i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- KORISNI LINKOVI -->
+
+                <div class="footer-column">
+
+                    <h5>
+                        Korisni linkovi
+                    </h5>
+
+
+                    <ul>
+
+                        <li>
+                            <a href="../Početna_v2.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="Atrakcije.html">
+                                Atrakcije
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="Tradicija.html">
+                                Tradicije
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="Smještaj.html">
+                                Smještaj
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="O_gradu_v2.html">
+                                O gradu
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="Kontakt.html">
+                                Kontakt
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                © 2024 Grad Slavonski Brod. Sva prava pridržana.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- GALLERY JAVASCRIPT -->
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('.gallery-thumb').on('click', function () {
+
+                var index = parseInt(
+                    $(this).attr('data-index')
+                ) || 0;
+
+                $('#galleryModal').modal({
+                    backdrop: true,
+                    keyboard: true,
+                    show: true
+                });
+
+                $('#galleryCarousel').carousel(index);
+
+            });
+
+        });
+
+    </script>
+
+
+    <!-- Scroll reveal -->
+
+    <script src="../js/scroll-reveal.js"></script>
+
+
 </body>
+
 </html>
