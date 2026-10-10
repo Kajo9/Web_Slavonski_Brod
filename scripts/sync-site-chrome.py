@@ -1,23 +1,15 @@
-<!DOCTYPE html>
-<html lang="hr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kuća Brlićevih - Slavonski Brod</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../css/Atrakcije.css">
-  <link rel="stylesheet" href="../css/attraction-detail.css">
-  <link rel="stylesheet" href="../css/scroll-reveal.css">
-  <link rel="stylesheet" href="../css/site-chrome.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Quicksand:wght@400;500&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <a href="#main-content" class="skip-link">Skoči na glavni sadržaj</a>
+#!/usr/bin/env python3
+"""Uskladi navbar i footer sa Početna_v2 na svim HTML stranicama."""
+import re
+from pathlib import Path
 
-  <!-- ==================== NAVBAR ==================== -->
+ROOT = Path(__file__).resolve().parents[1]
+
+SKIP_LINK = """  <a href="#main-content" class="skip-link">Skoči na glavni sadržaj</a>
+
+"""
+
+NAVBAR_OSTALO = """  <!-- ==================== NAVBAR ==================== -->
   <nav class="navbar navbar-dark navbar-expand-lg" role="navigation" aria-label="Glavna navigacija">
     <div class="container">
       <a class="navbar-brand" href="../Početna_v2.html">
@@ -82,60 +74,9 @@
       </div>
     </div>
   </nav>
+"""
 
-  <main class="attraction-page" id="main-content">
-  <div class="brlic-hero attraction-hero">
-    <img class="card-img" src="../slike/muzej_brlicevih_kartica.jpg" alt="Autentični interijer Kuće Brlićevih">
-    <div class="card-img-overlay">
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Kuća Brlićevih</h1>
-          <p class="lead">Povijesni dom obitelji Brlić, Slavonski Brod</p>
-          <a href="https://www.google.com/maps/search/?api=1&query=Ku%C4%87a+Brli%C4%87evih%2C+Slavonski+Brod" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Pogledaj na karti</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-    <section class="content-section attraction-section">
-      <h2>Općenito o Kući Brlićevih</h2>
-      <p class="opis">Kuća Brlićevih povijesni je dom obitelji Brlić, povezane s književnicom Ivanom Brlić-Mažuranić.</p>
-      <p class="opis">Upoznajte autentičan interijer i doznajte više o životu i djelovanju poznate brodske obitelji.</p>
-    </section>
-
-    <section class="content-section attraction-section">
-      <h2>Galerija slika</h2>
-      <div class="attraction-gallery" data-gallery-modal="#brlicGalleryModal">
-        <img class="gallery-thumb" src="https://tzbpz.hr/wp-content/uploads/2023/03/slavonski-brod-kuca-brlic-9.jpg" alt="Kuća Brlićevih, povijesni interijer">
-        <img class="gallery-thumb" src="https://tzbpz.hr/wp-content/uploads/2023/03/slavonski-brod-kuca-brlic-8.jpg" alt="Kuća Brlićevih u Slavonskom Brodu">
-        <img class="gallery-thumb" src="https://tzbpz.hr/wp-content/uploads/2023/03/slavonski-brod-kuca-brlic-7.jpg" alt="Detalj Kuće Brlićevih">
-        <img class="gallery-thumb" src="https://tzbpz.hr/wp-content/uploads/2023/03/slavonski-brod-kuca-brlic-6.jpg" alt="Kuća Brlićevih, galerijski prostor">
-      </div>
-    </section>
-
-    <div class="modal fade attraction-gallery-modal" id="brlicGalleryModal" tabindex="-1" role="dialog" aria-labelledby="brlicGalleryModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="brlicGalleryModalLabel">Galerija</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Zatvori galeriju"><span aria-hidden="true">&times;</span></button>
-          </div>
-          <div class="modal-body">
-            <div id="brlicGalleryCarousel" class="carousel slide" data-interval="false" data-wrap="true" aria-label="Galerija Kuće Brlićevih">
-              <div class="carousel-inner"></div>
-              <a class="carousel-control-prev" href="#brlicGalleryCarousel" role="button" data-slide="prev" aria-label="Prethodna fotografija"><span class="carousel-control-prev-icon" aria-hidden="true"></span></a>
-              <a class="carousel-control-next" href="#brlicGalleryCarousel" role="button" data-slide="next" aria-label="Sljedeća fotografija"><span class="carousel-control-next-icon" aria-hidden="true"></span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <section class="content-section attraction-section attraction-section--empty">
-      <h2>Video</h2>
-    </section>
-  </main>
-    <!-- ==================== FOOTER ==================== -->
+FOOTER_OSTALO = """  <!-- ==================== FOOTER ==================== -->
   <footer class="footer">
     <div class="container">
       <div class="footer-columns">
@@ -180,7 +121,124 @@
       <p>&copy; 2024 Grad Slavonski Brod. Sva prava pridržana.</p>
     </div>
   </footer>
+"""
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script><script src="../js/attraction-gallery.js"></script><script src="../js/scroll-reveal.js"></script>
-</body>
-</html>
+FOOTER_ROOT = """  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-columns">
+
+        <div class="footer-column">
+          <h5>Kontakt</h5>
+          <ul>
+            <li>Slavonski Brod</li>
+            <li>Telefon: 099/782-790</li>
+            <li>Email: sbturizam@gmail.com</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h5>Mediji</h5>
+          <div class="footer-icons">
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+              <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+              <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+              <i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h5>Korisni linkovi</h5>
+          <a class="nav-link" href="Početna_v2.html">Home</a>
+          <a class="nav-link" href="./ostalo/Atrakcije.html">Atrakcije</a>
+          <a class="nav-link" href="./ostalo/Tradicija.html">Tradicije</a>
+          <a class="nav-link" href="./ostalo/Smještaj.html">Smještaj</a>
+          <a class="nav-link" href="./ostalo/O_gradu_v2.html">O gradu</a>
+          <a class="nav-link" href="./ostalo/Kontakt.html">Kontakt</a>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Grad Slavonski Brod. Sva prava pridržana.</p>
+    </div>
+  </footer>
+"""
+
+SITE_CHROME_LINK_ROOT = '  <link rel="stylesheet" href="./css/site-chrome.css">\n'
+SITE_CHROME_LINK_OSTALO = '  <link rel="stylesheet" href="../css/site-chrome.css">\n'
+
+SKIP_RE = re.compile(
+    r'\s*<a href="#main-content" class="skip-link">[^<]*</a>\s*',
+    re.IGNORECASE,
+)
+NAV_RE = re.compile(
+    r'(?:<!--\s*={3,}\s*NAVBAR\s*={3,}\s*-->\s*)?'
+    r'<nav class="navbar navbar-dark navbar-expand-lg"[\s\S]*?</nav>',
+    re.IGNORECASE,
+)
+FOOTER_RE = re.compile(
+    r'(?:<!--\s*={3,}\s*FOOTER\s*={3,}\s*-->\s*)?'
+    r'<footer class="footer"[\s\S]*?</footer>',
+    re.IGNORECASE,
+)
+STRAY_FOOTER_RE = re.compile(r'\s*</div>\s*</footer>\s*(?=</body>)', re.IGNORECASE)
+
+
+def ensure_site_chrome_link(text: str, link_line: str) -> str:
+    if "site-chrome.css" in text:
+        return text
+    return re.sub(r"</head>", link_line + "</head>", text, count=1, flags=re.IGNORECASE)
+
+
+def process_ostalo(path: Path) -> bool:
+    original = path.read_text(encoding="utf-8")
+    text = SKIP_RE.sub("\n", original)
+    nav_block = SKIP_LINK + NAVBAR_OSTALO
+    if not NAV_RE.search(text):
+        print(f"WARN {path.name}: navbar not found")
+        return False
+    text, n = NAV_RE.subn(nav_block, text, count=1)
+    if n != 1:
+        print(f"WARN {path.name}: navbar count {n}")
+    text, n = FOOTER_RE.subn(FOOTER_OSTALO, text, count=1)
+    if n != 1:
+        print(f"WARN {path.name}: footer count {n}")
+    text = STRAY_FOOTER_RE.sub("\n", text)
+    text = ensure_site_chrome_link(text, SITE_CHROME_LINK_OSTALO)
+    if text != original:
+        path.write_text(text, encoding="utf-8")
+        return True
+    return False
+
+
+def process_pocetna(path: Path) -> bool:
+    original = path.read_text(encoding="utf-8")
+    text, n = FOOTER_RE.subn(FOOTER_ROOT, original, count=1)
+    if n != 1:
+        print(f"WARN {path.name}: footer count {n}")
+    text = ensure_site_chrome_link(text, SITE_CHROME_LINK_ROOT)
+    if text != original:
+        path.write_text(text, encoding="utf-8")
+        return True
+    return False
+
+
+def main() -> None:
+    changed = []
+    for path in sorted((ROOT / "ostalo").glob("*.html")):
+        if process_ostalo(path):
+            changed.append(path.name)
+    pocetna = ROOT / "Početna_v2.html"
+    if process_pocetna(pocetna):
+        changed.append(pocetna.name)
+    print("Updated:", ", ".join(changed) if changed else "(none)")
+
+
+if __name__ == "__main__":
+    main()

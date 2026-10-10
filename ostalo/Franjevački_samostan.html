@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../css/Franjevački_samostan.css">
   <link rel="stylesheet" href="../css/attraction-detail.css">
   <link rel="stylesheet" href="../css/scroll-reveal.css">
+  <link rel="stylesheet" href="../css/site-chrome.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +28,10 @@
 
 <body>
 
-<nav class="navbar navbar-dark navbar-expand-lg" role="navigation" aria-label="Glavna navigacija">
+  <a href="#main-content" class="skip-link">Skoči na glavni sadržaj</a>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar navbar-dark navbar-expand-lg" role="navigation" aria-label="Glavna navigacija">
     <div class="container">
       <a class="navbar-brand" href="../Početna_v2.html">
         <img src="../slike/grb_SB.png" alt="Grb Slavonski Brod"> Grad Slavonski Brod
@@ -51,7 +55,7 @@
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownAtrakcije">
               <a class="dropdown-item" href="Atrakcije.html">Sve atrakcije</a>
-              <div class="dropdown-divider" style="border-top: 2px solid #ffc107;"></div>
+              <div class="dropdown-divider" style="border-top: 1px solid #ffc107;"></div>
               <a class="dropdown-item" href="Tvrđava.html">Tvrđava Brod</a>
               <a class="dropdown-item" href="Industrijski_park.html">Industrijski park</a>
               <a class="dropdown-item" href="Kuca_Tambure.html">Kuća Tambure</a>
@@ -91,6 +95,7 @@
       </div>
     </div>
   </nav>
+
 
 <main class="attraction-page" id="main-content">
 <section class="attraction-hero">
@@ -217,7 +222,8 @@
 </section>
 </main>
 
-<footer class="footer">
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
     <div class="container">
       <div class="footer-columns">
 
@@ -248,11 +254,11 @@
         <div class="footer-column">
           <h5>Korisni linkovi</h5>
           <a class="nav-link" href="../Početna_v2.html">Home</a>
-          <a class="nav-link" href="./ostalo/Atrakcije.html">Atrakcije</a>
-          <a class="nav-link" href="./ostalo/Tradicija.html">Tradicije</a>
-          <a class="nav-link" href="./ostalo/Smještaj.html">Smještaj</a>
-          <a class="nav-link" href="./ostalo/O_gradu_v2.html">O gradu</a>
-          <a class="nav-link" href="./ostalo/Kontakt.html">Kontakt</a>
+          <a class="nav-link" href="Atrakcije.html">Atrakcije</a>
+          <a class="nav-link" href="Tradicija.html">Tradicije</a>
+          <a class="nav-link" href="Smještaj.html">Smještaj</a>
+          <a class="nav-link" href="O_gradu_v2.html">O gradu</a>
+          <a class="nav-link" href="Kontakt.html">Kontakt</a>
         </div>
 
       </div>
@@ -261,6 +267,7 @@
       <p>&copy; 2024 Grad Slavonski Brod. Sva prava pridržana.</p>
     </div>
   </footer>
+
 <script>
 (function () {
   var galleryModal = document.getElementById('galleryModal');

@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/Smještaj.css">
   <link rel="stylesheet" href="../css/scroll-reveal.css">
+  <link rel="stylesheet" href="../css/site-chrome.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
@@ -20,7 +21,10 @@
   <title>Slavonski Brod</title>
 </head>
 <body>
-    <nav class="navbar navbar-dark navbar-expand-lg" role="navigation" aria-label="Glavna navigacija">
+      <a href="#main-content" class="skip-link">Skoči na glavni sadržaj</a>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar navbar-dark navbar-expand-lg" role="navigation" aria-label="Glavna navigacija">
     <div class="container">
       <a class="navbar-brand" href="../Početna_v2.html">
         <img src="../slike/grb_SB.png" alt="Grb Slavonski Brod"> Grad Slavonski Brod
@@ -44,7 +48,7 @@
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownAtrakcije">
               <a class="dropdown-item" href="Atrakcije.html">Sve atrakcije</a>
-              <div class="dropdown-divider" style="border-top: 2px solid #ffc107;"></div>
+              <div class="dropdown-divider" style="border-top: 1px solid #ffc107;"></div>
               <a class="dropdown-item" href="Tvrđava.html">Tvrđava Brod</a>
               <a class="dropdown-item" href="Industrijski_park.html">Industrijski park</a>
               <a class="dropdown-item" href="Kuca_Tambure.html">Kuća Tambure</a>
@@ -85,7 +89,8 @@
     </div>
   </nav>
 
-    <div class="jumbotron jumbotron-fluid">
+
+    <div class="jumbotron jumbotron-fluid" id="main-content">
         <div class="container">
           <h1 class="display-5" class="naslov-1">Smještaj</h1>
             <hr>
@@ -338,48 +343,52 @@
       </div>
       
       
-      <footer class="footer">
-        <div class="container">
-    <div class="footer-columns">
-      <div class="footer-column">
-        <h5>Kontakt</h5>
-        <ul>
-          <li>Slavonski Brod</li>
-          <li>Telefon: 099/782-790</li>
-          <li>Email: sbturizam@gmail.com</li>
-        </ul>
-      </div>
+        <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-columns">
 
-      <div class="footer-column">
-        <h5>Mediji</h5>
-        <div class="footer-icons">
-          <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
-            <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
-          </a>
-          <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
-            <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
-            <i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
-          </a>
+        <div class="footer-column">
+          <h5>Kontakt</h5>
+          <ul>
+            <li>Slavonski Brod</li>
+            <li>Telefon: 099/782-790</li>
+            <li>Email: sbturizam@gmail.com</li>
+          </ul>
         </div>
-      </div>
 
-      <div class="footer-column">
-        <h5>Korisni linkovi</h5>
-        <a class="nav-link" href="../Početna_v2.html">Home</a>
-        <a class="nav-link" href="Atrakcije.html">Atrakcije</a>
-        <a class="nav-link" href="Tradicija.html">Tradicije</a>
-        <a class="nav-link" href="Smještaj.html">Smještaj</a>
-        <a class="nav-link" href="O_gradu_v2.html">O gradu</a>
-        <a class="nav-link" href="Kontakt.html">Kontakt</a>
+        <div class="footer-column">
+          <h5>Mediji</h5>
+          <div class="footer-icons">
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+              <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+              <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+              <i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h5>Korisni linkovi</h5>
+          <a class="nav-link" href="../Početna_v2.html">Home</a>
+          <a class="nav-link" href="Atrakcije.html">Atrakcije</a>
+          <a class="nav-link" href="Tradicija.html">Tradicije</a>
+          <a class="nav-link" href="Smještaj.html">Smještaj</a>
+          <a class="nav-link" href="O_gradu_v2.html">O gradu</a>
+          <a class="nav-link" href="Kontakt.html">Kontakt</a>
+        </div>
+
       </div>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2024 Grad Slavonski Brod. Sva prava pridržana.</p>
-  </div>
-</footer>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Grad Slavonski Brod. Sva prava pridržana.</p>
+    </div>
+  </footer>
+
   <script src="../js/scroll-reveal.js"></script>
 </body>
 </html>

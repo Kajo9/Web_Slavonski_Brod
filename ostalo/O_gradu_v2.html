@@ -17,9 +17,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
   <title>Slavonski Brod</title>
+  <link rel="stylesheet" href="../css/site-chrome.css">
 </head>
 <body>
-    <nav class="navbar navbar-dark navbar-expand-lg" role="navigation" aria-label="Glavna navigacija">
+      <a href="#main-content" class="skip-link">Skoči na glavni sadržaj</a>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar navbar-dark navbar-expand-lg" role="navigation" aria-label="Glavna navigacija">
     <div class="container">
       <a class="navbar-brand" href="../Početna_v2.html">
         <img src="../slike/grb_SB.png" alt="Grb Slavonski Brod"> Grad Slavonski Brod
@@ -43,7 +47,7 @@
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownAtrakcije">
               <a class="dropdown-item" href="Atrakcije.html">Sve atrakcije</a>
-              <div class="dropdown-divider" style="border-top: 2px solid #ffc107;"></div>
+              <div class="dropdown-divider" style="border-top: 1px solid #ffc107;"></div>
               <a class="dropdown-item" href="Tvrđava.html">Tvrđava Brod</a>
               <a class="dropdown-item" href="Industrijski_park.html">Industrijski park</a>
               <a class="dropdown-item" href="Kuca_Tambure.html">Kuća Tambure</a>
@@ -84,7 +88,8 @@
     </div>
   </nav>
 
-  <div class="about-page">
+
+  <div class="about-page" id="main-content">
     <section class="about-hero" aria-label="Slavonski Brod">
       <img src="/slike/o_gradu.jpg" alt="Slavonski Brod i Sava">
       <div class="about-hero-overlay">
@@ -408,7 +413,8 @@
       });
     });
   </script>
-<footer class="footer">
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
     <div class="container">
       <div class="footer-columns">
 
@@ -451,8 +457,6 @@
     <div class="footer-bottom">
       <p>&copy; 2024 Grad Slavonski Brod. Sva prava pridržana.</p>
     </div>
-  </footer>
-      </div>
   </footer>
 </body>
 </html>
