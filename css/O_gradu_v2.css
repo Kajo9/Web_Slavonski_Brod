@@ -865,6 +865,29 @@ footer.footer {
   line-height: 1.4;
 }
 
+/* LOCOMOTIVE */
+
+.industrial-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.industrial-image {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 16px; 
+    margin: 20px auto;   
+}
+
+.industrial-caption {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 /* HISTORY TOOLTIP */
 .about-page .history-tooltip {
   position: absolute;
