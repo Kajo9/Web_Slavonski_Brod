@@ -141,23 +141,6 @@ nav.navbar {
   height: 90px;
 }
 
-.hero-copy {
-  width: 100%;
-}
-
-.hero-copy .eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  color: #FFD700;
-  font-weight: 700;
-  margin-bottom: 16px;
-}
-
-.hero-copy h1 {
-  font-size: 3rem;
-  margin-bottom: 18px;
-}
-
 .hero-text {
   font-size: 1.15rem;
   max-width: 720px;
@@ -382,10 +365,6 @@ footer.footer {
 }
 
 @media (max-width: 768px) {
-  .hero-copy h1 {
-    font-size: 2.5rem;
-  }
-
   .hero-tags .tag-item {
     justify-content: center;
   }
@@ -398,10 +377,6 @@ footer.footer {
 @media (max-width: 576px) {
   .hero-section {
     padding: 60px 0 40px;
-  }
-
-  .hero-copy h1 {
-    font-size: 2rem;
   }
 
   .contact-section {
