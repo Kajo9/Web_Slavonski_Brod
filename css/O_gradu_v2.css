@@ -1081,6 +1081,11 @@ footer.footer {
 
 @media (max-width: 768px) {
 
+  .about-page .history-inner {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
   .about-page .history-section h2 {
     margin-bottom: 22px;
   }
@@ -1129,7 +1134,7 @@ footer.footer {
     background: rgba(0, 0, 145, 0.12);
   }
 
-  .about-page .history-point-wrap:first-child::before {
+  .about-page .history-point-wrap:first-of-type::before {
     top: 50%;
   }
 
@@ -1168,25 +1173,25 @@ footer.footer {
     flex: 1;
   }
 
-  .about-page .history-point-wrap:first-child .history-tooltip {
+  .about-page .history-point-wrap:first-of-type .history-tooltip {
     left: 0;
-    transform: translateX(-12px) translateY(8px);
+    transform: translateY(8px);
   }
 
-  .about-page .history-point-wrap:first-child:hover .history-tooltip,
-  .about-page .history-point-wrap:first-child:focus-within .history-tooltip {
-    transform: translateX(-12px) translateY(0);
+  .about-page .history-point-wrap:first-of-type:hover .history-tooltip,
+  .about-page .history-point-wrap:first-of-type:focus-within .history-tooltip {
+    transform: translateY(0);
   }
 
   .about-page .history-point-wrap:last-child .history-tooltip {
     left: auto;
     right: 0;
-    transform: translateX(12px) translateY(8px);
+    transform: translateY(8px);
   }
 
   .about-page .history-point-wrap:last-child:hover .history-tooltip,
   .about-page .history-point-wrap:last-child:focus-within .history-tooltip {
-    transform: translateX(12px) translateY(0);
+    transform: translateY(0);
   }
 
   .about-page .history-point-wrap:hover .history-tooltip,
